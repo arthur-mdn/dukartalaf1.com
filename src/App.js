@@ -11,6 +11,7 @@ import { LanguageProvider, useLanguage } from "./LanguageContext";
 import Menu from "./components/Menu";
 import Mentions from "./pages/Mentions";
 import Rgpd from "./pages/Rgpd";
+import Contact from "./pages/Contact";
 
 function App() {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -34,6 +35,7 @@ function MainContent() {
                 <Route path="/" element={<Accueil />}/>
                 <Route path="/inscription" element={<Boutique />} />
                 <Route path="/reglement" element={<Reglement />} />
+                <Route path="/contact" element={<Contact />} />
                 <Route path="/mentions-legales" element={<Mentions />} />
                 <Route path="/rgpd" element={<Rgpd />} />
                 {/* Définissez les autres routes ici */}

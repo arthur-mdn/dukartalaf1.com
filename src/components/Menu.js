@@ -21,6 +21,7 @@ function Menu({isMenuOpen, setIsMenuOpen}) {
                     <a href="/" rel="noreferrer" style={styles.menuNavLink} className={"expansiva"}> {translations.home} </a>
                     <a href="/inscription" rel="noreferrer" style={styles.menuNavLink} className={"expansiva"}> {translations.register} </a>
                     <a href="/reglement" rel="noreferrer" style={styles.menuNavLink} className={"expansiva"}> {translations.rules} </a>
+                    <a href="/contact" rel="noreferrer" style={styles.menuNavLink} className={"expansiva"}> {translations.contact} </a>
                 </div>
                 <Footer marginTop={'auto'}/>
             </menu>

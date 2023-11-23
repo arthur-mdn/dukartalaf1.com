@@ -22,6 +22,9 @@ function Footer({marginTop = "0"}) {
                 <li>
                     <a href="/rgpd" rel="noreferrer" style={styles.footertNavLink}> {translations.rgpd} </a>
                 </li>
+                <li>
+                    <a href="/contact" rel="noreferrer" style={styles.footertNavLink}> {translations.contact} </a>
+                </li>
             </ul>
             <ul style={styles.footerNavList}>
                 <li>
