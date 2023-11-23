@@ -72,9 +72,9 @@ function SampleNextArrow(props) {
     return (
         <button type={"button"}
             className={"button skew"}
-            style={{position:'absolute', right:"30px",bottom:'-120px', zIndex:2 }} // Personnalisez selon vos besoins
+            style={{position:'absolute', right:"30px",top:'-120px', zIndex:2 }} // Personnalisez selon vos besoins
             onClick={onClick}
-        ><FaCaretRight/> {translations.next}</button>
+        ><FaCaretRight  style={{fontSize:'1rem'}}/> {translations.next}</button>
     );
 }
 
@@ -84,9 +84,9 @@ function SamplePrevArrow(props) {
 
     return (
         <button type={"button"} className={"button skew"}
-            style={{ position:'absolute', display: "block", left:"30px",top:'-120px', zIndex:2}} // Personnalisez selon vos besoins
+            style={{ position:'absolute', display: "block", left:"30px",bottom:'-120px', zIndex:2}} // Personnalisez selon vos besoins
             onClick={onClick}
-        ><FaCaretLeft/>{translations.previous}</button>
+        ><FaCaretLeft style={{fontSize:'1rem'}}/>{translations.previous}</button>
     );
 }
 
