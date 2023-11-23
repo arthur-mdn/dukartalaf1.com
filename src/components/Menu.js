@@ -48,7 +48,7 @@ const styles = {
         width: '100%',
         height: '100%',
         backdropFilter: 'blur(15px)',
-        webkitBackdropFilter: 'blur(15px)',
+        WebkitBackdropFilter: 'blur(15px)',
         zIndex:"1001",
         transition: 'all 0.4s ease-in-out',
     },

@@ -1,9 +1,11 @@
-import React from "react";
+import React, {useState} from "react";
 import {useLanguage} from "../../../LanguageContext";
 import pistesData from "../../../datas/pistes.json";
+import Modal from "../../../components/modal/Modal";
 
 function BoutiqueGallery() {
     const { translations } = useLanguage();
+    const [modalIsOpen, setModalIsOpen] = useState('null');
 
     return (
         <section style={styles.boutique_section} >
@@ -18,17 +20,26 @@ function BoutiqueGallery() {
                             <img src={`pistes/${piste.image}`} alt={piste.nom} style={styles.boutique_list_item_image}/>
                             <h2 className={"white bold"}>{piste.nom}</h2>
                             <div style={styles.boutique_list_item_button}>
-                                {piste.dates.map(date => (
-                                    <a key={date.date} className={"button skew"} href={date.lienReservation} target="_blank" rel="noreferrer">
-                                        Réserver pour le {date.date}
-                                    </a>
-                                ))}
+                                <button type={"button"} key={piste.id} className={"skew"}  onClick={() => setModalIsOpen(piste)}>
+                                    {translations.book}
+                                </button>
                             </div>
 
                         </div>
                     ))}
                 </div>
             </article>
+            <Modal isOpen={modalIsOpen} title={translations.chooseDate} onClose={() => setModalIsOpen("null")}>
+                <p>{translations.chooseDateDescription}</p>
+                <div className={"fc f-c "}>
+                    {modalIsOpen.dates && modalIsOpen.dates.map(date => (
+                        <button type={"button"} className={"expansiva fs1"} key={date.date} onClick={() => setModalIsOpen("null")}>
+                            {date.date}
+                        </button>
+                    ))}
+                </div>
+
+            </Modal>
         </section>
     );
 }

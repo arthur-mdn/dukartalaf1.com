@@ -9,7 +9,9 @@ function Mentions() {
     return (
         <>
             <SecondaryHeroSection title={translations.mentions}/>
-            {translations.mentionsContent}
+            <article>
+                {translations.mentionsContent}
+            </article>
         </>
 
     );

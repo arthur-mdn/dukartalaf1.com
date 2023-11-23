@@ -1,5 +1,5 @@
 import React from "react";
-import {FaFacebookF, FaInstagram, FaTiktok} from "react-icons/fa6";
+import {FaFacebookF, FaInstagram, FaTiktok, FaYoutube} from "react-icons/fa6";
 import {useLanguage} from "../LanguageContext";
 
 function Footer({marginTop = "0"}) {
@@ -32,6 +32,9 @@ function Footer({marginTop = "0"}) {
                 </li>
                 <li>
                     <a href="https://www.instagram.com/" target="_blank" rel="noreferrer"  style={styles.footertNavLink}> <FaInstagram/> </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/" target="_blank" rel="noreferrer"  style={styles.footertNavLink}> <FaYoutube/> </a>
                 </li>
             </ul>
         </footer>

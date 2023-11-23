@@ -9,7 +9,9 @@ function Rgpd() {
     return (
         <>
             <SecondaryHeroSection title={translations.rgpd}/>
-            {translations.rgpdContent}
+            <article>
+                {translations.rgpdContent}
+            </article>
         </>
 
     );
