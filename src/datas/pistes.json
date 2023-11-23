@@ -1,0 +1,46 @@
+[
+  {
+    "id": 1,
+    "nom": "Metz Indoor",
+    "image": "metz_indoor.png",
+    "dates": [
+      {
+        "date": "2023-07-15",
+        "lienReservation": "https://site.externe/reservation/2"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "nom": "Karting de Crolles",
+    "image": "karting_crolles.png",
+    "dates": [
+      {
+        "date": "2023-08-05",
+        "lienReservation": "https://site.externe/reservation/3"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "nom": "Plessé",
+    "image": "plesse.png",
+    "dates": [
+      {
+        "date": "2023-08-05",
+        "lienReservation": "https://site.externe/reservation/4"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "nom": "Circuit de l'Europe",
+    "image": "circuit_europe.png",
+    "dates": [
+      {
+        "date": "2023-08-05",
+        "lienReservation": "https://site.externe/reservation/5"
+      }
+    ]
+  }
+]

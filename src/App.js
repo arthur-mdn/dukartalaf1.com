@@ -1,25 +1,46 @@
-import logo from './logo.svg';
-import './App.css';
+// App.js
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import TopBar from './components/TopBar';
+import NotFound from './components/NotFound';
+import Accueil from './pages/Accueil';
+import Boutique from './pages/Boutique';
+import Reglement from './pages/Reglement';
+import Footer from "./components/Footer";
+import { LanguageProvider, useLanguage } from "./LanguageContext";
+import Menu from "./components/Menu";
+import Mentions from "./pages/Mentions";
+import Rgpd from "./pages/Rgpd";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+    return (
+        <LanguageProvider>
+            <Router>
+                <TopBar isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen}/>
+                <Menu isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
+                <MainContent/>
+                <Footer/>
+            </Router>
+        </LanguageProvider>
+    );
+}
+
+function MainContent() {
+    const { translations } = useLanguage();
+    return (
+        <div>
+            <Routes>
+                <Route path="/" element={<Accueil />}/>
+                <Route path="/inscription" element={<Boutique />} />
+                <Route path="/reglement" element={<Reglement />} />
+                <Route path="/mentions-legales" element={<Mentions />} />
+                <Route path="/rgpd" element={<Rgpd />} />
+                {/* Définissez les autres routes ici */}
+                <Route path="*" element={<NotFound />} />
+            </Routes>
+        </div>
+    );
 }
 
 export default App;
