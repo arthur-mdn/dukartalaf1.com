@@ -46,14 +46,18 @@ function AccueilCarousel() {
         <section style={styles.boutique_section} >
             <article style={{width:'100%', padding:0}}>
                 <Slider {...settings}>
-                    {pistesData.map(piste => (
-                        <a href={"inscription"} style={{aspectRatio:"1/1"}} className={"fc f-c"} key={piste.id}>
-                            <img src={`pistes/${piste.image}`} alt={piste.nom} style={styles.boutique_list_item_image}/>
-                            <div>
-                                <h2 className={"white bold mt-a"}>{piste.nom}</h2>
-                            </div>
-                        </a>
-                    ))}
+                        {pistesData.map(piste => (
+                            <span style={{width:'100%', display:'flex', position:'relative'}}>
+                                 <a href={"inscription"} style={{aspectRatio:"1/1", width:'100%'}} className={"fc f-c"} key={piste.id}>
+                                <img src={`pistes/${piste.image}`} alt={piste.nom} style={styles.boutique_list_item_image}/>
+                                <div>
+                                    <h2 className={"white bold mt-a"}>{piste.nom}</h2>
+                                </div>
+                            </a>
+                            </span>
+
+                        ))}
+
                 </Slider>
             </article>
 
@@ -100,10 +104,12 @@ const styles = {
     },
     boutique_list_item_image :{
         position:"absolute",
-        width: '100%',
+        width: 'calc(100% - 20px)',
         height:'100%',
         objectFit:"cover",
         objectPosition:"center",
+        overflow:"hidden",
+        borderRadius:"2rem",
     }
 };
 
