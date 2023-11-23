@@ -1,23 +1,65 @@
 import React from "react";
 import {useLanguage} from "../../../LanguageContext";
 import pistesData from "../../../datas/pistes.json";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+import {FaCaretLeft, FaCaretRight} from "react-icons/fa6";
 
 function AccueilCarousel() {
     const { translations } = useLanguage();
+    // Configuration de base pour le carousel
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        nextArrow: <SampleNextArrow />,
+        prevArrow: <SamplePrevArrow />,
+    };
 
     return (
         <section style={styles.boutique_section} >
-            <article>
-                <div style={styles.boutique_list} >
+            <article style={{width:'100%', padding:0}}>
+                <Slider {...settings}>
                     {pistesData.map(piste => (
-                        <a href={"inscription"} key={piste.id} style={styles.boutique_list_item}>
+                        <a href={"inscription"} style={{aspectRatio:"1/1"}} className={"fc f-c"} key={piste.id}>
                             <img src={`pistes/${piste.image}`} alt={piste.nom} style={styles.boutique_list_item_image}/>
-                            <h2 className={"white bold mt-a"}>{piste.nom}</h2>
+                            <div>
+                                <h2 className={"white bold mt-a"}>{piste.nom}</h2>
+                            </div>
                         </a>
                     ))}
-                </div>
+                </Slider>
             </article>
+
         </section>
+    );
+}
+
+function SampleNextArrow(props) {
+    const { className, style, onClick } = props;
+    const { translations } = useLanguage();
+
+    return (
+        <button type={"button"}
+            className={"button skew"}
+            style={{position:'absolute', right:"30px",bottom:'-120px', zIndex:2 }} // Personnalisez selon vos besoins
+            onClick={onClick}
+        ><FaCaretRight/> {translations.next}</button>
+    );
+}
+
+function SamplePrevArrow(props) {
+    const { className, style, onClick } = props;
+    const { translations } = useLanguage();
+
+    return (
+        <button type={"button"} className={"button skew"}
+            style={{ position:'absolute', display: "block", left:"30px",top:'-120px', zIndex:2}} // Personnalisez selon vos besoins
+            onClick={onClick}
+        ><FaCaretLeft/>{translations.previous}</button>
     );
 }
 
@@ -33,31 +75,12 @@ const styles = {
         backgroundColor:"#060D30",
         color:"#fff",
     },
-    boutique_list:{
-        display: 'flex',
-        flexWrap: 'wrap',
-        justifyContent: 'center',
-        gap: '20px',
-        margin: 'auto',
-    },
-    boutique_list_item:{
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        gap: '10px',
-        width: '300px',
-        height: '300px',
-        position: 'relative',
-        borderRadius: '1.5rem',
-        overflow: 'hidden',
-        zIndex: 1
-    },
-    boutique_list_item_image:{
-        position: 'absolute',
+    boutique_list_item_image :{
+        position:"absolute",
         width: '100%',
-        height: '100%',
-        objectFit: 'none',
-        zIndex: -1,
+        height:'100%',
+        objectFit:"cover",
+        objectPosition:"center",
     }
 };
 

@@ -147,6 +147,9 @@ menu, ul, li{
 .w100{
   width: 100%;
 }
+.h100{
+  height: 100%;
+}
 
 .menu.open{
   opacity: 1;
@@ -256,4 +259,19 @@ textarea{
   resize: vertical;
   min-height: 50px;
   max-height: 150px;
+}
+
+
+.slick-slide{
+  position: relative;
+  aspect-ratio: 1/1;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+.slick-slide {
+  box-sizing: border-box;
+}
+.slick-slide img{
+  z-index: -1;
 }
