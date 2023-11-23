@@ -9,7 +9,7 @@ function AccueilEvent() {
             <div style={styles.damierBefore}> <div style={styles.damierOverlay}></div></div>
             <article className={"fr"}>
                 <div>
-                    <h1 className={"expansiva"}>{translations.newEvent}</h1>
+                    <h1 className={"expansiva fs1-5"}>{translations.newEvent}</h1>
                     <div className={"fc"} style={styles.polygonText}>
                         <p>
                             {translations.newEventDescription1}
@@ -22,12 +22,27 @@ function AccueilEvent() {
                             {translations.newEventDescription3}
                         </p>
                         <h3>{translations.newEventTitle2}</h3>
-
                         <p>
                             {translations.newEventDescription4}
                         </p>
+                        <ul style={{listStyle:"disc", paddingLeft:"3rem"}}>
+                            <li>
+                                {translations.newEventDescription4ListElement1}
+                            </li>
+                            <li>
+                                {translations.newEventDescription4ListElement2}
+                            </li>
+                            <li>
+                                {translations.newEventDescription4ListElement3}
+                            </li>
+                            <li>
+                                {translations.newEventDescription4ListElement4}
+                            </li>
+                        </ul>
                     </div>
-                    <div className={'fr'}>
+                    <br/>
+                    <br/>
+                    <div className={'fr'} style={{marginLeft:'2rem'}}>
                         <a href={"inscription"} className={"button expansiva white center skew"}>{translations.register}</a>
                     </div>
                 </div>
@@ -48,7 +63,7 @@ const styles = {
         width: '100%',
         position: 'relative',
         paddingTop:'100px',
-        paddingBottom:'100px',
+        paddingBottom:'80px',
         overflow: 'hidden',
     },
     damierBefore: {
@@ -87,6 +102,7 @@ const styles = {
     polygonText:{
         // clipPath: "polygon(0px 0px, 99% 0%, 71% 100%, 0% 100%) padding-box",
         textWrap:'balance',
+        marginLeft:'2rem',
     },
     polygonImage:{
         marginTop:'-6.5rem',

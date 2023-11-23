@@ -7,7 +7,7 @@ function AccueilTracks() {
     return (
         <section style={styles.event_section} >
             <article>
-                <h1 className={"expansiva"}>{translations.tracks}</h1>
+                <h1 className={"expansiva fs1-5"}>{translations.tracks}</h1>
                 <p>{translations.tracksDescription}</p>
                 <div className={"fr"} style={{gap:'2rem'}}>
                     <div style={{backgroundColor:'#060D30', padding:'4rem 2rem', borderRadius:'2rem', width:'fit-content', position:'relative', overflow:'hidden'}}>

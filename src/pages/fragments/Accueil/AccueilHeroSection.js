@@ -6,21 +6,25 @@ function AccueilHeroSection() {
     const { translations } = useLanguage();
 
     return (
-        <section style={styles.home_hero_section} >
-            <div style={styles.beforeStyle}> <div style={styles.overlay}></div></div> {/* Agit comme un pseudo-élément :before */}
-            <h1 className={"expansiva white center fs3"}>{translations.fromKartToF}</h1>
-            <div className={'fr f-c'}>
-                <a href={"inscription"} className={"button expansiva white center fs1"}>{translations.reserveYourPlace}</a>
-            </div>
-            <div style={styles.carsContainer}>
-                <img src={"/kart.svg"} alt="kart" style={styles.carsIllustration}/>
-                <div style={styles.carsSeparator}></div>
-                <img src={"/formule1.svg"} alt="formule1" style={styles.carsIllustration}/>
-            </div>
-            <div className={"fc f-c"}>
-                <FaChevronDown style={{fontSize:"4rem"}}/>
-            </div>
-        </section>
+        <>
+            <section style={styles.home_hero_section} >
+                <div style={styles.beforeStyle}> <div style={styles.overlay}></div></div> {/* Agit comme un pseudo-élément :before */}
+                <h1 className={"expansiva white center fs3"}>{translations.fromKartToF}</h1>
+                <div className={'fr f-c'}>
+                    <a href={"inscription"} className={"button expansiva white center fs1"}>{translations.reserveYourPlace}</a>
+                </div>
+                <div style={styles.carsContainer}>
+                    <img src={"/kart.svg"} alt="kart" style={styles.carsIllustration}/>
+                    <div style={styles.carsSeparator}></div>
+                    <img src={"/formule1.svg"} alt="formule1" style={styles.carsIllustration}/>
+                </div>
+                <div className={"fc f-c"}>
+                    <FaChevronDown style={{fontSize:"4rem"}}/>
+                </div>
+            </section>
+            <div style={{position:"fixed", backgroundColor:"#000",width:"100%", height:'70px', top:'0', zIndex:2}}></div>
+        </>
+
     );
 }
 
