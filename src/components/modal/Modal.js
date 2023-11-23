@@ -10,7 +10,7 @@ function Modal({ isOpen, onClose, children, title, maxHeight = "90vh", marginBot
                 <div className={'modal'} style={{maxWidth:'500px', maxHeight: maxHeight, marginBottom: marginBottom, position:"relative"}}>
                     <div className={'modal_content_title'}>
                         <div></div>
-                        <h2 className={"expansiva"}>{title || 'Serveur'}</h2>
+                        <h2 className={"expansiva"}>{title || 'Pistes'}</h2>
                         <button className={"close black bg-t fs2 b0"} onClick={onClose}>&times;</button>
                     </div>
                     {children}
