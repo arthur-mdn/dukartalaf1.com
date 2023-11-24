@@ -51,6 +51,7 @@ function Footer({marginTop = "0"}) {
                     <option value="en">English</option>
                 </select>
             </div>
+            <a href="https://mondon.pro" target={"_blank"} rel="noreferrer" className={"center black"}> {translations.madeBy} </a>
         </footer>
     );
 }
