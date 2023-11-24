@@ -7,7 +7,7 @@ function AccueilEvent() {
     return (
         <section style={styles.event_section} >
             <div style={styles.damierBefore}> <div style={styles.damierOverlay}></div></div>
-            <article className={"fr"}>
+            <article className={"fr"} id={"event_article"}>
                 <div>
                     <h1 className={"expansiva fs1-5"}>{translations.newEvent}</h1>
                     <div className={"fc"} style={styles.polygonText}>
@@ -47,7 +47,8 @@ function AccueilEvent() {
                     </div>
                 </div>
 
-                <img src={"kart_race.png"} alt={"kart race"} style={styles.polygonImage}/>
+                <img src={"kart_race.png"} alt={"kart race"} style={styles.polygonImage} id={"polygon_image"}/>
+                <img src={"kart_race.png"} alt={"kart race"} style={styles.polygonImageAlt} id={"polygon_image_alt"}/>
 
             </article>
 
@@ -112,6 +113,14 @@ const styles = {
         shapeOutside: "polygon(40% 0, 100% 0%, 100% 69%, 0% 100%)",
         objectFit: 'cover',
         height:'120%',
+        maxWidth: '800px',
+    },
+    polygonImageAlt:{
+        display:'none',
+        marginTop:'2.5rem',
+        width:'100%',
+        objectFit: 'cover',
+        height:'160px',
         maxWidth: '800px',
     }
 };

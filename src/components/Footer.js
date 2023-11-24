@@ -61,6 +61,7 @@ const styles = {
         flexWrap: 'wrap',
         alignItems: 'center',
         justifyContent: 'center',
+        padding:'0 2rem'
     },
     footertNavLink:{
         color: "#fff",

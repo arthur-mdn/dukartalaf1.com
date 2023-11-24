@@ -1,8 +1,47 @@
-import React from "react";
+import React, {useEffect} from "react";
 import {useLanguage} from "../../../LanguageContext";
+import pistesData from "../../../datas/pistes.json";
 
 function AccueilTracks() {
     const { translations } = useLanguage();
+    const [imageView, setImageView] = React.useState("");
+    const [selectedTrackImage, setSelectedTrackImage] = React.useState("");
+
+    const fetchSvg = async (edit = false) => {
+        try {
+            const response = await fetch(`/france_carte.svg`);
+            if (response.ok) {
+                let svgText = await response.text();
+                if (edit){
+                    svgText = svgText.replace(/<ellipse /g, `<ellipse onclick="handleEllipseClick(event)" `);
+                }
+                setImageView(svgText);
+            } else {
+                console.error('Error fetching SVG:', response.status);
+            }
+        } catch (error) {
+            console.error('Error fetching SVG:', error);
+        }
+    };
+
+    useEffect(() => {
+        fetchSvg(true);
+    }, []);
+
+    window.handleEllipseClick = (event) => {
+        const trackId = event.target.id;
+        const trackNumber = parseInt(trackId.split("_")[1]);
+
+        const trackData = pistesData.find(piste => piste.id === trackNumber);
+
+        if (trackData) {
+            console.log(trackData)
+            const trackImagePath = `/pistes/${trackData.piste}`;
+            setSelectedTrackImage(trackImagePath);
+        }
+    };
+
+
 
     return (
         <section style={styles.event_section} >
@@ -12,11 +51,12 @@ function AccueilTracks() {
                 <div className={"fr"} style={{gap:'2rem'}}>
                     <div style={{backgroundColor:'#060D30', padding:'4rem 2rem', borderRadius:'2rem', width:'fit-content', position:'relative', overflow:'hidden'}}>
                         <div style={styles.damierBefore}></div>
-                        <img src={"france_carte.svg"} style={{width:'100%', maxWidth:'600px'}}/>
+                        <div dangerouslySetInnerHTML={{ __html: imageView }}  />
+                        {/*<img src={"france_carte.svg"} style={{width:'100%', maxWidth:'600px'}}/>*/}
                         <div style={styles.damierAfter}></div>
                     </div>
-                    <div  style={{backgroundColor:'#000', padding:'4rem 2rem', borderRadius:'2rem'}}>
-                        détails de la piste sélectionnée
+                    <div style={{backgroundColor:'#000', padding:'4rem 2rem', borderRadius:'2rem'}}>
+                        {selectedTrackImage && <img src={selectedTrackImage} alt="Selected Track" style={{width:'100%', maxWidth:'600px'}} />}
                     </div>
                 </div>
 

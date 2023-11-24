@@ -2,7 +2,8 @@
   {
     "id": 1,
     "nom": "Metz Indoor",
-    "image": "metz_indoor.png",
+    "image": "metz_kart_indoor.png",
+    "piste": "metz_kart_indoor.svg",
     "dates": [
       {
         "date": "2023-07-15",
@@ -13,7 +14,8 @@
   {
     "id": 2,
     "nom": "Karting de Crolles",
-    "image": "karting_crolles.png",
+    "image": "karting_de_crolles.png",
+    "piste": "karting_de_crolles.svg",
     "dates": [
       {
         "date": "2023-08-05",
@@ -24,7 +26,8 @@
   {
     "id": 3,
     "nom": "Plessé",
-    "image": "plesse.png",
+    "image": "solo_kart_plesse.png",
+    "piste": "solo_kart_plesse.svg",
     "dates": [
       {
         "date": "2023-08-05",
@@ -35,7 +38,8 @@
   {
     "id": 4,
     "nom": "Circuit de l'Europe",
-    "image": "circuit_europe.png",
+    "image": "circuit_de_leurope.png",
+    "piste": "circuit_de_leurope.svg",
     "dates": [
       {
         "date": "2023-08-05",
