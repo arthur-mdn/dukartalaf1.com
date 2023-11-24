@@ -5,7 +5,7 @@ function AccueilEvent() {
     const { translations } = useLanguage();
 
     return (
-        <section style={styles.event_section} >
+        <section style={styles.event_section} className={"remove_padding_bottom_on_mobile"} >
             <div style={styles.damierBefore}> <div style={styles.damierOverlay}></div></div>
             <article className={"fr"} id={"event_article"}>
                 <div>
