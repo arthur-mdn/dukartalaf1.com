@@ -312,6 +312,9 @@ textarea{
   }
 
 
+  section article div div.fc, section article p{
+    margin-left: 0!important;
+  }
 }
 
 @media (max-width: 1000px) {
