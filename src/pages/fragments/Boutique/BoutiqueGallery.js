@@ -78,6 +78,8 @@ const styles = {
         height: '100%',
         objectFit: 'none',
         zIndex: -1,
+        backgroundColor: "grey"
+
     },
     boutique_list_item_button:{
         position: 'absolute',
