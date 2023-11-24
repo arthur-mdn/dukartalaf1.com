@@ -340,11 +340,14 @@ section{
 
 #carSeparator{
   min-width: 40vw;
-  animation: carSeparator 1s cubic-bezier(0.4, 0, 0.2, 1);
+  animation: carSeparator 2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @keyframes carSeparator {
   0% {
+    min-width: 100vw;
+  }
+  50% {
     min-width: 100vw;
   }
   100% {
