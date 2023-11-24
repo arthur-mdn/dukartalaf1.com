@@ -11,7 +11,7 @@ function Menu({isMenuOpen, setIsMenuOpen}) {
         <>
             <div style={styles.beforeStyle}  className={`menu ${isMenuOpen ? "open" : "close"}`}></div>
             <menu style={styles.menu} className={`fc menu ${isMenuOpen ? "open" : "close"}`}>
-                <div className={"fr w100 jc-sb"}>
+                <div className={"fr w100 jc-sb"} style={{padding:'0.3rem 2rem', width:'calc(100% - 4rem)'}}>
                     <img src="logo_ags_white.png" alt="Logo" style={styles.logo} />
                     <button type={"button"} style={styles.menuButton} onClick={() => setIsMenuOpen(false)}>
                         <FaTimes/>

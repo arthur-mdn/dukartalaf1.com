@@ -10,7 +10,7 @@ function TopBar({ setIsMenuOpen }) {
                 <button style={styles.menuButton} type={"button"} onClick={() => setIsMenuOpen(true)}>
                     <div style={styles.menuBarContainer}>
                         <div style={styles.menuBar}></div>
-                        <div style={{...styles.menuBar, ...styles.middleBar}}></div> {/* Barre du milieu plus grande */}
+                        <div style={{...styles.menuBar, ...styles.middleBar}}></div>
                         <div style={styles.menuBar}></div>
                     </div>
                     Menu
@@ -20,27 +20,27 @@ function TopBar({ setIsMenuOpen }) {
     );
 }
 
-// Styles CSS en JavaScript
 const styles = {
     navbar: {
         display: 'flex',
         justifyContent: 'space-between',
         alignItems: 'center',
-        width: '100%',
-        position: 'fixed', // Fixe la barre de navigation en haut
-        top: 0, // En haut de la page
-        left: 0, // Aligné à gauche
-        zIndex: 1000, // S'assure qu'elle est au-dessus des autres éléments
+        width: 'calc(100% - 4rem)',
+        position: 'fixed',
+        top: 0,
+        left: 0,
+        zIndex: 1000,
+        padding: '0.3rem 2rem'
     },
     logo: {
-        maxWidth: '205px', // Ajustez selon la taille de votre logo
-        maxHeight: '100%', // Ajustez si nécessaire
-        marginLeft: '10px', // Espace à gauche
+        maxWidth: '205px',
+        maxHeight: '100%',
+        marginLeft: '10px',
     },
     menuButton: {
-        marginRight: '10px', // Espace à droite
-        padding: '10px', // Espace interne du bouton
-        fontSize: '1em', // Taille du texte
+        marginRight: '10px',
+        padding: '10px',
+        fontSize: '1em',
         display: 'flex',
         flexDirection: 'row',
         justifyContent: 'center',
@@ -57,16 +57,16 @@ const styles = {
         flexDirection: 'column',
         justifyContent: 'right',
         alignItems: 'flex-end',
-        gap: '5px', // Espace entre les barres
+        gap: '5px',
     },
     menuBar: {
-        width: '30px', // Largeur des barres
-        height: '3px', // Hauteur des barres
-        backgroundColor: '#fff', // Couleur des barres
+        width: '30px',
+        height: '3px',
+        backgroundColor: '#fff',
         borderRadius:' 10px 0 0 10px'
     },
     middleBar: {
-        width: '40px', // Largeur de la barre du milieu plus grande
+        width: '40px',
     },
 };
 
