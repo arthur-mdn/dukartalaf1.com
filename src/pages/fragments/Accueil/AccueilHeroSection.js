@@ -14,9 +14,9 @@ function AccueilHeroSection() {
                     <a href={"inscription"} className={"button expansiva white center fs1"}>{translations.reserveYourPlace}</a>
                 </div>
                 <div style={styles.carsContainer} className={"carsContainer"}>
-                    <img src={"/kart.svg"} alt="kart" style={styles.carsIllustration}/>
+                    <img src={"/kart.png"} alt="kart" style={styles.carsIllustration}/>
                     <div style={styles.carsSeparator} id={"carSeparator"}></div>
-                    <img src={"/formule1.svg"} alt="formule1" style={styles.carsIllustration}/>
+                    <img src={"/formule1.png"} alt="formule1" style={styles.carsIllustration}/>
                 </div>
                 <div className={"fc f-c"}>
                     <FaChevronDown style={{fontSize:"4rem", color:"white"}}/>
