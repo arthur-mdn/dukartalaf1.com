@@ -118,10 +118,10 @@ const styles = {
     polygonImageAlt:{
         display:'none',
         marginTop:'2.5rem',
-        width:'100%',
+        marginRight: '-2rem',
+        marginLeft: '-2rem',
         objectFit: 'cover',
         height:'160px',
-        maxWidth: '800px',
     }
 };
 

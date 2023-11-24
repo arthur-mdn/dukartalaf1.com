@@ -51,11 +51,11 @@ function AccueilTracks() {
                 <h1 className={"expansiva fs1-5"}>{translations.tracks}</h1>
                 <p style={{marginLeft:'2rem'}}>{translations.tracksDescription}</p>
                 <div className={"fr f-c"} style={{gap:'2rem'}} id={"tracks_container"}>
-                    <div style={{backgroundColor:'#060D30', padding:'4rem 2rem', borderRadius:'2rem', width:'fit-content', position:'relative', overflow:'hidden'}}>
-                        <div style={styles.damierBefore}></div>
+                    <div style={{background: "linear-gradient(97deg, rgba(6,13,48,1) 0%, rgba(14,31,115,1) 100%)", padding:'4rem 2rem', borderRadius:'2rem', width:'fit-content', position:'relative', overflow:'hidden'}}>
+                        <div style={styles.damierBefore}> <div style={styles.damierBeforeOverlay}></div></div>
                         <div dangerouslySetInnerHTML={{ __html: imageView }}  />
                         {/*<img src={"france_carte.svg"} style={{width:'100%', maxWidth:'600px'}}/>*/}
-                        <div style={styles.damierAfter}></div>
+                        <div style={styles.damierAfter}> <div style={styles.damierAfterOverlay}></div></div>
                     </div>
                     <div style={{backgroundColor:'#000', padding:'4rem 2rem', borderRadius:'2rem',position:"relative"}}>
                         {selectedTrackImage && <><h3 className={"white"} style={{position:"absolute",top:0, textAlign:"center",width:"calc(100% - 4rem)"}}>{selectedTrackTitle}</h3><img src={selectedTrackImage} alt="Selected Track" style={{width:'100%', maxWidth:'600px'}} /></>}
@@ -104,6 +104,25 @@ const styles = {
         backgroundPosition: "0 0, 25px 25px",
         zIndex:"0"
     },
+    damierBeforeOverlay: {
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        width: '100%',
+        height: '100%',
+        backgroundImage: 'linear-gradient(to top, rgba(0,0,0, 0) 0%, rgba(0,0,0, 0) 40%, rgba(0,0,0,0.5) 100%)',
+        zIndex: 1,
+    },
+    damierAfterOverlay: {
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        width: '100%',
+        height: '100%',
+        backgroundImage: 'linear-gradient(to bottom, rgba(0,0,0, 0) 0%, rgba(0,0,0, 0) 40%, rgba(0,0,0,0.5) 100%)',
+        zIndex: 1,
+    },
+
     carsContainer:{
         display: 'flex',
         width: '100%',
