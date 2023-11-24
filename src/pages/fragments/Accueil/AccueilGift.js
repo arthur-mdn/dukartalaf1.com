@@ -11,8 +11,10 @@ function AccueilGift() {
                 <p className={"o-8"}>
                     {translations.giftPrize1}
                 </p>
+                <p className={"o-8"}>
+                    {translations.giftPrize2}
+                </p>
             </article>
-
         </section>
     );
 }

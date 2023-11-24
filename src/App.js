@@ -12,6 +12,7 @@ import Menu from "./components/Menu";
 import Mentions from "./pages/Mentions";
 import Rgpd from "./pages/Rgpd";
 import Contact from "./pages/Contact";
+import ComingSoon from "./pages/ComingSoon";
 
 function App() {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -38,6 +39,7 @@ function MainContent() {
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/mentions-legales" element={<Mentions />} />
                 <Route path="/rgpd" element={<Rgpd />} />
+                <Route path="/coming-soon" element={<ComingSoon />} />
                 {/* Définissez les autres routes ici */}
                 <Route path="*" element={<NotFound />} />
             </Routes>

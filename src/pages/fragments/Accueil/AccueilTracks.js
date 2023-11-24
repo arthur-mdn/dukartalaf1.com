@@ -6,6 +6,7 @@ function AccueilTracks() {
     const { translations } = useLanguage();
     const [imageView, setImageView] = React.useState("");
     const [selectedTrackImage, setSelectedTrackImage] = React.useState("");
+    const [selectedTrackTitle, setSelectedTrackTitle] = React.useState("");
 
     const fetchSvg = async (edit = false) => {
         try {
@@ -38,6 +39,7 @@ function AccueilTracks() {
             console.log(trackData)
             const trackImagePath = `/pistes/${trackData.piste}`;
             setSelectedTrackImage(trackImagePath);
+            setSelectedTrackTitle(trackData.nom);
         }
     };
 
@@ -47,16 +49,16 @@ function AccueilTracks() {
         <section style={styles.event_section} >
             <article>
                 <h1 className={"expansiva fs1-5"}>{translations.tracks}</h1>
-                <p>{translations.tracksDescription}</p>
-                <div className={"fr"} style={{gap:'2rem'}}>
+                <p style={{marginLeft:'2rem'}}>{translations.tracksDescription}</p>
+                <div className={"fr f-c"} style={{gap:'2rem'}} id={"tracks_container"}>
                     <div style={{backgroundColor:'#060D30', padding:'4rem 2rem', borderRadius:'2rem', width:'fit-content', position:'relative', overflow:'hidden'}}>
                         <div style={styles.damierBefore}></div>
                         <div dangerouslySetInnerHTML={{ __html: imageView }}  />
                         {/*<img src={"france_carte.svg"} style={{width:'100%', maxWidth:'600px'}}/>*/}
                         <div style={styles.damierAfter}></div>
                     </div>
-                    <div style={{backgroundColor:'#000', padding:'4rem 2rem', borderRadius:'2rem'}}>
-                        {selectedTrackImage && <img src={selectedTrackImage} alt="Selected Track" style={{width:'100%', maxWidth:'600px'}} />}
+                    <div style={{backgroundColor:'#000', padding:'4rem 2rem', borderRadius:'2rem',position:"relative"}}>
+                        {selectedTrackImage && <><h3 className={"white"} style={{position:"absolute",top:0, textAlign:"center",width:"calc(100% - 4rem)"}}>{selectedTrackTitle}</h3><img src={selectedTrackImage} alt="Selected Track" style={{width:'100%', maxWidth:'600px'}} /></>}
                     </div>
                 </div>
 
