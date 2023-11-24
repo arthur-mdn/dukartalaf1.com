@@ -62,7 +62,7 @@
   {
     "id": 6,
     "nom": "Racing Kart JPR",
-    "image": "racing_kart_jpr.png",
+    "image": "racing_kart_jpr.jpg",
     "piste": "racing_kart_jpr.svg",
     "dates": [
       {
@@ -74,7 +74,7 @@
   {
     "id": 7,
     "nom": "RKC",
-    "image": "rkc.png",
+    "image": "rkc.jpg",
     "piste": "rkc.svg",
     "dates": [
       {

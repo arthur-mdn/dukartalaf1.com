@@ -22,7 +22,7 @@ function AccueilHeroSection() {
                     <FaChevronDown style={{fontSize:"4rem", color:"white"}}/>
                 </div>
             </section>
-            <div style={{position:"fixed", backgroundColor:"#000",width:"100%", height:'70px', top:'0', zIndex:2}}></div>
+            <div style={{position:"fixed", backgroundColor:"#000",width:"100%", height:'70px', top:'0', zIndex:3}}></div>
         </>
 
     );

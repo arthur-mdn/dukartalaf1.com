@@ -17,7 +17,7 @@ function Menu({isMenuOpen, setIsMenuOpen}) {
                         <FaTimes/>
                     </button>
                 </div>
-                <div className={"fc f-c w100 mt-50"}>
+                <div className={"fc f-c w100 mt-50"} style={{gap:'1rem'}}>
                     <a href="/" rel="noreferrer" style={styles.menuNavLink} className={"expansiva"}> {translations.home} </a>
                     <a href="/inscription" rel="noreferrer" style={styles.menuNavLink} className={"expansiva"}> {translations.register} </a>
                     <a href="/reglement" rel="noreferrer" style={styles.menuNavLink} className={"expansiva"}> {translations.rules} </a>

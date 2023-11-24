@@ -9,7 +9,7 @@ function SecondaryHeroSection({title}) {
                 <div style={styles.beforeStyle}> <div style={styles.overlay}></div></div>
                 <div style={styles.damierBefore}> <div style={styles.damierOverlay}></div></div>
             </section>
-            <div style={{position:"fixed", backgroundColor:"#000",width:"100%", height:'70px', top:'0'}}>
+            <div style={{position:"fixed", backgroundColor:"#000",width:"100%", height:'70px', top:'0', zIndex:3}}>
             </div>
             <h1 className={"expansiva center"}>{title}</h1>
         </>
