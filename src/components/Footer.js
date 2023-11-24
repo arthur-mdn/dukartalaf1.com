@@ -3,7 +3,11 @@ import {FaFacebookF, FaInstagram, FaTiktok, FaYoutube} from "react-icons/fa6";
 import {useLanguage} from "../LanguageContext";
 
 function Footer({marginTop = "0"}) {
-    const { translations } = useLanguage();
+    const { translations, language, changeLanguage } = useLanguage();
+
+    const handleLanguageChange = (event) => {
+        changeLanguage(event.target.value);
+    };
 
     return (
         <footer style={{ ...styles.footer, marginTop: marginTop }} className={"fc f-c"}>
@@ -40,6 +44,13 @@ function Footer({marginTop = "0"}) {
                     <a href="https://www.youtube.com/" target="_blank" rel="noreferrer"  style={styles.footertNavLink}> <FaYoutube/> </a>
                 </li>
             </ul>
+
+            <div style={styles.languageSelectorContainer}>
+                <select onChange={handleLanguageChange} defaultValue={language} style={styles.languageSelector}>
+                    <option value="fr">Français</option>
+                    <option value="en">English</option>
+                </select>
+            </div>
         </footer>
     );
 }

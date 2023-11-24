@@ -8,7 +8,7 @@ export const useLanguage = () => {
 };
 
 export const LanguageProvider = ({ children }) => {
-    const [language, setLanguage] = useState('fr');
+    const [language, setLanguage] = useState(localStorage.getItem('language') || 'fr');
     const [translations, setTranslations] = useState({});
 
     useEffect(() => {
@@ -16,6 +16,7 @@ export const LanguageProvider = ({ children }) => {
             .then((module) => {
                 setTranslations(module.default);
             });
+        localStorage.setItem('language', language);
     }, [language]);
 
     const changeLanguage = (lang) => {
