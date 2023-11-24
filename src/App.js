@@ -16,16 +16,25 @@ import ComingSoon from "./pages/ComingSoon";
 
 function App() {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-    return (
-        <LanguageProvider>
-            <Router>
-                <TopBar isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen}/>
-                <Menu isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
-                <MainContent/>
-                <Footer/>
-            </Router>
-        </LanguageProvider>
-    );
+    const isComingSoonActivated = false;
+    if(isComingSoonActivated){
+        return (
+            <LanguageProvider>
+                <ComingSoon />
+            </LanguageProvider>
+        );
+    }else{
+        return (
+            <LanguageProvider>
+                <Router>
+                    <TopBar isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen}/>
+                    <Menu isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
+                    <MainContent/>
+                    <Footer/>
+                </Router>
+            </LanguageProvider>
+        );
+    }
 }
 
 function MainContent() {
