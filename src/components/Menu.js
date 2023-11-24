@@ -23,6 +23,7 @@ function Menu({isMenuOpen, setIsMenuOpen}) {
                     <a href="/reglement" rel="noreferrer" style={styles.menuNavLink} className={"expansiva"}> {translations.rules} </a>
                     <a href="/contact" rel="noreferrer" style={styles.menuNavLink} className={"expansiva"}> {translations.contact} </a>
                 </div>
+                <div style={{height:'60px'}}></div>
                 <Footer marginTop={'auto'}/>
             </menu>
         </>
