@@ -110,6 +110,7 @@ const styles = {
         objectPosition:"center",
         overflow:"hidden",
         borderRadius:"2rem",
+        backgroundColor: "grey"
     }
 };
 
