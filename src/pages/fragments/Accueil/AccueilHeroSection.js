@@ -15,7 +15,7 @@ function AccueilHeroSection() {
                 </div>
                 <div style={styles.carsContainer} className={"carsContainer"}>
                     <img src={"/kart.svg"} alt="kart" style={styles.carsIllustration}/>
-                    <div style={styles.carsSeparator}></div>
+                    <div style={styles.carsSeparator} id={"carSeparator"}></div>
                     <img src={"/formule1.svg"} alt="formule1" style={styles.carsIllustration}/>
                 </div>
                 <div className={"fc f-c"}>
@@ -68,7 +68,6 @@ const styles = {
         justifyContent: 'center',
     },
     carsSeparator:{
-        minWidth: '40vw',
         height: '100%',
     },
     carsIllustration:{width: '100%', maxWidth: '60vh', aspectRatio: '9/4.7'}
