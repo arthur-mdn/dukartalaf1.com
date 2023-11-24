@@ -17,13 +17,12 @@ function Menu({isMenuOpen, setIsMenuOpen}) {
                         <FaTimes/>
                     </button>
                 </div>
-                <div className={"fc f-c w100 mt-50"} style={{gap:'1rem'}}>
+                <div className={"fc f-c w100 mt-50"} style={{gap:'1rem', marginBottom:'4rem'}}>
                     <a href="/" rel="noreferrer" style={styles.menuNavLink} className={"expansiva"}> {translations.home} </a>
                     <a href="/inscription" rel="noreferrer" style={styles.menuNavLink} className={"expansiva"}> {translations.register} </a>
                     <a href="/reglement" rel="noreferrer" style={styles.menuNavLink} className={"expansiva"}> {translations.rules} </a>
                     <a href="/contact" rel="noreferrer" style={styles.menuNavLink} className={"expansiva"}> {translations.contact} </a>
                 </div>
-                <div style={{height:'60px'}}></div>
                 <Footer marginTop={'auto'}/>
             </menu>
         </>
