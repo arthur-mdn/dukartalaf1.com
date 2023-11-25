@@ -17,7 +17,6 @@ function TopBar({ setIsMenuOpen }) {
                     Menu
                 </button>
                 <LanguageSelector className={"hide_mobile"}/>
-
             </nav>
         </>
     );

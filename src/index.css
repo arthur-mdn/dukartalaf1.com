@@ -352,10 +352,20 @@ section{
   min-height: 75vh;
   justify-content: center
 }
+.show_mobile{
+  display: none!important;
+}
+.show_mobile button{
+  background-color: transparent;
+  border: 0;
+}
 @media (max-width: 740px) {
 
   #home_hero_section{
     min-height: auto;
+  }
+  .show_mobile{
+    display: flex!important;
   }
 
 #topbar_logo, #menu_logo{

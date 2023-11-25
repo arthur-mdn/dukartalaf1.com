@@ -3,6 +3,7 @@ import {useLanguage} from "../LanguageContext";
 import {FaCross} from "react-icons/fa6";
 import {FaTimes} from "react-icons/fa";
 import Footer from "./Footer";
+import LanguageSelector from "./LanguageSelector";
 
 function Menu({isMenuOpen, setIsMenuOpen}) {
     const { translations } = useLanguage();
@@ -23,6 +24,7 @@ function Menu({isMenuOpen, setIsMenuOpen}) {
                     <a href="/reglement" rel="noreferrer" style={styles.menuNavLink} className={"expansiva-bold"}> {translations.rules} </a>
                     <a href="/contact" rel="noreferrer" style={styles.menuNavLink} className={"expansiva-bold"}> {translations.contact} </a>
                 </div>
+                <LanguageSelector className={"show_mobile"}/>
             </menu>
         </>
     );
