@@ -9,9 +9,12 @@ function Mentions() {
     return (
         <>
             <SecondaryHeroSection title={translations.mentions}/>
-            <article>
-                {translations.mentionsContent}
-            </article>
+            <section>
+                <article dangerouslySetInnerHTML={{__html: translations.mentionsContent}}></article>
+            </section>
+            <br/>
+            <br/>
+            <br/>
         </>
 
     );

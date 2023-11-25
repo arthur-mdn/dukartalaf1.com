@@ -12,18 +12,17 @@ function Menu({isMenuOpen, setIsMenuOpen}) {
             <div style={styles.beforeStyle}  className={`menu ${isMenuOpen ? "open" : "close"}`}></div>
             <menu style={styles.menu} className={`fc menu ${isMenuOpen ? "open" : "close"}`}>
                 <div className={"fr w100 jc-sb"} style={{padding:'0.3rem 2rem', width:'calc(100% - 4rem)'}}>
-                    <img src="logo_ags_white.png" alt="Logo" style={styles.logo} />
+                    <img src="logo_ags_white.png" alt="Logo" style={styles.logo} id={"menu_logo"}/>
                     <button type={"button"} style={styles.menuButton} onClick={() => setIsMenuOpen(false)}>
                         <FaTimes/>
                     </button>
                 </div>
-                <div className={"fc f-c w100 mt-50"} style={{gap:'1rem', marginBottom:'4rem'}}>
-                    <a href="/" rel="noreferrer" style={styles.menuNavLink} className={"expansiva"}> {translations.home} </a>
-                    <a href="/inscription" rel="noreferrer" style={styles.menuNavLink} className={"expansiva"}> {translations.register} </a>
-                    <a href="/reglement" rel="noreferrer" style={styles.menuNavLink} className={"expansiva"}> {translations.rules} </a>
-                    <a href="/contact" rel="noreferrer" style={styles.menuNavLink} className={"expansiva"}> {translations.contact} </a>
+                <div className={"fc f-c w100 mt-50 g2"} style={{ marginBottom:'4rem'}}>
+                    <a href="/" rel="noreferrer" style={styles.menuNavLink} className={"expansiva-bold"}> {translations.home} </a>
+                    <a href="/inscription" rel="noreferrer" style={styles.menuNavLink} className={"expansiva-bold"}> {translations.register} </a>
+                    <a href="/reglement" rel="noreferrer" style={styles.menuNavLink} className={"expansiva-bold"}> {translations.rules} </a>
+                    <a href="/contact" rel="noreferrer" style={styles.menuNavLink} className={"expansiva-bold"}> {translations.contact} </a>
                 </div>
-                <Footer marginTop={'auto'}/>
             </menu>
         </>
     );
@@ -39,7 +38,7 @@ const styles = {
         top: 0,
         left: 0,
         zIndex: 1001,
-        backgroundColor:"rgba(0,0,0,0.3)",
+        backgroundColor:"rgb(50 62 95 / 43%)",
         transition: 'all 0.4s ease-in-out',
     },
     beforeStyle: {
@@ -54,7 +53,7 @@ const styles = {
         transition: 'all 0.4s ease-in-out',
     },
     logo: {
-        maxWidth: '205px',
+        maxWidth: '350px',
         maxHeight: '100%',
         marginLeft: '10px',
     },
@@ -67,7 +66,7 @@ const styles = {
     menuNavLink:{
         color: "#fff",
         textDecoration: 'none',
-        fontSize: '2em',
+        fontSize: '2.5em',
     },
     menuButton:{
         backgroundColor: 'transparent',

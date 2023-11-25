@@ -10,9 +10,12 @@ function Contact() {
     return (
         <>
             <SecondaryHeroSection title={translations.contact}/>
-            <article style={{padding:'2rem'}}>
-                <ContactForm/>
-            </article>
+            <section>
+                <article style={{padding:'2rem'}}>
+                    <ContactForm/>
+                </article>
+            </section>
+
         </>
 
     );
@@ -27,41 +30,43 @@ function ContactForm() {
     }
     return (
         <form onSubmit={handleSubmit} className={"f-c fc"}>
-            <label htmlFor="name">
-                {translations.name}
-            </label>
-            <input
-                id="name"
-                type="text"
-                name="name"
-            />
-            <ValidationError
-                prefix={translations.firstName}
-                field="name"
-                errors={state.errors}
-            />
+            <div className={"fr f-c w100 g1"} style={{maxWidth:'500px'}}>
 
-            <label htmlFor="firstName">
-                {translations.firstName}
-            </label>
-            <input
-                id="firstName"
-                type="text"
-                name="name"
-            />
-            <ValidationError
-                prefix={translations.firstName}
-                field="firstName"
-                errors={state.errors}
-            />
 
-            <label htmlFor="email">
-                {translations.email}
-            </label>
+                <input
+                    placeholder={translations.firstName}
+                    id="firstName"
+                    type="text"
+                    name="name"
+                    required={true}
+                />
+                <ValidationError
+                    prefix={translations.firstName}
+                    field="firstName"
+                    errors={state.errors}
+                />
+
+                <input
+                    placeholder={translations.name}
+                    id="name"
+                    type="text"
+                    name="name"
+                    required={true}
+                />
+                <ValidationError
+                    prefix={translations.name}
+                    field="name"
+                    errors={state.errors}
+                />
+            </div>
+
+
             <input
+                placeholder={translations.email}
                 id="email"
                 type="email"
                 name="email"
+                required={true}
             />
             <ValidationError
                 prefix="Email"
@@ -69,20 +74,31 @@ function ContactForm() {
                 errors={state.errors}
             />
 
+            <input
+                placeholder={translations.object}
+                id="object"
+                type="text"
+                name="object"
+                required={true}
+            />
+            <ValidationError
+                prefix={translations.object}
+                field="object"
+                errors={state.errors}
+            />
 
-            <label htmlFor="message">
-                {translations.message}
-            </label>
             <textarea
+                placeholder={translations.message}
                 id="message"
                 name="message"
+                required={true}
             />
             <ValidationError
                 prefix={translations.message}
                 field="message"
                 errors={state.errors}
             />
-            <button type="submit" disabled={state.submitting}>
+            <button type="submit" className={"button skew"} disabled={state.submitting}>
                 {translations.send}
             </button>
         </form>

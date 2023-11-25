@@ -9,9 +9,7 @@ function SecondaryHeroSection({title}) {
                 <div style={styles.beforeStyle}> <div style={styles.overlay}></div></div>
                 <div style={styles.damierBefore}> <div style={styles.damierOverlay}></div></div>
             </section>
-            <div style={{position:"fixed", backgroundColor:"#000",width:"100%", height:'70px', top:'0', zIndex:3}}>
-            </div>
-            <h1 className={"expansiva center"}>{title}</h1>
+            <h1 className={"expansiva-bold center fs3"}>{title}</h1>
         </>
 
     );
@@ -26,7 +24,7 @@ const styles = {
         flexDirection: 'column',
         width: '100%',
         position: 'relative',
-        paddingTop:'125px',
+        paddingTop:'155px',
     },
     overlay: {
         position: 'absolute',
@@ -56,7 +54,7 @@ const styles = {
         width: '100%',
         height:"50px",
         backgroundColor: "#fff",
-        backgroundImage: "linear-gradient(45deg, #060D30 25%, transparent 25%, transparent 75%, #060D30 75%), linear-gradient(45deg, #060D30 25%, transparent 25%, transparent 75%, #060D30 75%)",
+        backgroundImage: "linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%), linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%)",
         backgroundSize: "50px 50px",
         backgroundPosition: "0 0, 25px 25px",
         zIndex:"-1"

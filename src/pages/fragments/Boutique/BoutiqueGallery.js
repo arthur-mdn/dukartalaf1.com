@@ -57,8 +57,8 @@ const styles = {
         display: 'flex',
         flexWrap: 'wrap',
         justifyContent: 'center',
-        gap: '20px',
-        maxWidth: '1000px',
+        gap: '4rem',
+        maxWidth: '1400px',
         margin: 'auto',
     },
     boutique_list_item:{

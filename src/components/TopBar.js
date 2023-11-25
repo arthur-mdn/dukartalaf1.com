@@ -1,11 +1,12 @@
 import React from "react";
+import LanguageSelector from "./LanguageSelector";
 
 function TopBar({ setIsMenuOpen }) {
     return (
         <>
             <nav style={styles.navbar}>
                 <a href={"/"}>
-                    <img src="logo_ags_white.png" alt="Logo" style={styles.logo} />
+                    <img src="logo_ags_white.png" alt="Logo" style={styles.logo} id={"topbar_logo"}/>
                 </a>
                 <button style={styles.menuButton} type={"button"} onClick={() => setIsMenuOpen(true)}>
                     <div style={styles.menuBarContainer}>
@@ -15,6 +16,8 @@ function TopBar({ setIsMenuOpen }) {
                     </div>
                     Menu
                 </button>
+                <LanguageSelector className={"hide_mobile"}/>
+
             </nav>
         </>
     );
@@ -30,23 +33,25 @@ const styles = {
         top: 0,
         left: 0,
         zIndex: 1000,
-        padding: '0.3rem 2rem'
+        padding: '0.3rem 2rem',
+        backgroundColor:'black'
     },
     logo: {
-        maxWidth: '205px',
+        maxWidth: '350px',
         maxHeight: '100%',
         marginLeft: '10px',
     },
     menuButton: {
         marginRight: '10px',
+        marginLeft: 'auto',
         padding: '10px',
-        fontSize: '1em',
+        fontSize: '1.5em',
         display: 'flex',
         flexDirection: 'row',
         justifyContent: 'center',
         alignItems: 'center',
         gap: '15px',
-        fontFamily:"Expansiva",
+        fontFamily:"Expansiva Regular",
         color:'#fff',
         backgroundColor: 'transparent',
         border: 'none',

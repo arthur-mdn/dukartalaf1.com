@@ -7,7 +7,7 @@ function AccueilHeroSection() {
 
     return (
         <>
-            <section style={styles.home_hero_section} >
+            <section style={styles.home_hero_section} id={"home_hero_section"} >
                 <div style={styles.beforeStyle} id={"home_header"}> <div style={styles.overlay} id={"home_header_overlay"}></div></div> {/* Agit comme un pseudo-élément :before */}
                 <h1 className={"expansiva white center fs3"}>{translations.fromKartToF}</h1>
                 <div className={'fr f-c'}>
@@ -22,7 +22,6 @@ function AccueilHeroSection() {
                     <FaChevronDown style={{fontSize:"4rem", color:"white"}}/>
                 </div>
             </section>
-            <div style={{position:"fixed", backgroundColor:"#000",width:"100%", height:'70px', top:'0', zIndex:3}}></div>
         </>
 
     );

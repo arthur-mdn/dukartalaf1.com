@@ -1,18 +1,15 @@
 import React from "react";
 import {FaFacebookF, FaInstagram, FaTiktok, FaYoutube} from "react-icons/fa6";
 import {useLanguage} from "../LanguageContext";
+import LanguageSelector from "./LanguageSelector";
 
 function Footer({marginTop = "0"}) {
-    const { translations, language, changeLanguage } = useLanguage();
-
-    const handleLanguageChange = (event) => {
-        changeLanguage(event.target.value);
-    };
+    const { translations } = useLanguage();
 
     return (
         <footer style={{ ...styles.footer, marginTop: marginTop }} className={"fc f-c"}>
             <img src="logo_white.png" alt="Logo" style={styles.logo} />
-            <hr/>
+            <LanguageSelector/>
             <ul style={styles.footerNavList}>
                 <li>
                     <a href="/reglement" rel="noreferrer" style={styles.footertNavLink}> {translations.rules} </a>
@@ -44,13 +41,6 @@ function Footer({marginTop = "0"}) {
                     <a href="https://www.youtube.com/" target="_blank" rel="noreferrer"  style={styles.footertNavLink}> <FaYoutube/> </a>
                 </li>
             </ul>
-
-            <div style={styles.languageSelectorContainer}>
-                <select onChange={handleLanguageChange} defaultValue={language} style={styles.languageSelector}>
-                    <option value="fr">Français</option>
-                    <option value="en">English</option>
-                </select>
-            </div>
             <a href="https://mondon.pro" target={"_blank"} rel="noreferrer" className={"center black"}> {translations.madeBy} </a>
         </footer>
     );
@@ -63,12 +53,12 @@ const styles = {
         width: '100%',
         backgroundColor: '#000',
         padding: "2rem 0",
-        gap: '2rem',
+        gap: '3rem',
     },
     footerNavList:{
         display:"flex",
         listStyle: 'none',
-        gap: '2rem',
+        gap: '2.5rem',
         fontSize: '1.5rem',
         flexWrap: 'wrap',
         alignItems: 'center',
@@ -78,11 +68,15 @@ const styles = {
     footertNavLink:{
         color: "#fff",
         textDecoration: 'none',
+        fontWeight:'lighter',
     },
     logo: {
         maxWidth: '205px', // Ajustez selon la taille de votre logo
         maxHeight: '100%', // Ajustez si nécessaire
         marginLeft: '10px', // Espace à gauche
+    },
+    flag: {
+        width: '50px',
     },
     menuButton: {
         marginRight: '10px', // Espace à droite
@@ -93,7 +87,7 @@ const styles = {
         justifyContent: 'center',
         alignItems: 'center',
         gap: '15px',
-        fontFamily:"Expansiva",
+        fontFamily:"Expansiva Regular",
         color:'#fff',
         backgroundColor: 'transparent',
         border: 'none',

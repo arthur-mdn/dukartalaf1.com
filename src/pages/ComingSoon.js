@@ -61,7 +61,7 @@ const styles = {
         justifyContent: 'center',
         alignItems: 'center',
         gap: '15px',
-        fontFamily:"Expansiva",
+        fontFamily:"Expansiva Regular",
         color:'#fff',
         backgroundColor: 'transparent',
         border: 'none',

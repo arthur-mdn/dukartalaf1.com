@@ -9,19 +9,19 @@ function AccueilEvent() {
             <div style={styles.damierBefore}> <div style={styles.damierOverlay}></div></div>
             <article className={"fr"} id={"event_article"}>
                 <div>
-                    <h1 className={"expansiva fs1-5"}>{translations.newEvent}</h1>
+                    <h1 className={"expansiva-bold fs2"}>{translations.newEvent}</h1>
                     <div className={"fc"} style={styles.polygonText}>
                         <p>
                             {translations.newEventDescription1}
                         </p>
-                        <h3>{translations.newEventTitle1}</h3>
+                        <h3 className={"fs1-5"}>{translations.newEventTitle1}</h3>
                         <p>
                             {translations.newEventDescription2}
                         </p>
                         <p>
                             {translations.newEventDescription3}
                         </p>
-                        <h3>{translations.newEventTitle2}</h3>
+                        <h3 className={"fs1-5"}>{translations.newEventTitle2}</h3>
                         <p>
                             {translations.newEventDescription4}
                         </p>
@@ -75,7 +75,7 @@ const styles = {
         width: '100%',
         height:"50px",
         backgroundColor: "#fff",
-        backgroundImage: "linear-gradient(45deg, #060D30 25%, transparent 25%, transparent 75%, #060D30 75%), linear-gradient(45deg, #060D30 25%, transparent 25%, transparent 75%, #060D30 75%)",
+        backgroundImage: "linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%), linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%)",
         backgroundSize: "50px 50px",
         backgroundPosition: "0 0, 25px 25px",
         zIndex:"-1"
@@ -113,7 +113,7 @@ const styles = {
         clipPath: "polygon(40% 0px, 100% 0%, 100% 69%, 6% 91.4%,5.5% 91.5%, 4% 91.5%, 3.2% 91.1%, 2.5% 90.5%, 1.9% 89%, 2% 87%, 3% 84%)",
         shapeOutside: "polygon(40% 0px, 100% 0%, 100% 69%, 6% 91.4%,5.5% 91.5%, 4% 91.5%, 3.2% 91.1%, 2.5% 90.5%, 1.9% 89%, 2% 87%, 3% 84%)",
         objectFit: 'cover',
-        height:'120%',
+        // height:'120%',
         maxWidth: '800px',
     },
     polygonImageAlt:{

@@ -15,6 +15,7 @@ function Modal({ isOpen, onClose, children, title, maxHeight = "90vh", marginBot
                     </div>
                     {children}
                 </div>
+                <img src="logo_white.png" alt="Logo" style={{maxWidth: '350px',width:'80%'}}/>
             </div>
     </div>
     );
