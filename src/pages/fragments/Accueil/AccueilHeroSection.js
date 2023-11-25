@@ -18,9 +18,9 @@ function AccueilHeroSection() {
                     <div style={styles.carsSeparator} id={"carSeparator"}></div>
                     <img src={"/formule1.png"} alt="formule1" style={styles.carsIllustration}/>
                 </div>
-                <div className={"fc f-c"}>
+                <a className={"fc f-c"} href={"#event_article"}>
                     <FaChevronDown style={{fontSize:"4rem", color:"white"}}/>
-                </div>
+                </a>
             </section>
         </>
 
