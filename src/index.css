@@ -349,7 +349,7 @@ section{
 /* css media query to apply style to mobile screens */
 
 #home_hero_section{
-  min-height: 75vh;
+  min-height: 80vh;
   justify-content: center
 }
 .show_mobile{
