@@ -5,7 +5,7 @@ function AccueilEvent() {
     const { translations } = useLanguage();
 
     return (
-        <section style={styles.event_section} className={"remove_padding_bottom_on_mobile"} >
+        <section style={styles.event_section} className={"remove_padding_bottom_on_mobile"} id={"event_section"}>
             <div style={styles.damierBefore}> <div style={styles.damierOverlay}></div></div>
             <article className={"fr"} id={"event_article"}>
                 <div>
@@ -65,7 +65,7 @@ const styles = {
         position: 'relative',
         paddingTop:'100px',
         paddingBottom:'80px',
-        overflow: 'hidden',
+        overflowX: 'clip',
     },
     damierBefore: {
         content: '',
@@ -75,7 +75,7 @@ const styles = {
         width: '100%',
         height:"50px",
         backgroundColor: "#fff",
-        backgroundImage: "linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%), linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%)",
+        backgroundImage: "linear-gradient(45deg, black 25%, transparent 26%, transparent 75%, black 75%), linear-gradient(45deg, black 25%, transparent 26%, transparent 75%, black 75%)",
         backgroundSize: "50px 50px",
         backgroundPosition: "0 0, 25px 25px",
         zIndex:"-1"
@@ -106,7 +106,7 @@ const styles = {
         marginLeft:'2rem',
     },
     polygonImage:{
-        marginTop:'-6.5rem',
+        marginTop:'-8.5rem',
         marginRight:'-15vw',
         width:'60vw',
         // clipPath: "polygon(40% 0, 100% 0%, 100% 69%, 0% 100%)",

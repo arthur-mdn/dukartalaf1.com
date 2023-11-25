@@ -84,7 +84,7 @@ function SamplePrevArrow(props) {
 
     return (
         <button type={"button"}
-                className={"button skew with-icon expansiva fr f-c g1 fs1"}
+                className={"button skew-reverse with-icon expansiva fr f-c g1 fs1"}
             style={{ position:'absolute', left:"30px",bottom:'-120px', zIndex:2}} // Personnalisez selon vos besoins
             onClick={onClick}
         ><FaPlay className={"fs1-5 "} style={{rotate:'180deg'}}/>{translations.previous}</button>
@@ -105,8 +105,8 @@ const styles = {
     },
     boutique_list_item_image :{
         position:"absolute",
-        width: 'calc(100% - 20px)',
-        height:'100%',
+        width: 'calc(100% - 40px)',
+        height:'calc(100% - 40px)',
         objectFit:"cover",
         objectPosition:"center",
         overflow:"hidden",

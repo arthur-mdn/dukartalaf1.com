@@ -91,12 +91,12 @@ button:hover, .button:hover{
   background-color: #333;
 }
 
-button.skew:hover::after, .button.skew:hover::after{
+button.skew:hover::after, .button.skew:hover::after, button.skew-reverse:hover::after, .button.skew-reverse:hover::after{
   background-color: #333;
 }
 
 button.skew, .button.skew{
-  border-radius: 1rem;
+  border-radius: 1.5rem;
   border-top-right-radius: 6em;
   position: relative;
   will-change: background-color;
@@ -127,6 +127,29 @@ button.skew::after, .button.skew::after{
   transform: skewX(30deg);
   border-bottom-right-radius: 0.8rem;
   border-top-right-radius: 0.8rem;
+}
+
+button.skew-reverse::after, .button.skew-reverse::after{
+  transition: 0.2s all;
+  will-change: background-color;
+  content: "";
+  position: absolute;
+  display: block;
+  background: #000;
+  border: 2px solid #000;
+  width: 3em;
+  height: 100%;
+  top: -2px;
+  -webkit-transform-origin: bottom left;
+  -moz-transform-origin: bottom left;
+  transform-origin: bottom left;
+  left: -0.5rem;
+  border-left: none;
+  -webkit-transform: skewX(-20deg);
+  -moz-transform: skewX(-20deg);
+  transform: skewX(30deg);
+  border-top-left-radius: 0.8rem;
+  border-bottom-left-radius: 0.8rem;
 }
 
 .fr{
@@ -165,6 +188,9 @@ button.skew::after, .button.skew::after{
 }
 .fs3{
   font-size: 3rem;
+}
+.fs3-5{
+  font-size: 3.5rem;
 }
 /*article{*/
 /*  margin: 0 2rem;*/

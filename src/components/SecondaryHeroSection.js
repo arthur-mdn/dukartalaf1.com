@@ -54,7 +54,7 @@ const styles = {
         width: '100%',
         height:"50px",
         backgroundColor: "#fff",
-        backgroundImage: "linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%), linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%)",
+        backgroundImage: "linear-gradient(45deg, black 25%, transparent 26%, transparent 75%, black 75%), linear-gradient(45deg, black 25%, transparent 26%, transparent 75%, black 75%)",
         backgroundSize: "50px 50px",
         backgroundPosition: "0 0, 25px 25px",
         zIndex:"-1"

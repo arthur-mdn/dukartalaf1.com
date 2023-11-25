@@ -23,8 +23,9 @@ function Menu({isMenuOpen, setIsMenuOpen}) {
                     <a href="/inscription" rel="noreferrer" style={styles.menuNavLink} className={"expansiva-bold"}> {translations.register} </a>
                     <a href="/reglement" rel="noreferrer" style={styles.menuNavLink} className={"expansiva-bold"}> {translations.rules} </a>
                     <a href="/contact" rel="noreferrer" style={styles.menuNavLink} className={"expansiva-bold"}> {translations.contact} </a>
+                    <LanguageSelector className={"show_mobile"}/>
                 </div>
-                <LanguageSelector className={"show_mobile"}/>
+                <div></div>
             </menu>
         </>
     );
@@ -42,6 +43,7 @@ const styles = {
         zIndex: 1001,
         backgroundColor:"rgb(50 62 95 / 43%)",
         transition: 'all 0.4s ease-in-out',
+        justifyContent: "space-between"
     },
     beforeStyle: {
         position: 'fixed',

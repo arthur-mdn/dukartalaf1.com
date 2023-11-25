@@ -11,7 +11,7 @@ function Contact() {
         <>
             <SecondaryHeroSection title={translations.contact}/>
             <section>
-                <article style={{padding:'2rem'}}>
+                <article style={{padding:' 0 2rem 2rem 2rem'}}>
                     <ContactForm/>
                 </article>
             </section>
@@ -29,7 +29,7 @@ function ContactForm() {
         return <p>{translations.thankForYourMessage}</p>;
     }
     return (
-        <form onSubmit={handleSubmit} className={"f-c fc"}>
+        <form onSubmit={handleSubmit} className={"f-c fc g1"}>
             <div className={"fr f-c w100 g1"} style={{maxWidth:'500px'}}>
 
 
