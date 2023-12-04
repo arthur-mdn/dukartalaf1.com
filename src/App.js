@@ -16,7 +16,7 @@ import ComingSoon from "./pages/ComingSoon";
 
 function App() {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-    const isComingSoonActivated = true;
+    const isComingSoonActivated = false;
     if(isComingSoonActivated){
         return (
             <LanguageProvider>
