@@ -6,8 +6,14 @@
     "piste": "ales_pole_mecanique.svg",
     "dates": [
       {
-        "date": "2023-07-15",
-        "lienReservation": "https://site.externe/reservation/2"
+        "id": 113740,
+        "date": "2024-02-25",
+        "lienReservation": "https://yurplan.com/events/Pole-Mecanique-Karting-Ales/113740"
+      },
+      {
+        "id": 113741,
+        "date": "2024-03-03",
+        "lienReservation": "https://yurplan.com/events/Pole-Mecanique-Karting-Ales/113741"
       }
     ]
   },

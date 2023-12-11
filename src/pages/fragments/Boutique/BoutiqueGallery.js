@@ -2,10 +2,12 @@ import React, {useState} from "react";
 import {useLanguage} from "../../../LanguageContext";
 import pistesData from "../../../datas/pistes.json";
 import Modal from "../../../components/modal/Modal";
+import EventModal from "../../../components/modal/EventModal";
 
 function BoutiqueGallery() {
     const { translations } = useLanguage();
     const [modalIsOpen, setModalIsOpen] = useState('null');
+    const [eventModalIsOpen, setEventModalIsOpen] = useState('null');
 
     return (
         <section style={styles.boutique_section} >
@@ -33,13 +35,36 @@ function BoutiqueGallery() {
                 <p>{translations.chooseDateDescription}</p>
                 <div className={"fc f-c "}>
                     {modalIsOpen.dates && modalIsOpen.dates.map(date => (
-                        <button type={"button"} className={"expansiva fs1"} key={date.date} onClick={() => setModalIsOpen("null")}>
-                            {date.date}
-                        </button>
+                        <>
+                            <button type={"button"} className={"expansiva fs1"} key={date.date} onClick={() => setEventModalIsOpen(date)}>
+                                {date.date}
+                            </button>
+                        </>
+
+
                     ))}
                 </div>
-
             </Modal>
+            <EventModal isOpen={eventModalIsOpen} maxWidth={"93%"} title={translations.chooseDate} onClose={() => setEventModalIsOpen("null")}>
+                <div className={"fc f-c "} style={{height:'100%', width:'100%'}}>
+                    {eventModalIsOpen.date && (
+                        <>
+
+                            <iframe
+                                title={"Réserver"}
+                                id={`yurplan-widget-${eventModalIsOpen.id}`}
+                                src={eventModalIsOpen.lienReservation}
+                                width={"100%"}
+                                height={"100%"}
+                            >
+                            </iframe>
+                        </>
+
+
+                    )}
+                </div>
+            </EventModal>
+
         </section>
     );
 }
