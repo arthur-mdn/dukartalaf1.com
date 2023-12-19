@@ -60,8 +60,8 @@ function AccueilTracks() {
                             <div dangerouslySetInnerHTML={{ __html: imageView }}  />
                             <div style={styles.damierAfter}> <div style={styles.damierAfterOverlay}></div></div>
                         </div>
-                        <div style={{backgroundColor:'#000', padding:'4rem 2rem', borderRadius:'2rem',position:"relative", minWidth:"30vw", display:"flex",alignItems:"center",justifyContent:"center"}}>
-                            {selectedTrackImage && <><h3 className={"white"} style={{position:"absolute",top:0, textAlign:"center",width:"calc(100% - 4rem)"}}>{selectedTrackTitle}</h3><img src={selectedTrackImage} alt="Selected Track" style={{width:'100%', maxWidth:'300px'}} /><a  href={`/inscription/${selectedTrackId}`} className={"button white"} style={{position:"absolute",bottom:0,left:'50%',transform:"translate(-50%, 0%)", textAlign:"center", backgroundColor:"#333"}}>{translations.book}</a></>}
+                        <div style={{backgroundColor:'#000', padding:'4rem 2rem 2rem', borderRadius:'2rem',position:"relative", minWidth:"30vw", display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"center"}}>
+                            {selectedTrackImage && <><h3 className={"white"} style={{position:"absolute",top:0, textAlign:"center",width:"calc(100% - 4rem)"}}>{selectedTrackTitle}</h3><img src={selectedTrackImage} alt="Selected Track" style={{width:'100%', maxWidth:'300px'}} /><a  href={`/inscription/${selectedTrackId}`} className={"button white"} style={{ textAlign:"center", backgroundColor:"#333"}}>{translations.book}</a></>}
                             {!selectedTrackImage && <h3 className={"white"} style={{position:"absolute",top:0, textAlign:"center",width:"calc(100% - 4rem)"}}>{translations.selectTrack}</h3>}
                         </div>
                     </div>
