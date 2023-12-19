@@ -3,16 +3,32 @@ import {useLanguage} from "../../../LanguageContext";
 
 function AccueilVideo() {
     const { translations } = useLanguage();
+    const iframe_container = {
+        left: 0,
+        width: "100%",
+        height: "100%",
+        position: "relative"
+    }
 
+    const iframe ={top: 0,
+        left: 0,
+        width: "100%",
+        height: "100%",
+        position: "absolute",
+        border: 0}
     return (
         <section style={styles.event_section} className={"fc f-c"}>
-                <div style={{aspectRatio:'16/9',width:'calc(100% - 4rem)',maxWidth:'1200px', backgroundColor:'grey', borderRadius:'2rem', overflow:'hidden'}}>
-                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/aVlMeOh6gHk?si=_C7PAQZ6OQTWprE5" title="YouTube video player" frameBorder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowFullScreen></iframe>
+                <div style={{width:'calc(100% - 4rem)',maxWidth:'1200px',height:'800px'}}>
+                    <div style={iframe_container}>
+                        <iframe
+                            src="https://www.tiktok.com/embed/7313991494216584481"
+                            style={iframe}
+                            allowfullscreen
+                            scrolling="no"
+                            allow="encrypted-media;"
+                        ></iframe>
+                    </div>
                 </div>
-
-
         </section>
     );
 }
