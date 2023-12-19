@@ -419,6 +419,9 @@ section{
   background-color: transparent;
   border: 0;
 }
+#topbar_logo, #menu_logo{
+  max-width: 100px!important;
+}
 @media (max-width: 740px) {
 
   .slick-slider .button.skew-reverse , .slick-slider .button.skew{
@@ -440,9 +443,7 @@ section{
     display: flex!important;
   }
 
-#topbar_logo, #menu_logo{
-  max-width: 100px!important;
-}
+
   .hide_mobile{
     display: none!important;
   }
