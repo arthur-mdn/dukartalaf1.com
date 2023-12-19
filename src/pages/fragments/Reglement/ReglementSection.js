@@ -7,9 +7,8 @@ function ReglementSection() {
     return (
         <section style={styles.event_section} >
             <article>
-                <h1 className={"expansiva"}>{translations.rulesOfTheEvent}</h1>
                 <div className={"fc"}>
-                    <p>
+                    <p className={"center_on_mobile"}>
                         {translations.rulesOfTheEvent1}
                     </p>
                 </div>

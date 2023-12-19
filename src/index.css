@@ -423,6 +423,9 @@ section{
   max-width: 100px!important;
 }
 @media (max-width: 740px) {
+  .center_on_mobile{
+    text-align: center!important;
+  }
 
   .slick-slider .button.skew-reverse , .slick-slider .button.skew{
     left: 50%!important;
