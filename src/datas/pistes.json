@@ -132,7 +132,7 @@
     "id": 10,
     "nom": "Solo Kart",
     "logo": "solo_kart/logo.jpg",
-    "image": "solo_kart/photo.jpg",
+    "image": "solo_kart/photo.JPG",
     "piste": "solo_kart/piste.png",
     "dates": [
       {
