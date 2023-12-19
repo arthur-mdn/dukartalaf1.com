@@ -54,14 +54,14 @@ function AccueilTracks() {
                 <h1 className={"expansiva-bold fs2"}>{translations.tracks}</h1>
                 <div style={{marginLeft:'2rem'}} className={"noMarginleftOnMobile"}>
                     <p style={{marginRight:'auto', maxWidth:'800px', marginBottom:'50px'}}>{translations.tracksDescription}</p>
-                    <div className={"fr f-c"} style={{gap:'2rem'}} id={"tracks_container"}>
-                        <div style={{background: "linear-gradient(97deg, rgba(6,13,48,1) 0%, rgba(14,31,115,1) 100%)", padding:'4rem 2rem', borderRadius:'2rem', width:'fit-content', position:'relative', overflow:'hidden'}}>
+                    <div className={"fr f-c"} style={{gap:'2rem',alignItems:'stretch'}} id={"tracks_container"}>
+                        <div style={{background: "linear-gradient(97deg, rgba(6,13,48,1) 0%, rgba(14,31,115,1) 100%)", padding:'4rem 2rem', borderRadius:'2rem', position:'relative', overflow:'hidden', display:"flex",alignItems:"center",justifyContent:"center"}}>
                             <div style={styles.damierBefore}> <div style={styles.damierBeforeOverlay}></div></div>
                             <div dangerouslySetInnerHTML={{ __html: imageView }}  />
                             <div style={styles.damierAfter}> <div style={styles.damierAfterOverlay}></div></div>
                         </div>
-                        <div style={{backgroundColor:'#000', padding:'4rem 2rem', borderRadius:'2rem',position:"relative", width:'50vw', maxWidth:'400px'}}>
-                            {selectedTrackImage && <><h3 className={"white"} style={{position:"absolute",top:0, textAlign:"center",width:"calc(100% - 4rem)"}}>{selectedTrackTitle}</h3><img src={selectedTrackImage} alt="Selected Track" style={{width:'100%', maxWidth:'600px'}} /><a  href={`/inscription/${selectedTrackId}`} className={"button white"} style={{position:"absolute",bottom:0,left:'50%',transform:"translate(-50%, 0%)", textAlign:"center", backgroundColor:"#333"}}>{translations.book}</a></>}
+                        <div style={{backgroundColor:'#000', padding:'4rem 2rem', borderRadius:'2rem',position:"relative", minWidth:"30vw", display:"flex",alignItems:"center",justifyContent:"center"}}>
+                            {selectedTrackImage && <><h3 className={"white"} style={{position:"absolute",top:0, textAlign:"center",width:"calc(100% - 4rem)"}}>{selectedTrackTitle}</h3><img src={selectedTrackImage} alt="Selected Track" style={{width:'100%', maxWidth:'300px'}} /><a  href={`/inscription/${selectedTrackId}`} className={"button white"} style={{position:"absolute",bottom:0,left:'50%',transform:"translate(-50%, 0%)", textAlign:"center", backgroundColor:"#333"}}>{translations.book}</a></>}
                             {!selectedTrackImage && <h3 className={"white"} style={{position:"absolute",top:0, textAlign:"center",width:"calc(100% - 4rem)"}}>{translations.selectTrack}</h3>}
                         </div>
                     </div>
@@ -82,7 +82,7 @@ const styles = {
         width: '100%',
         position: 'relative',
         paddingTop:'80px',
-        paddingBottom:'80px',
+        paddingBottom:'120px',
     },
     damierBefore: {
         content: '',

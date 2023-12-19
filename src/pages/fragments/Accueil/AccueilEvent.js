@@ -44,7 +44,7 @@ function AccueilEvent() {
                     </div>
                     <br/>
                     <br/>
-                    <div className={'fr'} style={{marginLeft:'2rem'}}>
+                    <div className={'fr'}>
                         <a href={"inscription"} className={"button expansiva white center skew"}>{translations.register}</a>
                     </div>
                 </div>
