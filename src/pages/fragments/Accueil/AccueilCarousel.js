@@ -48,8 +48,8 @@ function AccueilCarousel() {
                 <Slider {...settings}>
                         {pistesData.map(piste => (
                             <span style={{width:'100%', display:'flex', position:'relative'}} key={piste.id}>
-                                 <a href={"inscription"} style={{aspectRatio:"1/1", width:'100%'}} className={"fc f-c"} key={piste.id}>
-                                <img src={`pistes/${piste.image}`} alt={piste.nom} style={styles.boutique_list_item_image}/>
+                                 <a href={`inscription/${piste.id}`} style={{aspectRatio:"1/1", width:'100%'}} className={"fc f-c"} key={piste.id}>
+                                <img src={`/pistes/${piste.image}`} alt={piste.nom} style={styles.boutique_list_item_image}/>
                                 <div>
                                     <h2 className={"white bold mt-a"}>{piste.nom}</h2>
                                 </div>

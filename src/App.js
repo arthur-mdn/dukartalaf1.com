@@ -44,6 +44,7 @@ function MainContent() {
             <Routes>
                 <Route path="/" element={<Accueil />}/>
                 <Route path="/inscription" element={<Boutique />} />
+                <Route path="/inscription/:pisteId" element={<Boutique />} />
                 <Route path="/reglement" element={<Reglement />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/mentions-legales" element={<Mentions />} />

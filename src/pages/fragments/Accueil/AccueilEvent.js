@@ -49,8 +49,8 @@ function AccueilEvent() {
                     </div>
                 </div>
 
-                <img src={"kart_race.jpg"} alt={"kart race"} style={styles.polygonImage} id={"polygon_image"}/>
-                <img src={"kart_race.jpg"} alt={"kart race"} style={styles.polygonImageAlt} id={"polygon_image_alt"}/>
+                <img src={"/kart_race.jpg"} alt={"kart race"} style={styles.polygonImage} id={"polygon_image"}/>
+                <img src={"/kart_race.jpg"} alt={"kart race"} style={styles.polygonImageAlt} id={"polygon_image_alt"}/>
 
             </article>
 

@@ -9,7 +9,7 @@ function ComingSoon() {
 
     return (
         <footer style={{ ...styles.footer, height:'calc(100vh - 4rem)' }} className={"fc f-c"}>
-            <img src="logo_white.png" alt="Logo" style={styles.logo} />
+            <img src="/logo_white.png" alt="Logo" style={styles.logo} />
             <hr/>
             <h1 className={"white expansiva fs3 center"}>
                 {translations.comingSoon}

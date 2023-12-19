@@ -1,6 +1,8 @@
 html{
   box-sizing: border-box;
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  width: 100%
 }
 
 body {
@@ -73,7 +75,7 @@ button, .button{
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 0.8rem;
@@ -102,6 +104,11 @@ button.skew, .button.skew{
   will-change: background-color;
   font-family: "Expansiva Regular";
 }
+button.skew, .button.skew-reverse{
+  position: relative;
+  will-change: background-color;
+  font-family: "Expansiva Regular";
+}
 button.skew.with-icon{
   padding: 15px 50px 15px 26px;
 
@@ -120,7 +127,7 @@ button.skew::after, .button.skew::after{
   -webkit-transform-origin: bottom left;
   -moz-transform-origin: bottom left;
   transform-origin: bottom left;
-  right: -1.5rem;
+  right: -2.8rem;
   border-left: none;
   -webkit-transform: skewX(-20deg);
   -moz-transform: skewX(-20deg);
@@ -381,7 +388,7 @@ textarea{
 }
 
 .slick-slide > div {
-  margin: 0 10px;
+  /*margin: 0 10px;*/
   position: relative;
   width: 100%;
   height: 100%;
@@ -414,15 +421,27 @@ section{
 }
 @media (max-width: 740px) {
 
+  .slick-slider .button.skew-reverse , .slick-slider .button.skew{
+    left: 50%!important;
+    transform: translate(-50%, 0%);
+    font-size: 1rem;
+  }
   #home_hero_section{
     min-height: auto;
+  }
+  #home_hero_section h1{
+    font-size: 2.5rem;
+    margin: 0.67em;
+  }
+  #home_hero_section a{
+    font-size: 1rem;
   }
   .show_mobile{
     display: flex!important;
   }
 
 #topbar_logo, #menu_logo{
-  max-width: 200px!important;
+  max-width: 100px!important;
 }
   .hide_mobile{
     display: none!important;

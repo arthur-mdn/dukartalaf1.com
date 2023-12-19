@@ -13,10 +13,10 @@ function LanguageSelector({className = ""}) {
     return (
         <div style={styles.languageSelectorContainer} className={className}>
             <button type={"button"} style={styles.languageSelectorButton} className={"languageSelectorButton"} disabled={language === "fr"} onClick={() => handleLanguageChange("fr")}>
-                <img src={`fr.png`} alt="Logo" style={styles.flag} />
+                <img src={`/fr.png`} alt="Logo" style={styles.flag} />
             </button>
             <button type={"button"} style={styles.languageSelectorButton} className={"languageSelectorButton"} disabled={language === "en"} onClick={() => handleLanguageChange("en")}>
-                <img src={`en.png`} alt="Logo" style={styles.flag} />
+                <img src={`/en.png`} alt="Logo" style={styles.flag} />
             </button>
         </div>
     );

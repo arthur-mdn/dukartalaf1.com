@@ -5,6 +5,7 @@ import pistesData from "../../../datas/pistes.json";
 function AccueilTracks() {
     const { translations } = useLanguage();
     const [imageView, setImageView] = React.useState("");
+    const [selectedTrackId, setSelectedTrackId] = React.useState(null);
     const [selectedTrackImage, setSelectedTrackImage] = React.useState("");
     const [selectedTrackTitle, setSelectedTrackTitle] = React.useState("");
 
@@ -39,6 +40,7 @@ function AccueilTracks() {
             console.log(trackData)
             event.target.classList.add("selected");
             const trackImagePath = `/pistes/${trackData.piste}`;
+            setSelectedTrackId(trackData.id);
             setSelectedTrackImage(trackImagePath);
             setSelectedTrackTitle(trackData.nom);
         }
@@ -59,7 +61,7 @@ function AccueilTracks() {
                             <div style={styles.damierAfter}> <div style={styles.damierAfterOverlay}></div></div>
                         </div>
                         <div style={{backgroundColor:'#000', padding:'4rem 2rem', borderRadius:'2rem',position:"relative", width:'50vw', maxWidth:'400px'}}>
-                            {selectedTrackImage && <><h3 className={"white"} style={{position:"absolute",top:0, textAlign:"center",width:"calc(100% - 4rem)"}}>{selectedTrackTitle}</h3><img src={selectedTrackImage} alt="Selected Track" style={{width:'100%', maxWidth:'600px'}} /></>}
+                            {selectedTrackImage && <><h3 className={"white"} style={{position:"absolute",top:0, textAlign:"center",width:"calc(100% - 4rem)"}}>{selectedTrackTitle}</h3><img src={selectedTrackImage} alt="Selected Track" style={{width:'100%', maxWidth:'600px'}} /><a  href={`/inscription/${selectedTrackId}`} className={"button white"} style={{position:"absolute",bottom:0,left:'50%',transform:"translate(-50%, 0%)", textAlign:"center", backgroundColor:"#333"}}>{translations.book}</a></>}
                             {!selectedTrackImage && <h3 className={"white"} style={{position:"absolute",top:0, textAlign:"center",width:"calc(100% - 4rem)"}}>{translations.selectTrack}</h3>}
                         </div>
                     </div>

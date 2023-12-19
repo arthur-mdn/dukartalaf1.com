@@ -6,7 +6,7 @@ function TopBar({ setIsMenuOpen }) {
         <>
             <nav style={styles.navbar}>
                 <a href={"/"}>
-                    <img src="logo_ags_white.png" alt="Logo" style={styles.logo} id={"topbar_logo"}/>
+                    <img src="/logo_white.png" alt="Logo" style={styles.logo} id={"topbar_logo"}/>
                 </a>
                 <button style={styles.menuButton} type={"button"} onClick={() => setIsMenuOpen(true)}>
                     <div style={styles.menuBarContainer}>
@@ -36,9 +36,11 @@ const styles = {
         backgroundColor:'black'
     },
     logo: {
-        maxWidth: '350px',
+        maxWidth: '10px',
         maxHeight: '100%',
         marginLeft: '10px',
+        marginTop: '5px',
+        marginBottom: '5px',
     },
     menuButton: {
         marginRight: '10px',

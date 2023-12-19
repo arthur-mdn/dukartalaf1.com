@@ -28,7 +28,6 @@ const styles = {
         flexDirection: 'column',
         width: '100%',
         position: 'relative',
-        paddingTop:'100px',
         paddingBottom:'100px',
     }
 };

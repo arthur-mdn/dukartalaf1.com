@@ -13,7 +13,7 @@ function Menu({isMenuOpen, setIsMenuOpen}) {
             <div style={styles.beforeStyle}  className={`menu ${isMenuOpen ? "open" : "close"}`}></div>
             <menu style={styles.menu} className={`fc menu ${isMenuOpen ? "open" : "close"}`}>
                 <div className={"fr w100 jc-sb"} style={{padding:'0.3rem 2rem', width:'calc(100% - 4rem)'}}>
-                    <img src="logo_ags_white.png" alt="Logo" style={styles.logo} id={"menu_logo"}/>
+                    <img src="/logo_white.png" alt="Logo" style={styles.logo} id={"menu_logo"}/>
                     <button type={"button"} style={styles.menuButton} onClick={() => setIsMenuOpen(false)}>
                         <FaTimes/>
                     </button>
@@ -60,6 +60,8 @@ const styles = {
         maxWidth: '350px',
         maxHeight: '100%',
         marginLeft: '10px',
+        marginTop: '5px',
+        marginBottom: '5px',
     },
     menuNavList:{
         display:"flex",
