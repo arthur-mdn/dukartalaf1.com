@@ -350,14 +350,38 @@ textarea{
 .slick-slide img{
   z-index: -1;
 }
+.slick-slide a:before{
+  position: absolute;
+  width: 100%;
+    height: 100%;
+    content: '';
+  background-color: rgba(0,0,0,0.4);
+  opacity: 0.8;
+  z-index: 0;
+}
+.slick-slide > div > span > a >div > h2{
+  position: relative;
+  z-index: 1;
+}
 
+.black_overlay:before{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background-color: rgba(0,0,0,0.4);
+    opacity: 0.8;
+    z-index: 0;
+}
+.black_overlay h2{
+    z-index: 1;
+}
 
 .slick-slide > div {
   margin: 0 10px;
   position: relative;
   width: 100%;
   height: 100%;
-
 }
 .slick-list {
   margin: 0 -10px;
