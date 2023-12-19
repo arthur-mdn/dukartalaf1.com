@@ -21,6 +21,7 @@ function BoutiqueGallery() {
                         <div key={piste.id} style={styles.boutique_list_item}  className={"black_overlay"}>
                             <img src={`pistes/${piste.image}`} alt={piste.nom} style={styles.boutique_list_item_image}/>
                             <h2 className={"white bold"}>{piste.nom}</h2>
+                            <img src={`pistes/${piste.logo}`} alt={piste.nom} style={{maxWidth:'120px'}} />
                             <div style={styles.boutique_list_item_button}>
                                 <button type={"button"} key={piste.id} className={"skew"}  onClick={() => setModalIsOpen(piste)}>
                                     {translations.book}
