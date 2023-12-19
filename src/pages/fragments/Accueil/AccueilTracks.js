@@ -37,6 +37,7 @@ function AccueilTracks() {
 
         if (trackData) {
             console.log(trackData)
+            event.target.classList.add("selected");
             const trackImagePath = `/pistes/${trackData.piste}`;
             setSelectedTrackImage(trackImagePath);
             setSelectedTrackTitle(trackData.nom);
@@ -55,7 +56,6 @@ function AccueilTracks() {
                         <div style={{background: "linear-gradient(97deg, rgba(6,13,48,1) 0%, rgba(14,31,115,1) 100%)", padding:'4rem 2rem', borderRadius:'2rem', width:'fit-content', position:'relative', overflow:'hidden'}}>
                             <div style={styles.damierBefore}> <div style={styles.damierBeforeOverlay}></div></div>
                             <div dangerouslySetInnerHTML={{ __html: imageView }}  />
-                            {/*<img src={"france_carte.svg"} style={{width:'100%', maxWidth:'600px'}}/>*/}
                             <div style={styles.damierAfter}> <div style={styles.damierAfterOverlay}></div></div>
                         </div>
                         <div style={{backgroundColor:'#000', padding:'4rem 2rem', borderRadius:'2rem',position:"relative", width:'50vw', maxWidth:'400px'}}>

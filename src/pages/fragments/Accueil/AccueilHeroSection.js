@@ -13,11 +13,11 @@ function AccueilHeroSection() {
                 <div className={'fr f-c'}>
                     <a href={"inscription"} className={"button expansiva white center fs1-5"}>{translations.reserveYourPlace}</a>
                 </div>
-                <div style={styles.carsContainer} className={"carsContainer"}>
-                    <img src={"/kart.png"} alt="kart" style={styles.carsIllustration}/>
-                    <div style={styles.carsSeparator} id={"carSeparator"}></div>
-                    <img src={"/formule1.png"} alt="formule1" style={styles.carsIllustration}/>
-                </div>
+                {/*<div style={styles.carsContainer} className={"carsContainer"}>*/}
+                {/*    <img src={"/kart.png"} alt="kart" style={styles.carsIllustration}/>*/}
+                {/*    <div style={styles.carsSeparator} id={"carSeparator"}></div>*/}
+                {/*    <img src={"/formule1.png"} alt="formule1" style={styles.carsIllustration}/>*/}
+                {/*</div>*/}
                 <a className={"fc f-c"} href={"#event_section"}>
                     <FaChevronDown style={{fontSize:"4rem", color:"white"}}/>
                 </a>
