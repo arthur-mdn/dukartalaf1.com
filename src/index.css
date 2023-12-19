@@ -459,11 +459,11 @@ section{
 
 
   #home_header{
-    background-image: url("../public/home_header_mobile.png")!important;
+    background-image: url("../public/home_header.png")!important;
   }
 
   #home_header_overlay{
-    opacity: 0!important;
+    /*opacity: 0!important;*/
   }
 
 
