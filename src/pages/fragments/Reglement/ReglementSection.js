@@ -14,7 +14,7 @@ function ReglementSection() {
                     </p>
                 </div>
                 <div className={'fr f-c'}>
-                    <button className={"expansiva white center skew"}>{translations.seeRules}</button>
+                    <a href="/docs/reglement_du_kart_a_la_f1_2024.pdf" download className={"button expansiva white center skew"}>{translations.seeRules}</a>
                 </div>
             </article>
         </section>
