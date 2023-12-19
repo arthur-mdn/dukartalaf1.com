@@ -1,9 +1,10 @@
 [
   {
     "id": 1,
-    "nom": "Ales pôle mécanique",
-    "image": "ales_pole_mecanique.png",
-    "piste": "ales_pole_mecanique.svg",
+    "nom": "BKL Brignoles",
+    "logo": "brignoles/logo.jpg",
+    "image": "brignoles/photo.jpg",
+    "piste": "brignoles/piste.png",
     "dates": [
       {
         "id": 113740,
@@ -20,8 +21,9 @@
   {
     "id": 2,
     "nom": "Circuit de L'enclos",
-    "image": "circuit_de_lenclos.jpg",
-    "piste": "circuit_de_lenclos.svg",
+    "logo": "circuit_de_l_enclos/logo.jpg",
+    "image": "circuit_de_l_enclos/photo.jpg",
+    "piste": "circuit_de_l_enclos/piste.png",
     "dates": [
       {
         "date": "2023-07-15",
@@ -31,9 +33,10 @@
   },
   {
     "id": 3,
-    "nom": "karting de Murée",
-    "image": "karting_de_muree.png",
-    "piste": "karting_de_muree.svg",
+    "nom": "Circuit de L'Europe",
+    "logo": "circuit_de_l_europe/logo.jpg",
+    "image": "circuit_de_l_europe/photo.jpg",
+    "piste": "circuit_de_l_europe/piste.png",
     "dates": [
       {
         "date": "2023-07-15",
@@ -43,9 +46,10 @@
   },
   {
     "id": 4,
-    "nom": "Metz Indoor",
-    "image": "metz_kart_indoor.png",
-    "piste": "metz_kart_indoor.svg",
+    "nom": "Racing Kart JPR",
+    "logo": "racing_kart_jpr/logo.jpg",
+    "image": "racing_kart_jpr/photo.jpg",
+    "piste": "racing_kart_jpr/piste.png",
     "dates": [
       {
         "date": "2023-07-15",
@@ -55,9 +59,10 @@
   },
   {
     "id": 5,
-    "nom": "OnlyKart",
-    "image": "onlykart.png",
-    "piste": "onlykart.svg",
+    "nom": "Karthors",
+    "logo": "karthors/logo.jpg",
+    "image": "karthors/photo.jpg",
+    "piste": "karthors/piste.png",
     "dates": [
       {
         "date": "2023-07-15",
@@ -67,9 +72,10 @@
   },
   {
     "id": 6,
-    "nom": "Racing Kart JPR",
-    "image": "racing_kart_jpr.jpg",
-    "piste": "racing_kart_jpr.svg",
+    "nom": "Magescq",
+    "logo": "magescq/logo.jpg",
+    "image": "magescq/photo.jpg",
+    "piste": "magescq/piste.png",
     "dates": [
       {
         "date": "2023-07-15",
@@ -79,9 +85,42 @@
   },
   {
     "id": 7,
+    "nom": "OnlyKart",
+    "logo": "onlykart/logo.jpg",
+    "image": "onlykart/photo.PNG",
+    "piste": "onlykart/piste.png",
+    "dates": [
+      {
+        "date": "2023-07-15",
+        "lienReservation": "https://site.externe/reservation/2"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "nom": "Ales pôle mécanique",
+    "logo": "ales_pole_mecanique/logo.jpg",
+    "image": "ales_pole_mecanique/photo.jpg",
+    "piste": "ales_pole_mecanique/piste.png",
+    "dates": [
+      {
+        "id": 113740,
+        "date": "2024-02-25",
+        "lienReservation": "https://yurplan.com/events/Pole-Mecanique-Karting-Ales/113740"
+      },
+      {
+        "id": 113741,
+        "date": "2024-03-03",
+        "lienReservation": "https://yurplan.com/events/Pole-Mecanique-Karting-Ales/113741"
+      }
+    ]
+  },
+  {
+    "id": 9,
     "nom": "RKC",
-    "image": "rkc.jpg",
-    "piste": "rkc.svg",
+    "logo": "rkc/logo.jpg",
+    "image": "rkc/photo.jpg",
+    "piste": "rkc/piste.png",
     "dates": [
       {
         "date": "2023-08-05",
@@ -90,22 +129,11 @@
     ]
   },
   {
-    "id": 8,
-    "nom": "Sarron",
-    "image": "sarron.png",
-    "piste": "sarron.svg",
-    "dates": [
-      {
-        "date": "2023-08-05",
-        "lienReservation": "https://site.externe/reservation/4"
-      }
-    ]
-  },
-  {
-    "id": 9,
+    "id": 10,
     "nom": "Solo Kart",
-    "image": "solo_kart.png",
-    "piste": "solo_kart.svg",
+    "logo": "solo_kart/logo.jpg",
+    "image": "solo_kart/photo.jpg",
+    "piste": "solo_kart/piste.png",
     "dates": [
       {
         "date": "2023-08-05",
@@ -113,4 +141,5 @@
       }
     ]
   }
+
 ]
