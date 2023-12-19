@@ -9,11 +9,15 @@
       {
         "id": 115663,
         "date": "2024-02-25",
+        "startTime": "13:30",
+        "endTime": "18:00",
         "lienReservation": "https://yurplan.com/events/Brignoles-Karting-Loisir/115663"
       },
       {
         "id": 115667,
         "date": "2024-03-03",
+        "startTime": "13:30",
+        "endTime": "18:00",
         "lienReservation": "https://yurplan.com/events/Brignoles-Karting-Loisir/115667"
       }
     ]
@@ -26,14 +30,118 @@
     "piste": "crolles/piste.png",
     "dates": [
       {
-        "id": 113740,
+        "id": 115463,
         "date": "2024-02-25",
-        "lienReservation": "https://yurplan.com/events/Pole-Mecanique-Karting-Ales/113740"
+        "startTime": "08:45",
+        "endTime": "09:45",
+        "lienReservation": "https://yurplan.com/events/Karting-de-Crolles/115463"
       },
       {
-        "id": 113741,
+        "id": 115468,
+        "date": "2024-02-25",
+        "startTime": "09:45",
+        "endTime": "10:45",
+        "lienReservation": "https://yurplan.com/events/Karting-de-Crolles/115468"
+      },
+      {
+        "id": 115469,
+        "date": "2024-02-25",
+        "startTime": "10:45",
+        "endTime": "11:45",
+        "lienReservation": "https://yurplan.com/events/Karting-de-Crolles/115469"
+      },
+      {
+        "id": 115470,
+        "date": "2024-02-25",
+        "startTime": "11:45",
+        "endTime": "12:45",
+        "lienReservation": "https://yurplan.com/events/Karting-de-Crolles/115470"
+      },
+      {
+        "id": 115472,
+        "date": "2024-02-25",
+        "startTime": "13:30",
+        "endTime": "14:30",
+        "lienReservation": "https://yurplan.com/events/Karting-de-Crolles/115472"
+      },
+      {
+        "id": 115473,
+        "date": "2024-02-25",
+        "startTime": "14:30",
+        "endTime": "15:30",
+        "lienReservation": "https://yurplan.com/events/Karting-de-Crolles/115473"
+      },
+      {
+        "id": 115474,
+        "date": "2024-02-25",
+        "startTime": "15:30",
+        "endTime": "16:30",
+        "lienReservation": "https://yurplan.com/events/Karting-de-Crolles/115474"
+      },
+      {
+        "id": 115475,
+        "date": "2024-02-25",
+        "startTime": "16:30",
+        "endTime": "17:30",
+        "lienReservation": "https://yurplan.com/events/Karting-de-Crolles/115475"
+      },
+
+
+      {
+        "id": 115476,
         "date": "2024-03-03",
-        "lienReservation": "https://yurplan.com/events/Pole-Mecanique-Karting-Ales/113741"
+        "startTime": "08:45",
+        "endTime": "09:45",
+        "lienReservation": "https://yurplan.com/events/Karting-de-Crolles/115476"
+      },
+      {
+        "id": 115477,
+        "date": "2024-03-03",
+        "startTime": "09:45",
+        "endTime": "10:45",
+        "lienReservation": "https://yurplan.com/events/Karting-de-Crolles/115477"
+      },
+      {
+        "id": 115479,
+        "date": "2024-03-03",
+        "startTime": "10:45",
+        "endTime": "11:45",
+        "lienReservation": "https://yurplan.com/events/Karting-de-Crolles/115479"
+      },
+      {
+        "id": 115481,
+        "date": "2024-03-03",
+        "startTime": "11:45",
+        "endTime": "12:45",
+        "lienReservation": "https://yurplan.com/events/Karting-de-Crolles/115481"
+      },
+      {
+        "id": 115482,
+        "date": "2024-03-03",
+        "startTime": "13:30",
+        "endTime": "14:30",
+        "lienReservation": "https://yurplan.com/events/Karting-de-Crolles/115482"
+      },
+      {
+        "id": 115483,
+        "date": "2024-03-03",
+        "startTime": "14:30",
+        "endTime": "15:30",
+        "lienReservation": "https://yurplan.com/events/Karting-de-Crolles/115483"
+      },
+      {
+        "id": 115484,
+        "date": "2024-03-03",
+        "startTime": "15:30",
+        "endTime": "16:30",
+        "lienReservation": "https://yurplan.com/events/Karting-de-Crolles/115484"
+      },
+      {
+        "id": 115485,
+        "date": "2024-03-03",
+        "startTime": "16:30",
+        "endTime": "17:30",
+        "lienReservation": "https://yurplan.com/events/Karting-de-Crolles/115485"
       }
     ]
   },
@@ -45,8 +153,33 @@
     "piste": "circuit_de_l_enclos/piste.png",
     "dates": [
       {
-        "date": "2023-07-15",
-        "lienReservation": "https://site.externe/reservation/2"
+        "id": 115486,
+        "date": "2024-02-25",
+        "startTime": "10:00",
+        "endTime": "12:00",
+        "lienReservation": "https://yurplan.com/events/Circuit-de-l-Enclos/115486"
+      },
+      {
+        "id": 115487,
+        "date": "2024-02-25",
+        "startTime": "14:00",
+        "endTime": "17:00",
+        "lienReservation": "https://yurplan.com/events/Circuit-de-l-Enclos/115487"
+      },
+
+      {
+        "id": 115490,
+        "date": "2024-03-03",
+        "startTime": "10:00",
+        "endTime": "12:00",
+        "lienReservation": "https://yurplan.com/events/Circuit-de-l-Enclos/115490"
+      },
+      {
+        "id": 115491,
+        "date": "2024-03-03",
+        "startTime": "14:00",
+        "endTime": "17:00",
+        "lienReservation": "https://yurplan.com/events/Circuit-de-l-Enclos/115491"
       }
     ]
   },
@@ -58,8 +191,47 @@
     "piste": "circuit_de_l_europe/piste.png",
     "dates": [
       {
-        "date": "2023-07-15",
-        "lienReservation": "https://site.externe/reservation/2"
+        "id": 115584,
+        "date": "2024-02-25",
+        "startTime": "09:00",
+        "endTime": "12:00",
+        "lienReservation": "https://yurplan.com/events/Circuit-de-l-Europe/115584"
+      },
+      {
+        "id": 115686,
+        "date": "2024-02-25",
+        "startTime": "12:00",
+        "endTime": "15:00",
+        "lienReservation": "https://yurplan.com/events/Circuit-de-l-Europe/115686"
+      },
+      {
+        "id": 115687,
+        "date": "2024-02-25",
+        "startTime": "15:00",
+        "endTime": "18:00",
+        "lienReservation": "https://yurplan.com/events/Circuit-de-l-Europe/115687"
+      },
+
+      {
+        "id": 115585,
+        "date": "2024-03-03",
+        "startTime": "09:00",
+        "endTime": "12:00",
+        "lienReservation": "https://yurplan.com/events/Circuit-de-l-Europe/115585"
+      },
+      {
+        "id": 115689,
+        "date": "2024-03-03",
+        "startTime": "12:00",
+        "endTime": "15:00",
+        "lienReservation": "https://yurplan.com/events/Circuit-de-l-Europe/115689"
+      },
+      {
+        "id": 115690,
+        "date": "2024-03-03",
+        "startTime": "15:00",
+        "endTime": "18:00",
+        "lienReservation": "https://yurplan.com/events/Circuit-de-l-Europe/115690"
       }
     ]
   },
@@ -71,8 +243,32 @@
     "piste": "racing_kart_jpr/piste.png",
     "dates": [
       {
-        "date": "2023-07-15",
-        "lienReservation": "https://site.externe/reservation/2"
+        "id": 113735,
+        "date": "2024-02-25",
+        "startTime": "10:30",
+        "endTime": "12:30",
+        "lienReservation": "https://yurplan.com/events/Racing-Kart-JPR/113735"
+      },
+      {
+        "id": 115456,
+        "date": "2024-02-25",
+        "startTime": "14:00",
+        "endTime": "17:00",
+        "lienReservation": "https://yurplan.com/events/Racing-Kart-JPR/115456"
+      },
+      {
+        "id": 113736,
+        "date": "2024-03-03",
+        "startTime": "10:30",
+        "endTime": "12:30",
+        "lienReservation": "https://yurplan.com/events/Racing-Kart-JPR/113736"
+      },
+      {
+        "id": 115457,
+        "date": "2024-03-03",
+        "startTime": "14:00",
+        "endTime": "17:00",
+        "lienReservation": "https://yurplan.com/events/Racing-Kart-JPR/115457"
       }
     ]
   },
@@ -84,8 +280,33 @@
     "piste": "karthors/piste.png",
     "dates": [
       {
-        "date": "2023-07-15",
-        "lienReservation": "https://site.externe/reservation/2"
+        "id": 115587,
+        "date": "2024-02-25",
+        "startTime": "10:00",
+        "endTime": "12:00",
+        "lienReservation": "https://yurplan.com/events/Karthors/115587"
+      },
+      {
+        "id": 115624,
+        "date": "2024-02-25",
+        "startTime": "14:00",
+        "endTime": "16:00",
+        "lienReservation": "https://yurplan.com/events/Karthors/115624"
+      },
+      {
+        "id": 115625,
+        "date": "2024-02-25",
+        "startTime": "16:00",
+        "endTime": "18:30",
+        "lienReservation": "https://yurplan.com/events/Karthors/115625"
+      },
+
+      {
+        "id": 115588,
+        "date": "2024-03-03",
+        "startTime": "13:00",
+        "endTime": "18:30",
+        "lienReservation": "https://yurplan.com/events/Karthors/115588"
       }
     ]
   },
@@ -97,8 +318,47 @@
     "piste": "magescq/piste.png",
     "dates": [
       {
-        "date": "2023-07-15",
-        "lienReservation": "https://site.externe/reservation/2"
+        "id": 115591,
+        "date": "2024-02-25",
+        "startTime": "10:00",
+        "endTime": "12:00",
+        "lienReservation": "https://yurplan.com/events/Karting-de-Magescq/115591"
+      },
+      {
+        "id": 115593,
+        "date": "2024-02-25",
+        "startTime": "13:00",
+        "endTime": "15:00",
+        "lienReservation": "https://yurplan.com/events/Karting-de-Magescq/115593"
+      },
+      {
+        "id": 115594,
+        "date": "2024-02-25",
+        "startTime": "15:00",
+        "endTime": "17:00",
+        "lienReservation": "https://yurplan.com/events/Karting-de-Magescq/115594"
+      },
+
+      {
+        "id": 115595,
+        "date": "2024-03-03",
+        "startTime": "10:00",
+        "endTime": "12:00",
+        "lienReservation": "https://yurplan.com/events/Karting-de-Magescq/115595"
+      },
+      {
+        "id": 115596,
+        "date": "2024-03-03",
+        "startTime": "13:00",
+        "endTime": "15:00",
+        "lienReservation": "https://yurplan.com/events/Karting-de-Magescq/115596"
+      },
+      {
+        "id": 115597,
+        "date": "2024-03-03",
+        "startTime": "15:00",
+        "endTime": "17:00",
+        "lienReservation": "https://yurplan.com/events/Karting-de-Magescq/115597"
       }
     ]
   },
@@ -110,8 +370,32 @@
     "piste": "onlykart/piste.png",
     "dates": [
       {
-        "date": "2023-07-15",
-        "lienReservation": "https://site.externe/reservation/2"
+        "id": 115599,
+        "date": "2024-02-25",
+        "startTime": "12:00",
+        "endTime": "13:45",
+        "lienReservation": "https://yurplan.com/events/Only-Kart/115599"
+      },
+      {
+        "id": 115600,
+        "date": "2024-02-25",
+        "startTime": "18:45",
+        "endTime": "19:45",
+        "lienReservation": "https://yurplan.com/events/Only-Kart/115600"
+      },
+      {
+        "id": 115602,
+        "date": "2024-03-03",
+        "startTime": "12:00",
+        "endTime": "13:45",
+        "lienReservation": "https://yurplan.com/events/Only-Kart/115602"
+      },
+      {
+        "id": 115603,
+        "date": "2024-03-03",
+        "startTime": "18:45",
+        "endTime": "19:45",
+        "lienReservation": "https://yurplan.com/events/Only-Kart/115603"
       }
     ]
   },
@@ -125,12 +409,16 @@
       {
         "id": 113740,
         "date": "2024-02-25",
+        "startTime": "09:00",
+        "endTime": "13:00",
         "lienReservation": "https://yurplan.com/events/Pole-Mecanique-Karting-Ales/113740"
       },
       {
-        "id": 113741,
+        "id": 113740,
         "date": "2024-03-03",
-        "lienReservation": "https://yurplan.com/events/Pole-Mecanique-Karting-Ales/113741"
+        "startTime": "09:00",
+        "endTime": "13:00",
+        "lienReservation": "https://yurplan.com/events/Pole-Mecanique-Karting-Ales/113740"
       }
     ]
   },
@@ -142,8 +430,18 @@
     "piste": "rkc/piste.png",
     "dates": [
       {
-        "date": "2023-08-05",
-        "lienReservation": "https://site.externe/reservation/3"
+        "id": 113728,
+        "date": "2024-02-25",
+        "startTime": "10:30",
+        "endTime": "18:00",
+        "lienReservation": "https://yurplan.com/events/RKC/113728"
+      },
+      {
+        "id": 115460,
+        "date": "2024-03-03",
+        "startTime": "10:30",
+        "endTime": "18:00",
+        "lienReservation": "https://yurplan.com/events/RKC/115460"
       }
     ]
   },
@@ -155,8 +453,33 @@
     "piste": "solo_kart/piste.png",
     "dates": [
       {
-        "date": "2023-08-05",
-        "lienReservation": "https://site.externe/reservation/5"
+        "id": 115460,
+        "date": "2024-02-25",
+        "startTime": "10:00",
+        "endTime": "12:00",
+        "lienReservation": "https://yurplan.com/events/Solokart/113743"
+      },
+      {
+        "id": 115660,
+        "date": "2024-02-25",
+        "startTime": "14:00",
+        "endTime": "17:00",
+        "lienReservation": "https://yurplan.com/events/Solokart/115660"
+      },
+
+      {
+        "id": 113745,
+        "date": "2024-03-03",
+        "startTime": "10:00",
+        "endTime": "12:00",
+        "lienReservation": "https://yurplan.com/events/Solokart/113745"
+      },
+      {
+        "id": 115661,
+        "date": "2024-03-03",
+        "startTime": "14:00",
+        "endTime": "17:00",
+        "lienReservation": "https://yurplan.com/events/Solokart/115661"
       }
     ]
   }

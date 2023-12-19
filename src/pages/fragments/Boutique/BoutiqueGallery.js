@@ -31,15 +31,14 @@ function BoutiqueGallery() {
                     ))}
                 </div>
             </article>
-            <Modal isOpen={modalIsOpen} title={translations.chooseDate} onClose={() => setModalIsOpen("null")}>
-                <h2>{modalIsOpen.nom}</h2>
-                <img src={`pistes/${modalIsOpen.logo}`} alt={modalIsOpen.nom} style={{maxWidth:'200px', margin:'auto'}} />
-                <p>{translations.chooseDateDescription}</p>
-                <div className={"fc f-c "}>
+            <Modal isOpen={modalIsOpen} title={translations.chooseDate} onClose={() => setModalIsOpen("null")} width={"90vw"} maxWidth={"1000px"}>
+                <img src={`pistes/${modalIsOpen.logo}`} alt={modalIsOpen.nom} style={{maxWidth:'150px', margin:'auto'}} />
+                <p style={{marginTop:0}}>{translations.chooseDateDescription}</p>
+                <div className={"fr f-c fw-w"} style={{maxHeight:'370px', overflowY:"scroll"}}>
                     {modalIsOpen.dates && modalIsOpen.dates.map(date => (
                         <>
                             <button type={"button"} className={"expansiva fs1"} key={date.date} onClick={() => setEventModalIsOpen(date)}>
-                                {date.date}
+                                {date.date} ({date.startTime} - {date.endTime})
                             </button>
                         </>
 

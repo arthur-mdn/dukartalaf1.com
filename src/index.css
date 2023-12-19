@@ -177,6 +177,9 @@ button.skew-reverse::after, .button.skew-reverse::after{
     margin-top: 3rem;
 
 }
+.fw-w{
+  flex-wrap: wrap;
+}
 .fs1{
   font-size: 1rem;
 }
