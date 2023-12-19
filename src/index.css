@@ -426,6 +426,9 @@ section{
   .center_on_mobile{
     text-align: center!important;
   }
+  .noMarginleftOnMobile{
+    margin-left: 0!important;
+  }
 
   .slick-slider .button.skew-reverse , .slick-slider .button.skew{
     left: 50%!important;

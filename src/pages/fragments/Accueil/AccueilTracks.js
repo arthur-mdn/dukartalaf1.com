@@ -52,7 +52,7 @@ function AccueilTracks() {
         <section style={styles.event_section} >
             <article>
                 <h1 className={"expansiva-bold fs2"}>{translations.tracks}</h1>
-                <div style={{marginLeft:'2rem'}}>
+                <div style={{marginLeft:'2rem'}} className={"noMarginleftOnMobile"}>
                     <p style={{marginRight:'auto', maxWidth:'800px', marginBottom:'50px'}}>{translations.tracksDescription}</p>
                     <div className={"fr f-c"} style={{gap:'2rem'}} id={"tracks_container"}>
                         <div style={{background: "linear-gradient(97deg, rgba(6,13,48,1) 0%, rgba(14,31,115,1) 100%)", padding:'4rem 2rem', borderRadius:'2rem', width:'fit-content', position:'relative', overflow:'hidden'}}>
