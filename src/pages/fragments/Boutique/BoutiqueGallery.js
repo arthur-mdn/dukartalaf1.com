@@ -20,6 +20,11 @@ function BoutiqueGallery() {
         }
     }, [pisteId]);
 
+    const formatDate = (dateString) => {
+        const [year, month, day] = dateString.split("-");
+        return `${day}/${month}/${year}`;
+    };
+
     return (
         <section style={styles.boutique_section} >
             <article>
@@ -50,7 +55,7 @@ function BoutiqueGallery() {
                     {modalIsOpen.dates && modalIsOpen.dates.map(date => (
                         <>
                             <button type={"button"} className={"expansiva fs1"} key={date.date} onClick={() => setEventModalIsOpen(date)}>
-                                {date.date} ({date.startTime} - {date.endTime})
+                                {formatDate(date.date)} ({date.startTime} - {date.endTime})
                             </button>
                         </>
 
