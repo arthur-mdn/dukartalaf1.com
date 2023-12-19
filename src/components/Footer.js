@@ -1,5 +1,5 @@
 import React from "react";
-import {FaFacebookF, FaInstagram, FaTiktok, FaYoutube} from "react-icons/fa6";
+import {FaFacebookF, FaInstagram, FaLinkedin, FaTiktok, FaYoutube} from "react-icons/fa6";
 import {useLanguage} from "../LanguageContext";
 import LanguageSelector from "./LanguageSelector";
 
@@ -8,7 +8,7 @@ function Footer({marginTop = "0"}) {
 
     return (
         <footer style={{ ...styles.footer, marginTop: marginTop }} className={"fc f-c"}>
-            <img src="logo_white.png" alt="Logo" style={styles.logo} />
+            <a target={"_blank"} href={"https://www.agsformule1.com/"}><img src="logo_white.png" alt="Logo" style={styles.logo} /></a>
             <LanguageSelector/>
             <ul style={styles.footerNavList}>
                 <li>
@@ -29,16 +29,19 @@ function Footer({marginTop = "0"}) {
             </ul>
             <ul style={styles.footerNavList}>
                 <li>
-                    <a href="https://www.facebook.com/" target="_blank" rel="noreferrer"  style={styles.footertNavLink}> <FaFacebookF/> </a>
+                    <a href="https://www.instagram.com/agsformule1/" target="_blank" rel="noreferrer"  style={styles.footertNavLink}> <FaInstagram/> </a>
                 </li>
                 <li>
-                    <a href="https://www.tiktok.com/" target="_blank" rel="noreferrer"  style={styles.footertNavLink}> <FaTiktok/> </a>
+                    <a href="https://www.facebook.com/agsformule1" target="_blank" rel="noreferrer"  style={styles.footertNavLink}> <FaFacebookF/> </a>
                 </li>
                 <li>
-                    <a href="https://www.instagram.com/" target="_blank" rel="noreferrer"  style={styles.footertNavLink}> <FaInstagram/> </a>
+                    <a href="https://www.linkedin.com/company/ags-fomula-1-racing-events/" target="_blank" rel="noreferrer"  style={styles.footertNavLink}> <FaLinkedin/> </a>
                 </li>
                 <li>
-                    <a href="https://www.youtube.com/" target="_blank" rel="noreferrer"  style={styles.footertNavLink}> <FaYoutube/> </a>
+                    <a href="https://www.tiktok.com/@agsformule1" target="_blank" rel="noreferrer"  style={styles.footertNavLink}> <FaTiktok/> </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/@agsformule1546" target="_blank" rel="noreferrer"  style={styles.footertNavLink}> <FaYoutube/> </a>
                 </li>
             </ul>
             <a href="https://mondon.pro" target={"_blank"} rel="noreferrer" className={"center black"}> {translations.madeBy} </a>

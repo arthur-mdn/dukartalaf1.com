@@ -66,7 +66,7 @@
   {
     "id": 5,
     "nom": "Racing Kart JPR",
-    "logo": "racing_kart_jpr/logo.jpg",
+    "logo": "racing_kart_jpr/logo.jpeg",
     "image": "racing_kart_jpr/photo.jpg",
     "piste": "racing_kart_jpr/piste.png",
     "dates": [
@@ -92,7 +92,7 @@
   {
     "id": 7,
     "nom": "Magescq",
-    "logo": "magescq/logo.jpg",
+    "logo": "magescq/logo.PNG",
     "image": "magescq/photo.jpg",
     "piste": "magescq/piste.png",
     "dates": [
@@ -137,7 +137,7 @@
   {
     "id": 10,
     "nom": "RKC",
-    "logo": "rkc/logo.jpg",
+    "logo": "rkc/logo.png",
     "image": "rkc/photo.jpg",
     "piste": "rkc/piste.png",
     "dates": [
@@ -149,8 +149,8 @@
   },
   {
     "id": 11,
-    "nom": "Solo Kart",
-    "logo": "solo_kart/logo.jpg",
+    "nom": "Solokart",
+    "logo": "solo_kart/logo.png",
     "image": "solo_kart/photo.JPG",
     "piste": "solo_kart/piste.png",
     "dates": [

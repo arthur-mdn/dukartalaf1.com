@@ -32,6 +32,8 @@ function BoutiqueGallery() {
                 </div>
             </article>
             <Modal isOpen={modalIsOpen} title={translations.chooseDate} onClose={() => setModalIsOpen("null")}>
+                <h2>{modalIsOpen.nom}</h2>
+                <img src={`pistes/${modalIsOpen.logo}`} alt={modalIsOpen.nom} style={{maxWidth:'200px', margin:'auto'}} />
                 <p>{translations.chooseDateDescription}</p>
                 <div className={"fc f-c "}>
                     {modalIsOpen.dates && modalIsOpen.dates.map(date => (

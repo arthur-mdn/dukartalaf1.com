@@ -60,6 +60,7 @@ function AccueilTracks() {
                         </div>
                         <div style={{backgroundColor:'#000', padding:'4rem 2rem', borderRadius:'2rem',position:"relative", width:'50vw', maxWidth:'400px'}}>
                             {selectedTrackImage && <><h3 className={"white"} style={{position:"absolute",top:0, textAlign:"center",width:"calc(100% - 4rem)"}}>{selectedTrackTitle}</h3><img src={selectedTrackImage} alt="Selected Track" style={{width:'100%', maxWidth:'600px'}} /></>}
+                            {!selectedTrackImage && <h3 className={"white"} style={{position:"absolute",top:0, textAlign:"center",width:"calc(100% - 4rem)"}}>{translations.selectTrack}</h3>}
                         </div>
                     </div>
                 </div>
