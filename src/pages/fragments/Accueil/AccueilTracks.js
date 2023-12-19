@@ -55,7 +55,7 @@ function AccueilTracks() {
                 <div style={{marginLeft:'2rem'}} className={"noMarginleftOnMobile"}>
                     <p style={{marginRight:'auto', maxWidth:'800px', marginBottom:'50px'}}>{translations.tracksDescription}</p>
                     <div className={"fr f-c"} style={{gap:'2rem',alignItems:'stretch'}} id={"tracks_container"}>
-                        <div style={{background: "linear-gradient(97deg, rgba(6,13,48,1) 0%, rgba(14,31,115,1) 100%)", padding:'4rem 2rem', borderRadius:'2rem', position:'relative', overflow:'hidden', display:"flex",alignItems:"center",justifyContent:"center"}}>
+                        <div style={{background: "linear-gradient(97deg, rgba(6,13,48,1) 0%, rgba(14,31,115,1) 100%)", padding:'4rem 1rem', borderRadius:'2rem', position:'relative', overflow:'hidden', display:"flex",alignItems:"center",justifyContent:"center"}}>
                             <div style={styles.damierBefore}> <div style={styles.damierBeforeOverlay}></div></div>
                             <div dangerouslySetInnerHTML={{ __html: imageView }}  />
                             <div style={styles.damierAfter}> <div style={styles.damierAfterOverlay}></div></div>
