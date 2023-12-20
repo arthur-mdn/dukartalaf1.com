@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "nom": "Brignoles Karting Loisir",
+    "nom": "Brignoles Karting Loisir (83)",
     "logo": "brignoles/logo.jpg",
     "image": "brignoles/photo.jpg",
     "piste": "brignoles/piste.png",
@@ -24,7 +24,7 @@
   },
   {
     "id": 2,
-    "nom": "Karting de Crolles",
+    "nom": "Karting de Crolles (38)",
     "logo": "crolles/logo.jpg",
     "image": "crolles/photo.jpg",
     "piste": "crolles/piste.png",
@@ -147,7 +147,7 @@
   },
   {
     "id": 3,
-    "nom": "Circuit de L'Enclos",
+    "nom": "Circuit de L'Enclos (25)",
     "logo": "circuit_de_l_enclos/logo.jpg",
     "image": "circuit_de_l_enclos/photo.jpg",
     "piste": "circuit_de_l_enclos/piste.png",
@@ -185,7 +185,7 @@
   },
   {
     "id": 4,
-    "nom": "Circuit de L'Europe",
+    "nom": "Circuit de L'Europe (76)",
     "logo": "circuit_de_l_europe/logo.jpg",
     "image": "circuit_de_l_europe/photo.jpg",
     "piste": "circuit_de_l_europe/piste.png",
@@ -237,7 +237,7 @@
   },
   {
     "id": 5,
-    "nom": "Racing Kart JPR",
+    "nom": "Racing Kart JPR (59)",
     "logo": "racing_kart_jpr/logo.jpeg",
     "image": "racing_kart_jpr/photo.jpg",
     "piste": "racing_kart_jpr/piste.png",
@@ -318,7 +318,7 @@
   },
   {
     "id": 6,
-    "nom": "Karthors",
+    "nom": "Karthors (46)",
     "logo": "karthors/logo.jpg",
     "image": "karthors/photo.jpg",
     "piste": "karthors/piste.png",
@@ -370,7 +370,7 @@
   },
   {
     "id": 7,
-    "nom": "Karting de Magescq",
+    "nom": "Karting de Magescq (31)",
     "logo": "magescq/logo.PNG",
     "image": "magescq/photo.jpg",
     "piste": "magescq/piste.png",
@@ -422,7 +422,7 @@
   },
   {
     "id": 8,
-    "nom": "OnlyKart",
+    "nom": "OnlyKart (01)",
     "logo": "onlykart/logo.jpg",
     "image": "onlykart/photo.PNG",
     "piste": "onlykart/piste.png",
@@ -459,7 +459,7 @@
   },
   {
     "id": 9,
-    "nom": "Pôle mécanique d'Alès",
+    "nom": "Pôle mécanique d'Alès (30)",
     "logo": "ales_pole_mecanique/logo.jpg",
     "image": "ales_pole_mecanique/photo.jpg",
     "piste": "ales_pole_mecanique/piste.png",
@@ -482,7 +482,7 @@
   },
   {
     "id": 10,
-    "nom": "RKC",
+    "nom": "RKC (95)",
     "logo": "rkc/logo.jpg",
     "image": "rkc/photo.jpg",
     "piste": "rkc/piste.png",
@@ -505,7 +505,7 @@
   },
   {
     "id": 11,
-    "nom": "Solokart",
+    "nom": "Solokart (44)",
     "logo": "solo_kart/logo.jpg",
     "image": "solo_kart/photo.JPG",
     "piste": "solo_kart/piste.png",
