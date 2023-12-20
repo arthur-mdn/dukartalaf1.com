@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "nom": "BKL Brignoles",
+    "nom": "Brignoles Karting Loisir",
     "logo": "brignoles/logo.jpg",
     "image": "brignoles/photo.jpg",
     "piste": "brignoles/piste.png",
@@ -24,7 +24,7 @@
   },
   {
     "id": 2,
-    "nom": "Circuit de Crolles",
+    "nom": "Karting de Crolles",
     "logo": "crolles/logo.jpg",
     "image": "crolles/photo.jpg",
     "piste": "crolles/piste.png",
@@ -147,7 +147,7 @@
   },
   {
     "id": 3,
-    "nom": "Circuit de L'enclos",
+    "nom": "Circuit de L'Enclos",
     "logo": "circuit_de_l_enclos/logo.jpg",
     "image": "circuit_de_l_enclos/photo.jpg",
     "piste": "circuit_de_l_enclos/piste.png",
@@ -356,7 +356,7 @@
   },
   {
     "id": 7,
-    "nom": "Magescq",
+    "nom": "Karting de Magescq",
     "logo": "magescq/logo.PNG",
     "image": "magescq/photo.jpg",
     "piste": "magescq/piste.png",
@@ -445,7 +445,7 @@
   },
   {
     "id": 9,
-    "nom": "Ales pôle mécanique",
+    "nom": "Pôle mécanique d'Alès",
     "logo": "ales_pole_mecanique/logo.jpg",
     "image": "ales_pole_mecanique/photo.jpg",
     "piste": "ales_pole_mecanique/piste.png",
