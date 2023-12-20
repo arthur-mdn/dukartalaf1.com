@@ -469,7 +469,7 @@
   {
     "id": 10,
     "nom": "RKC",
-    "logo": "rkc/logo.png",
+    "logo": "rkc/logo.jpg",
     "image": "rkc/photo.jpg",
     "piste": "rkc/piste.png",
     "dates": [
@@ -492,7 +492,7 @@
   {
     "id": 11,
     "nom": "Solokart",
-    "logo": "solo_kart/logo.png",
+    "logo": "solo_kart/logo.jpg",
     "image": "solo_kart/photo.JPG",
     "piste": "solo_kart/piste.png",
     "dates": [
