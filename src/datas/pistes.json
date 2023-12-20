@@ -346,11 +346,25 @@
       },
 
       {
-        "id": 115588,
+        "id": 115729,
         "date": "2024-03-03",
         "startTime": "13:00",
+        "endTime": "15:00",
+        "lienReservation": "https://yurplan.com/events/Karthors/115729"
+      },
+      {
+        "id": 115730,
+        "date": "2024-03-03",
+        "startTime": "15:00",
+        "endTime": "17:00",
+        "lienReservation": "https://yurplan.com/events/Karthors/115730"
+      },
+      {
+        "id": 115731,
+        "date": "2024-03-03",
+        "startTime": "17:00",
         "endTime": "18:30",
-        "lienReservation": "https://yurplan.com/events/Karthors/115588"
+        "lienReservation": "https://yurplan.com/events/Karthors/115731"
       }
     ]
   },
