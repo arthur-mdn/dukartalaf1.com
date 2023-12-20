@@ -54,7 +54,9 @@ function BoutiqueGallery() {
                 <div className={"fr f-c fw-w"} style={{maxHeight:'300px', overflowY:"scroll"}}>
                     {modalIsOpen.dates && modalIsOpen.dates.map(date => (
                         <>
-                            <button type={"button"} className={"expansiva fs1"} key={date.date} onClick={() => setEventModalIsOpen(date)}>
+                            <button type={"button"} className={"expansiva fs1"} key={date.date}
+                                    // onClick={() => setEventModalIsOpen(date)}
+                                    onClick={() => window.open(date.lienReservation, '_blank')}>
                                 {formatDate(date.date)} ({date.startTime} - {date.endTime})
                             </button>
                         </>
