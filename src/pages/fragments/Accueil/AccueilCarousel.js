@@ -46,7 +46,7 @@ function AccueilCarousel() {
         <section style={styles.boutique_section} >
             <article style={{width:'100%', padding:0}}>
                 <Slider {...settings}>
-                        {pistesData.map(piste => (
+                        {pistesData.sort((a, b) => a.nom.localeCompare(b.nom)).map(piste => (
                             <span style={{width:'100%', display:'flex', position:'relative'}} key={piste.id}>
                                  <a href={`inscription/${piste.id}`} style={{aspectRatio:"1/1", width:'100%'}} className={"fc f-c"} key={piste.id}>
                                 <img src={`/pistes/${piste.image}`} alt={piste.nom} style={styles.boutique_list_item_image}/>

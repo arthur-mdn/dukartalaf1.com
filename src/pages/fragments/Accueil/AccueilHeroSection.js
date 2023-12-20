@@ -57,7 +57,7 @@ const styles = {
         width: '100%',
         height: '100%',
         backgroundColor: '#060D30', // Calque bleu avec opacité 50%
-        opacity:'0.7',
+        opacity:'0.5',
         zIndex: 1, // S'assure que le calque est au-dessus de l'image de fond
     },
     carsContainer:{

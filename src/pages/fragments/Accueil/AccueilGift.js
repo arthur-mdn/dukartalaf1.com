@@ -7,7 +7,12 @@ function AccueilGift() {
     return (
         <section style={styles.gift_section} >
             <article>
-                <h1 className={"expansiva fs2"}>{translations.giftPrize}</h1>
+                <div className={" fr fw-w jc-c column_on_mobile"}>
+                    <h1 className={"expansiva fs2"}>{translations.giftPrizeTitle1}</h1>
+                    <h1 className={"expansiva fs2"}>{translations.giftPrizeTitle2}</h1>
+                    <h1 className={"expansiva fs2 tw"}>{translations.giftPrizeTitle3}</h1>
+                </div>
+
                 <p className={"o-8"}>
                     {translations.giftPrize1}
                 </p>

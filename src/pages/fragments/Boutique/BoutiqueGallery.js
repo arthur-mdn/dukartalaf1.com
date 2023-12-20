@@ -33,7 +33,7 @@ function BoutiqueGallery() {
                 <br/>
                 <br/>
                 <div style={styles.boutique_list}>
-                    {pistesData.map(piste => (
+                    {pistesData.sort((a, b) => a.nom.localeCompare(b.nom)).map(piste => (
                         <div key={piste.id} style={styles.boutique_list_item}  className={"black_overlay"}>
                             <img src={`/pistes/${piste.image}`} alt={piste.nom} style={styles.boutique_list_item_image}/>
                             <h2 className={"white bold"}>{piste.nom}</h2>

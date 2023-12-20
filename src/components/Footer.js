@@ -8,7 +8,10 @@ function Footer({marginTop = "0"}) {
 
     return (
         <footer style={{ ...styles.footer, marginTop: marginTop }} className={"fc f-c"}>
-            <a target={"_blank"} href={"https://www.agsformule1.com/"}><img src="/logo_ags_white_old.png" alt="Logo" style={styles.logo} /></a>
+            <div className={"fr g1 ai-c jc-c"}>
+                <a target={"_blank"} href={"https://www.agsformule1.com/"}><img src="/logo_white.png" alt="Logo" style={styles.logo} /></a>
+                <a target={"_blank"} href={"https://www.sodikart.com/"}><img src="/logo_sodikart.png" alt="Logo" style={styles.logo} /></a>
+            </div>
             <LanguageSelector/>
             <ul style={styles.footerNavList}>
                 <li>
@@ -74,7 +77,7 @@ const styles = {
         fontWeight:'lighter',
     },
     logo: {
-        maxWidth: '500px', // Ajustez selon la taille de votre logo
+        maxWidth: '200px', // Ajustez selon la taille de votre logo
         width: '90%', // Ajustez selon la taille de votre logo
         maxHeight: '100%', // Ajustez si nécessaire
         marginLeft: '10px', // Espace à gauche

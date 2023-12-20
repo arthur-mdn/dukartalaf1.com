@@ -423,6 +423,9 @@ section{
   max-width: 100px!important;
 }
 @media (max-width: 740px) {
+  .column_on_mobile{
+    flex-direction: column;
+  }
   .center_on_mobile{
     text-align: center!important;
   }
@@ -473,7 +476,23 @@ section{
     margin-left: 0!important;
   }
 }
-
+.ai-c{
+    align-items: center;
+}
+.column_on_mobile{
+gap: 0.5rem 1rem;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+.column_on_mobile h1{
+  text-wrap: nowrap;
+  margin: 0;
+}
+.column_on_mobile h1.tw{
+  text-wrap: wrap;
+}
 @media (max-width: 977px) {
 
   #tracks_container{
