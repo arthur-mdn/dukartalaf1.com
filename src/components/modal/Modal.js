@@ -11,7 +11,7 @@ function Modal({ isOpen, onClose, children, title, maxHeight = "90vh",maxWidth='
                     <div className={'modal_content_title'}>
                         <div></div>
                         <h2 className={"expansiva"} style={{margin:0}}>{title || 'Pistes'}</h2>
-                        <button className={"close black bg-t fs2 b0"} onClick={onClose}>&times;</button>
+                        <button className={"close black bg-t fs1-5 b0"} onClick={onClose}>&times;</button>
                     </div>
                     {children}
                 </div>

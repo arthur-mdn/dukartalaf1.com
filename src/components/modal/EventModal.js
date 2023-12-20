@@ -10,7 +10,7 @@ function EventModal({ isOpen, onClose, children, title, maxHeight = "90vh",width
                 <div className={'modal'} style={{maxWidth:maxWidth, maxHeight: maxHeight, width:width,height:'77vh', marginBottom: marginBottom, position:"relative"}}>
                     <div className={'modal_content_title'}>
                         <div></div>
-                        <button className={"close black bg-t fs2 b0"} onClick={onClose}>&times;</button>
+                        <button className={"close black bg-t fs1-5 b0"} onClick={onClose}>&times;</button>
                     </div>
                     {children}
                 </div>
