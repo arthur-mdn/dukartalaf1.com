@@ -55,8 +55,9 @@ function BoutiqueGallery() {
                     {modalIsOpen.dates && modalIsOpen.dates.map(date => (
                         <>
                             <button type={"button"} className={"expansiva fs1"} key={date.date}
-                                    // onClick={() => setEventModalIsOpen(date)}
-                                    onClick={() => window.open(date.lienReservation, '_blank')}>
+                                    onClick={() => setEventModalIsOpen(date)}
+                                    //onClick={() => window.open(date.lienReservation, '_blank')}
+                                >
                                 {formatDate(date.date)} ({date.startTime} - {date.endTime})
                             </button>
                         </>
@@ -73,7 +74,7 @@ function BoutiqueGallery() {
                             <iframe
                                 title={"Réserver"}
                                 id={`yurplan-widget-${eventModalIsOpen.id}`}
-                                src={eventModalIsOpen.lienReservation}
+                                src={`${eventModalIsOpen.lienReservation}/tickets/widget`}
                                 width={"100%"}
                                 height={"100%"}
                             >
