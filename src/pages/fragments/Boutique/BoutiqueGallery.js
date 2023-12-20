@@ -66,7 +66,7 @@ function BoutiqueGallery() {
                     ))}
                 </div>
             </Modal>
-            <EventModal isOpen={eventModalIsOpen} maxWidth={"93%"} title={translations.chooseDate} onClose={() => setEventModalIsOpen("null")}>
+            <EventModal isOpen={eventModalIsOpen} maxWidth={"93%"} zIndex={99999} title={translations.chooseDate} onClose={() => setEventModalIsOpen("null")}>
                 <div className={"fc f-c "} style={{height:'100%', width:'100%'}}>
                     {eventModalIsOpen.date && (
                         <>
