@@ -50,7 +50,7 @@ function AccueilCarousel() {
                             <span style={{width:'100%', display:'flex', position:'relative'}} key={piste.id}>
                                  <a href={`inscription/${piste.id}`} style={{aspectRatio:"1/1", width:'100%'}} className={"fc f-c"} key={piste.id}>
                                 <img src={`/pistes/${piste.image}`} alt={piste.nom} style={styles.boutique_list_item_image}/>
-                                <div className={"fc"} style={{zIndex:2, maxWidth:'90%'}}>
+                                <div className={"fc"} style={{zIndex:1g, maxWidth:'90%'}}>
                                 <h2 className={"white bold"} style={{marginBottom:0}}>{piste.nom}</h2>
                                 <h2 className={"white bold"} style={{marginTop:0}}>({piste.postal_code})</h2>
                             </div>

@@ -36,7 +36,7 @@ function BoutiqueGallery() {
                     {pistesData.sort((a, b) => a.nom.localeCompare(b.nom)).map(piste => (
                         <div key={piste.id} style={styles.boutique_list_item}  className={"black_overlay"}>
                             <img src={`/pistes/${piste.image}`} alt={piste.nom} style={styles.boutique_list_item_image}/>
-                            <div className={"fc"} style={{zIndex:2, maxWidth:'90%'}}>
+                            <div className={"fc"} style={{zIndex:1, maxWidth:'90%'}}>
                                 <h2 className={"white bold"} style={{marginBottom:0}}>{piste.nom}</h2>
                                 <h2 className={"white bold"} style={{marginTop:0}}>({piste.postal_code})</h2>
                             </div>
@@ -77,7 +77,7 @@ function BoutiqueGallery() {
                             <iframe
                                 title={"Réserver"}
                                 id={`yurplan-widget-${eventModalIsOpen.id}`}
-                                src={`${eventModalIsOpen.lienReservation}/tickets/widget`}
+                                src={`${eventModalIsOpen.lienReservation}`}
                                 width={"100%"}
                                 height={"100%"}
                             >
