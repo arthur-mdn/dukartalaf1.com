@@ -1,7 +1,8 @@
 [
   {
     "id": 1,
-    "nom": "Brignoles Karting Loisir (83)",
+    "nom": "Brignoles Karting Loisir",
+    "postal_code": 83,
     "logo": "brignoles/logo.jpg",
     "image": "brignoles/photo.jpg",
     "piste": "brignoles/piste.png",
@@ -24,7 +25,8 @@
   },
   {
     "id": 2,
-    "nom": "Karting de Crolles (38)",
+    "nom": "Karting de Crolles",
+    "postal_code": "38",
     "logo": "crolles/logo.jpg",
     "image": "crolles/photo.jpg",
     "piste": "crolles/piste.png",
@@ -147,7 +149,8 @@
   },
   {
     "id": 3,
-    "nom": "Circuit de L'Enclos (25)",
+    "nom": "Circuit de L'Enclos",
+    "postal_code": "25",
     "logo": "circuit_de_l_enclos/logo.jpg",
     "image": "circuit_de_l_enclos/photo.jpg",
     "piste": "circuit_de_l_enclos/piste.png",
@@ -185,7 +188,8 @@
   },
   {
     "id": 4,
-    "nom": "Circuit de L'Europe (76)",
+    "nom": "Circuit de L'Europe",
+    "postal_code": "76",
     "logo": "circuit_de_l_europe/logo.jpg",
     "image": "circuit_de_l_europe/photo.jpg",
     "piste": "circuit_de_l_europe/piste.png",
@@ -237,7 +241,8 @@
   },
   {
     "id": 5,
-    "nom": "Racing Kart JPR (59)",
+    "nom": "Racing Kart JPR",
+    "postal_code": "59",
     "logo": "racing_kart_jpr/logo.jpeg",
     "image": "racing_kart_jpr/photo.jpg",
     "piste": "racing_kart_jpr/piste.png",
@@ -318,7 +323,8 @@
   },
   {
     "id": 6,
-    "nom": "Karthors (46)",
+    "nom": "Karthors",
+    "postal_code": "46",
     "logo": "karthors/logo.jpg",
     "image": "karthors/photo.jpg",
     "piste": "karthors/piste.png",
@@ -370,7 +376,8 @@
   },
   {
     "id": 7,
-    "nom": "Karting de Magescq (40)",
+    "nom": "Karting de Magescq",
+    "postal_code": "40",
     "logo": "magescq/logo.PNG",
     "image": "magescq/photo.jpg",
     "piste": "magescq/piste.png",
@@ -422,7 +429,8 @@
   },
   {
     "id": 8,
-    "nom": "OnlyKart (01)",
+    "nom": "OnlyKart",
+    "postal_code": "01",
     "logo": "onlykart/logo.jpg",
     "image": "onlykart/photo.PNG",
     "piste": "onlykart/piste.png",
@@ -459,7 +467,8 @@
   },
   {
     "id": 9,
-    "nom": "Pôle mécanique d'Alès (30)",
+    "nom": "Pôle mécanique d'Alès",
+    "postal_code": "30",
     "logo": "ales_pole_mecanique/logo.jpg",
     "image": "ales_pole_mecanique/photo.jpg",
     "piste": "ales_pole_mecanique/piste.png",
@@ -482,7 +491,8 @@
   },
   {
     "id": 10,
-    "nom": "RKC (95)",
+    "nom": "RKC",
+    "postal_code": "95",
     "logo": "rkc/logo.jpg",
     "image": "rkc/photo.jpg",
     "piste": "rkc/piste.png",
@@ -505,7 +515,8 @@
   },
   {
     "id": 11,
-    "nom": "Solokart (44)",
+    "nom": "Solokart",
+    "postal_code": "44",
     "logo": "solo_kart/logo.jpg",
     "image": "solo_kart/photo.JPG",
     "piste": "solo_kart/piste.png",
