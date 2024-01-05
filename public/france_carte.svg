@@ -8,6 +8,7 @@
 	.st2{fill:none;stroke:#FFFFFF;stroke-width:0.25;stroke-miterlimit:10;}
 	.st3{fill:none;stroke:#FFFFFF;stroke-width:0.5;stroke-miterlimit:10;}
 	.st4{fill:#0D1D6C;cursor:pointer}
+	.st4.yo{fill:red;cursor:pointer}
 </style>
 <g>
 	<defs>
@@ -364,4 +365,6 @@
 	<ellipse class="st4" cx="100" cy="165.5" rx="10" ry="10" idd="solo_kart" id="piste_11"/>
 	<ellipse class="st4" cx="370" cy="310.5" rx="10" ry="10" idd="crolles" id="piste_2"/>
 	<ellipse class="st4" cx="125" cy="355.5" rx="10" ry="10" idd="magesq" id="piste_7"/>
+	<ellipse class="st4" cx="180" cy="360" rx="10" ry="10" idd="sarron" id="piste_13"/>
+	<ellipse class="st4" cx="165" cy="120" rx="10" ry="10" idd="aunay" id="piste_12"/>
 </svg>
