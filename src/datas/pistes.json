@@ -549,6 +549,59 @@
         "lienReservation": "https://yurplan.com/events/Solokart/115661/tickets/widget?widget=dGlja2V0aW5nV2lkZ2V0WXBfMTEzNjMzXzExNzM1OA%3D%3D&from=widget_117358&wversion=1&culture=fr"
       }
     ]
+  },
+  {
+    "id": 12,
+    "nom": "Ouest Karting – Circuit International d’Aunay",
+    "postal_code": "61",
+    "logo": "ouest_karting/logo.jpg",
+    "image": "ouest_karting/photo.jpg",
+    "piste": "ouest_karting/piste.png",
+    "dates": [
+      {
+        "id": 115855,
+        "date": "2024-02-25",
+        "startTime": "10:00",
+        "endTime": "13:00",
+        "lienReservation": "https://yurplan.com/events/Ouest-Karting-Circuit-International-d-Aunay/115855/tickets/widget?widget=dGlja2V0aW5nV2lkZ2V0WXBfMTEzODI3XzExNzU1Ng%3D%3D&from=widget_117556&wversion=1&culture=fr"
+      },
+      {
+        "id": 115856,
+        "date": "2024-02-25",
+        "startTime": "13:00",
+        "endTime": "16:00",
+        "lienReservation": "https://yurplan.com/events/Ouest-Karting-Circuit-International-d-Aunay/115856/tickets/widget?widget=dGlja2V0aW5nV2lkZ2V0WXBfMTEzODI4XzExNzU1Nw%3D%3D&from=widget_117557&wversion=1&culture=fr"
+      },
+      {
+        "id": 115857,
+        "date": "2024-02-25",
+        "startTime": "16:00",
+        "endTime": "18:00",
+        "lienReservation": "https://yurplan.com/events/Ouest-Karting-Circuit-International-d-Aunay/115857/tickets/widget?widget=dGlja2V0aW5nV2lkZ2V0WXBfMTEzODI5XzExNzU1OA%3D%3D&from=widget_117558&wversion=1&culture=fr"
+      },
+
+      {
+        "id": 115860,
+        "date": "2024-03-03",
+        "startTime": "10:00",
+        "endTime": "13:00",
+        "lienReservation": "https://yurplan.com/events/Ouest-Karting-Circuit-International-d-Aunay/115860/tickets/widget?widget=dGlja2V0aW5nV2lkZ2V0WXBfMTEzODMyXzExNzU2MQ%3D%3D&from=widget_117561&wversion=1&culture=fr"
+      },
+      {
+        "id": 115866,
+        "date": "2024-03-03",
+        "startTime": "13:00",
+        "endTime": "16:00",
+        "lienReservation": "https://yurplan.com/events/Ouest-Karting-Circuit-International-d-Aunay/115866/tickets/widget?widget=dGlja2V0aW5nV2lkZ2V0WXBfMTEzODM4XzExNzU2Nw%3D%3D&from=widget_117567&wversion=1&culture=fr"
+      },
+      {
+        "id": 115867,
+        "date": "2024-03-03",
+        "startTime": "16:00",
+        "endTime": "18:00",
+        "lienReservation": "https://yurplan.com/events/Ouest-Karting-Circuit-International-d-Aunay/115867/tickets/widget?widget=dGlja2V0aW5nV2lkZ2V0WXBfMTEzODM5XzExNzU2OA%3D%3D&from=widget_117568&wversion=1&culture=fr"
+      }
+    ]
   }
 
 ]
