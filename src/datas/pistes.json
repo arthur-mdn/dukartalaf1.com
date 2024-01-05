@@ -602,6 +602,44 @@
         "lienReservation": "https://yurplan.com/events/Ouest-Karting-Circuit-International-d-Aunay/115867/tickets/widget?widget=dGlja2V0aW5nV2lkZ2V0WXBfMTEzODM5XzExNzU2OA%3D%3D&from=widget_117568&wversion=1&culture=fr"
       }
     ]
-  }
+  },
+  {
+    "id": 13,
+    "nom": "Circuit Sarron",
+    "postal_code": "63",
+    "logo": "sarron/logo.png",
+    "image": "sarron/photo.jpg",
+    "piste": "sarron/piste.png",
+    "dates": [
+      {
+        "id": 114199,
+        "date": "2024-02-25",
+        "startTime": "10:00",
+        "endTime": "12:00",
+        "lienReservation": "https://yurplan.com/events/Circuit-Sarron/114199/tickets/widget?widget=dGlja2V0aW5nV2lkZ2V0WXBfMTEyMTcxXzExNTg1OQ%3D%3D&from=widget_115859&wversion=1&culture=fr"
+      },
+      {
+        "id": 116022,
+        "date": "2024-02-25",
+        "startTime": "14:00",
+        "endTime": "17:00",
+        "lienReservation": "https://yurplan.com/events/Circuit-Sarron/116022/tickets/widget?widget=dGlja2V0aW5nV2lkZ2V0WXBfMTEzOTk0XzExNzcyNA%3D%3D&from=widget_117724&wversion=1&culture=fr"
+      },
 
+      {
+        "id": 116024,
+        "date": "2024-03-03",
+        "startTime": "10:00",
+        "endTime": "12:00",
+        "lienReservation": "https://yurplan.com/events/Circuit-Sarron/116024/tickets/widget?widget=dGlja2V0aW5nV2lkZ2V0WXBfMTEzOTk2XzExNzcyNg%3D%3D&from=widget_117726&wversion=1&culture=fr"
+      },
+      {
+        "id": 116025,
+        "date": "2024-03-03",
+        "startTime": "14:00",
+        "endTime": "17:00",
+        "lienReservation": "https://yurplan.com/events/Circuit-Sarron/116025/tickets/widget?widget=dGlja2V0aW5nV2lkZ2V0WXBfMTEzOTk3XzExNzcyNw%3D%3D&from=widget_117727&wversion=1&culture=fr"
+      }
+    ]
+  }
 ]
