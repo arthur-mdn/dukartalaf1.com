@@ -40,7 +40,7 @@ function BoutiqueGallery() {
                                 <h2 className={"white bold"} style={{marginBottom:0}}>{piste.nom}</h2>
                                 <h2 className={"white bold"} style={{marginTop:0}}>({piste.postal_code})</h2>
                             </div>
-                            <img src={`/pistes/${piste.logo}`} alt={piste.nom} style={{maxWidth:'120px'}} />
+                            <img src={`/pistes/${piste.logo}`} alt={piste.nom} style={{maxWidth:'120px', position:"absolute", top:"50%", left:"50%", transform:"translate(-50%,-50%)",zIndex:"-1"}} />
                             <div style={styles.boutique_list_item_button}>
                                 <button type={"button"} key={piste.id}   onClick={() => setModalIsOpen(piste)}>
                                     {translations.book}
