@@ -1,7 +1,5 @@
 import React from "react";
-import {useLanguage} from "../LanguageContext";
 function SecondaryHeroSection({title}) {
-    const { translations } = useLanguage();
 
     return (
         <>

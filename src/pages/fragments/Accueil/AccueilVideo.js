@@ -1,8 +1,6 @@
 import React from "react";
-import {useLanguage} from "../../../LanguageContext";
 
 function AccueilVideo() {
-    const { translations } = useLanguage();
     const iframe_container = {
         left: 0,
         width: "100%",
@@ -21,6 +19,7 @@ function AccueilVideo() {
                 <div style={{width:'calc(100% - 4rem)',maxWidth:'1200px',height:'800px'}}>
                     <div style={iframe_container}>
                         <iframe
+                            title={"Tiktok Teaser"}
                             src="https://www.tiktok.com/embed/7313991494216584481"
                             style={iframe}
                             allowfullscreen

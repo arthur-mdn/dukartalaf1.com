@@ -4,10 +4,9 @@ import pistesData from "../../../datas/pistes.json";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import {FaCaretLeft, FaCaretRight, FaPlay} from "react-icons/fa6";
+import {FaPlay} from "react-icons/fa6";
 
 function AccueilCarousel() {
-    const { translations } = useLanguage();
     // Configuration de base pour le carousel
     const settings = {
         dots: false,
@@ -67,26 +66,26 @@ function AccueilCarousel() {
 }
 
 function SampleNextArrow(props) {
-    const { className, style, onClick } = props;
+    const { onClick } = props;
     const { translations } = useLanguage();
 
     return (
         <button type={"button"}
             className={"button skew with-icon expansiva fr f-c g1 fs1"}
-            style={{position:'absolute', right:"30px",top:'-120px', zIndex:2 }} // Personnalisez selon vos besoins
+            style={{position:'absolute', right:"30px",top:'-120px', zIndex:2 }}
             onClick={onClick}
         ><FaPlay className={"fs1-5 "}/> {translations.next}</button>
     );
 }
 
 function SamplePrevArrow(props) {
-    const { className, style, onClick } = props;
+    const { onClick } = props;
     const { translations } = useLanguage();
 
     return (
         <button type={"button"}
                 className={"button skew-reverse with-icon expansiva fr f-c g1 fs1"}
-            style={{ position:'absolute', left:"30px",bottom:'-120px', zIndex:2}} // Personnalisez selon vos besoins
+            style={{ position:'absolute', left:"30px",bottom:'-120px', zIndex:2}}
             onClick={onClick}
         ><FaPlay className={"fs1-5 "} style={{rotate:'180deg'}}/>{translations.previous}</button>
     );

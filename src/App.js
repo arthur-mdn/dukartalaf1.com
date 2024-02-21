@@ -7,7 +7,7 @@ import Accueil from './pages/Accueil';
 import Boutique from './pages/Boutique';
 import Reglement from './pages/Reglement';
 import Footer from "./components/Footer";
-import { LanguageProvider, useLanguage } from "./LanguageContext";
+import { LanguageProvider } from "./LanguageContext";
 import Menu from "./components/Menu";
 import Mentions from "./pages/Mentions";
 import Rgpd from "./pages/Rgpd";
@@ -38,7 +38,6 @@ function App() {
 }
 
 function MainContent() {
-    const { translations } = useLanguage();
     return (
         <div>
             <Routes>

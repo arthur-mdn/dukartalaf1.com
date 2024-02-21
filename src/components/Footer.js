@@ -9,8 +9,8 @@ function Footer({marginTop = "0"}) {
     return (
         <footer style={{ ...styles.footer, marginTop: marginTop }} className={"fc f-c"}>
             <div className={"fr g1 ai-c jc-c"}>
-                <a target={"_blank"} href={"https://www.agsformule1.com/"}><img src="/logo_white.png" alt="Logo" style={styles.logo} /></a>
-                <a target={"_blank"} href={"https://www.sodikart.com/"}><img src="/logo_sodikart.png" alt="Logo" style={styles.logo} /></a>
+                <a target={"_blank"} rel={"noreferrer"} href={"https://www.agsformule1.com/"}><img src="/logo_white.png" alt="Logo" style={styles.logo} /></a>
+                <a target={"_blank"} rel={"noreferrer"} href={"https://www.sodikart.com/"}><img src="/logo_sodikart.png" alt="Logo" style={styles.logo} /></a>
             </div>
             <LanguageSelector/>
             <ul style={styles.footerNavList}>

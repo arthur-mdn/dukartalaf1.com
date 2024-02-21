@@ -1,8 +1,6 @@
 import React from "react";
 import {useLanguage} from "../LanguageContext";
-import {FaCross} from "react-icons/fa6";
 import {FaTimes} from "react-icons/fa";
-import Footer from "./Footer";
 import LanguageSelector from "./LanguageSelector";
 
 function Menu({isMenuOpen, setIsMenuOpen}) {

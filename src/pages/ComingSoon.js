@@ -1,8 +1,5 @@
 import React from "react";
-import SecondaryHeroSection from "../components/SecondaryHeroSection";
 import {useLanguage} from "../LanguageContext";
-import ReglementSection from "./fragments/Reglement/ReglementSection";
-import {FaFacebookF, FaInstagram, FaTiktok, FaYoutube} from "react-icons/fa6";
 
 function ComingSoon() {
     const { translations } = useLanguage();
