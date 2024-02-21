@@ -13,7 +13,7 @@ function ReglementSection() {
                     </p>
                 </div>
                 <div className={'fr f-c'}>
-                    <a href="/docs/reglement_du_kart_a_la_f1_2024.pdf" download className={"button expansiva white center skew"}>{translations.seeRules}</a>
+                    <a href="/docs/reglement_du_kart_a_la_f1_2024_v8.pdf" download className={"button expansiva white center skew"}>{translations.seeRules}</a>
                 </div>
             </article>
         </section>
