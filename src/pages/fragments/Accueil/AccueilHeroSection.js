@@ -10,8 +10,9 @@ function AccueilHeroSection() {
             <section style={styles.home_hero_section} id={"home_hero_section"} >
                 <div style={styles.beforeStyle} id={"home_header"}> <div style={styles.overlay} id={"home_header_overlay"}></div></div> {/* Agit comme un pseudo-élément :before */}
                 <h1 className={"expansiva white center fs3-5"}>{translations.fromKartToF}</h1>
+                <p className={"white center"}>2ème édition</p>
                 <div className={'fr f-c'}>
-                    <a href={"inscription"} className={"button expansiva white center fs1-5"}>{translations.reserveYourPlace}</a>
+                    <a href={"#AccueilContactForm"} className={"button expansiva white center fs1-5"}>{translations.stayConnected}</a>
                 </div>
                 {/*<div style={styles.carsContainer} className={"carsContainer"}>*/}
                 {/*    <img src={"/kart.png"} alt="kart" style={styles.carsIllustration}/>*/}

@@ -26,12 +26,12 @@ function ContactForm() {
     return (
         <>
             <br/>
-            <a className={"button fr ai-c g1"} href={"mailto:event@agsracing.com"}>
+            <a className={"button fr ai-c g1"} href={"mailto:dukartalaf1@agsracing.com"}>
                 <FaEnvelope/>
                 {translations.contactUsByMail}
             </a>
             <br/>
-            <p>Adresse Email : <a href={"mailto:event@agsracing.com"}>event@agsracing.com</a></p>
+            <p>Adresse Email : <a href={"mailto:dukartalaf1@agsracing.com"}>dukartalaf1@agsracing.com</a></p>
             <br/>
         </>
 

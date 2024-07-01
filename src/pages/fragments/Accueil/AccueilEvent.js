@@ -40,13 +40,16 @@ function AccueilEvent() {
                             <li>
                                 {translations.newEventDescription4ListElement4}
                             </li>
+                            <li>
+                                {translations.newEventDescription4ListElement5}
+                            </li>
+                            <li>
+                                {translations.newEventDescription4ListElement6}
+                            </li>
                         </ul>
                     </div>
                     <br/>
                     <br/>
-                    <div className={'fr'}>
-                        <a href={"inscription"} className={"button expansiva white center skew"}>{translations.register}</a>
-                    </div>
                 </div>
 
                 <img src={"/kart_race.jpg"} alt={"kart race"} style={styles.polygonImage} id={"polygon_image"}/>

@@ -14,9 +14,9 @@ function Footer({marginTop = "0"}) {
             </div>
             <LanguageSelector/>
             <ul style={styles.footerNavList}>
-                <li>
-                    <a href="/reglement" rel="noreferrer" style={styles.footertNavLink}> {translations.rules} </a>
-                </li>
+                {/*<li>*/}
+                {/*    <a href="/reglement" rel="noreferrer" style={styles.footertNavLink}> {translations.rules} </a>*/}
+                {/*</li>*/}
                 <li>
                     <a href="/" rel="noreferrer" style={styles.footertNavLink}> {translations.home} </a>
                 </li>

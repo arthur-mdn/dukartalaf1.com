@@ -8,16 +8,11 @@ function AccueilGift() {
         <section style={styles.gift_section} >
             <article>
                 <div className={" fr fw-w jc-c column_on_mobile"}>
-                    <h1 className={"expansiva fs2"}>{translations.giftPrizeTitle1}</h1>
-                    <h1 className={"expansiva fs2"}>{translations.giftPrizeTitle2}</h1>
-                    <h1 className={"expansiva fs2 tw"}>{translations.giftPrizeTitle3}</h1>
+                    <h1 className={"expansiva fs2 tw-w"}>{translations.giftPrizeTitle}</h1>
                 </div>
 
                 <p className={"o-8"}>
-                    {translations.giftPrize1}
-                </p>
-                <p className={"o-8"}>
-                    {translations.giftPrize2}
+                    {translations.giftPrize}
                 </p>
             </article>
         </section>

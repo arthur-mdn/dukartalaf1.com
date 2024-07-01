@@ -18,8 +18,8 @@ function Menu({isMenuOpen, setIsMenuOpen}) {
                 </div>
                 <div className={"fc f-c w100 mt-50 g2"} style={{ marginBottom:'4rem'}}>
                     <a href="/" rel="noreferrer" style={styles.menuNavLink} className={"expansiva-bold"}> {translations.home} </a>
-                    <a href="/inscription" rel="noreferrer" style={styles.menuNavLink} className={"expansiva-bold"}> {translations.register} </a>
-                    <a href="/reglement" rel="noreferrer" style={styles.menuNavLink} className={"expansiva-bold"}> {translations.rules} </a>
+                    {/*<a href="/inscription" rel="noreferrer" style={styles.menuNavLink} className={"expansiva-bold"}> {translations.register} </a>*/}
+                    {/*<a href="/reglement" rel="noreferrer" style={styles.menuNavLink} className={"expansiva-bold"}> {translations.rules} </a>*/}
                     <a href="/contact" rel="noreferrer" style={styles.menuNavLink} className={"expansiva-bold"}> {translations.contact} </a>
                     <LanguageSelector className={"show_mobile"}/>
                 </div>
