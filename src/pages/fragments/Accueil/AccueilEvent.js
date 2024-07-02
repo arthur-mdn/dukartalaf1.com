@@ -21,7 +21,19 @@ function AccueilEvent() {
                         <h3 className={"fs1-5"}>{translations.newEventTitle2}</h3>
 
                         <p>
-                            {translations.newEventDescription3}
+                            {translations.newEventDescription31}
+                        </p>
+                        <p>
+                            {translations.newEventDescription32}
+                        </p>
+                        <p>
+                            {translations.newEventDescription33}
+                        </p>
+                        <p>
+                            {translations.newEventDescription34}
+                        </p>
+                        <p>
+                            {translations.newEventDescription35}
                         </p>
                         <h3 className={"fs1-5"}>{translations.newEventTitle3}</h3>
                         <p>

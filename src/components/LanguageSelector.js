@@ -16,7 +16,7 @@ function LanguageSelector({className = ""}) {
                 <img src={`/fr.png`} alt="Logo" style={styles.flag} />
             </button>
             <button type={"button"} style={styles.languageSelectorButton} className={"languageSelectorButton"} disabled={language === "en"} onClick={() => handleLanguageChange("en")}>
-                <img src={`/en.png`} alt="Logo" style={styles.flag} />
+                <img src={`/uk.svg`} alt="Logo" style={styles.flag} />
             </button>
         </div>
     );
