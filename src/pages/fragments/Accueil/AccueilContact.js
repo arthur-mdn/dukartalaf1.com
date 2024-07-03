@@ -4,7 +4,7 @@ import { useForm, ValidationError } from '@formspree/react';
 
 function ContactForm() {
     const { translations } = useLanguage();
-    const [state, handleSubmit] = useForm("meojqobe");
+    const [state, handleSubmit] = useForm("xgvweyqw");
     if (state.succeeded) {
         return <p>{translations.registered}</p>;
     }
