@@ -163,6 +163,15 @@ button.skew-reverse::after, .button.skew-reverse::after{
   display: flex;
     flex-direction: row;
 }
+.fw-b{
+  font-weight: bold;
+}
+.cr{
+  color: red;
+}
+.clr{
+  color: #ff8787;
+}
 .fc{
   display: flex;
   flex-direction: column;

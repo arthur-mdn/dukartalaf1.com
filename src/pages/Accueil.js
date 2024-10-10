@@ -12,7 +12,7 @@ function Accueil() {
             <AccueilHeroSection/>
             <AccueilEvent/>
             <AccueilGift/>
-            {/*<AccueilTracks/>*/}
+            <AccueilTracks/>
             {/*<AccueilCarousel/>*/}
             <AccueilContact/>
             <AccueilVideo/>

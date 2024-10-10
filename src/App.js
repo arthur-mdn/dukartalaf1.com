@@ -38,18 +38,21 @@ function App() {
 }
 
 function MainContent() {
+    // console.log(
+    //     `%cAttention : La date de paiement prévue pour le développement et le déploiement de ce site était le 03 Juillet 2024, et elle n'a pas été respectée.`,
+    //     'color: red; font-size: 16px;'
+    // );
     return (
         <div>
             <Routes>
                 <Route path="/" element={<Accueil />}/>
-                <Route path="/inscription" element={<Boutique />} />
-                <Route path="/inscription/:pisteId" element={<Boutique />} />
+                {/*<Route path="/inscription" element={<Boutique />} />*/}
+                {/*<Route path="/inscription/:pisteId" element={<Boutique />} />*/}
                 <Route path="/reglement" element={<Reglement />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/mentions-legales" element={<Mentions />} />
                 <Route path="/rgpd" element={<Rgpd />} />
                 <Route path="/coming-soon" element={<ComingSoon />} />
-                {/* Définissez les autres routes ici */}
                 <Route path="*" element={<NotFound />} />
             </Routes>
         </div>

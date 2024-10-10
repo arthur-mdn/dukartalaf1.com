@@ -7,6 +7,8 @@ function AccueilTracks() {
     const [imageView, setImageView] = React.useState("");
     const [selectedTrackId, setSelectedTrackId] = React.useState(null);
     const [selectedTrackImage, setSelectedTrackImage] = React.useState("");
+    const [selectedTrackPiste, setSelectedTrackPiste] = React.useState("");
+    const [selectedTrackLogo, setSelectedTrackLogo] = React.useState("");
     const [selectedTrackTitle, setSelectedTrackTitle] = React.useState("");
 
     const fetchSvg = async (edit = false) => {
@@ -15,7 +17,7 @@ function AccueilTracks() {
             if (response.ok) {
                 let svgText = await response.text();
                 if (edit){
-                    svgText = svgText.replace(/<ellipse /g, `<ellipse onclick="handleEllipseClick(event)" `);
+                    svgText = svgText.replace(/<circle /g, `<circle onmouseover="handleEllipseClick(event)" onclick="handleEllipseClick(event)" `);
                 }
                 setImageView(svgText);
             } else {
@@ -31,6 +33,7 @@ function AccueilTracks() {
     }, []);
 
     window.handleEllipseClick = (event) => {
+        console.log(event.target.id);
         const trackId = event.target.id;
         const trackNumber = parseInt(trackId.split("_")[1]);
 
@@ -39,9 +42,10 @@ function AccueilTracks() {
         if (trackData) {
             console.log(trackData)
             event.target.classList.add("selected");
-            const trackImagePath = `/pistes/${trackData.piste}`;
             setSelectedTrackId(trackData.id);
-            setSelectedTrackImage(trackImagePath);
+            setSelectedTrackImage(`/pistes/${trackData.image}`);
+            setSelectedTrackPiste(`/pistes/${trackData.piste}`);
+            setSelectedTrackLogo(`/pistes/${trackData.logo}`);
             setSelectedTrackTitle(trackData.nom);
         }
     };
@@ -61,7 +65,11 @@ function AccueilTracks() {
                             <div style={styles.damierAfter}> <div style={styles.damierAfterOverlay}></div></div>
                         </div>
                         <div style={{backgroundColor:'#000', padding:'4rem 2rem 2rem', borderRadius:'2rem',position:"relative", minWidth:"30vw", display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"center"}}>
-                            {selectedTrackImage && <><h3 className={"white"} style={{position:"absolute",top:0, textAlign:"center",width:"calc(100% - 4rem)"}}>{selectedTrackTitle}</h3><img src={selectedTrackImage} alt="Selected Track" style={{width:'100%', maxWidth:'300px'}} /><a  href={`/inscription/${selectedTrackId}`} className={"button white"} style={{ textAlign:"center", backgroundColor:"#333"}}>{translations.book}</a></>}
+                            {selectedTrackImage && <>
+                                <h3 className={"white"} style={{position:"absolute",top:0, textAlign:"center",width:"calc(100% - 4rem)"}}>{selectedTrackTitle}</h3>
+                                <img src={selectedTrackImage} alt="Selected Track" style={{width:'100%', maxWidth:'300px'}} />
+                                {/*<a  href={`/inscription/${selectedTrackId}`} className={"button white"} style={{ textAlign:"center", backgroundColor:"#333"}}>{translations.book}</a>*/}
+                            </>}
                             {!selectedTrackImage && <h3 className={"white"} style={{position:"absolute", marginTop:"-1rem",textAlign:"center",width:"calc(100% - 4rem)"}}>{translations.selectTrack}</h3>}
                         </div>
                     </div>

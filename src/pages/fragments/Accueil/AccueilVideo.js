@@ -20,9 +20,9 @@ function AccueilVideo() {
                     <div style={iframe_container}>
                         <iframe
                             title={"Tiktok Teaser"}
-                            src="https://www.tiktok.com/embed/7313991494216584481"
+                            src="https://www.tiktok.com/embed/7328445330477927712"
                             style={iframe}
-                            allowfullscreen
+                            allowFullScreen
                             scrolling="no"
                             allow="encrypted-media;"
                         ></iframe>

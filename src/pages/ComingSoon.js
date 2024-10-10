@@ -45,7 +45,7 @@ const styles = {
     },
     logo: {
         width:'100%',
-        maxWidth: '205px', // Ajustez selon la taille de votre logo
+        maxWidth: '205px', // Ajustez selon la taille de votre logo.png
         maxHeight: '100%', // Ajustez si nécessaire
         marginLeft: '10px', // Espace à gauche
     },

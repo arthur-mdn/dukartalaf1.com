@@ -11,35 +11,26 @@ function AccueilEvent() {
                 <div>
                     <h1 className={"expansiva-bold fs2"}>{translations.newEvent}</h1>
                     <div className={"fc"} style={styles.polygonText}>
+                        <h3 className={"fs1-5"}>{translations.newEventTitle5}</h3>
+                        <p dangerouslySetInnerHTML={{
+                            __html: translations.newEventDescription51
+                        }}>
+                        </p>
                         <p>
-                            {translations.newEventDescription1}
+                            {translations.newEventDescription52}
+                        </p>
+                        <p>
+                            {translations.newEventDescription53}
                         </p>
                         <h3 className={"fs1-5"}>{translations.newEventTitle1}</h3>
                         <p>
                             {translations.newEventDescription2}
                         </p>
                         <h3 className={"fs1-5"}>{translations.newEventTitle2}</h3>
-
                         <p>
-                            {translations.newEventDescription31}
+                            {translations.newEventDescription3}
                         </p>
-                        <p>
-                            {translations.newEventDescription32}
-                        </p>
-                        <p>
-                            {translations.newEventDescription33}
-                        </p>
-                        <p>
-                            {translations.newEventDescription34}
-                        </p>
-                        <p>
-                            {translations.newEventDescription35}
-                        </p>
-                        <h3 className={"fs1-5"}>{translations.newEventTitle3}</h3>
-                        <p>
-                            {translations.newEventDescription4}
-                        </p>
-                        <ul style={{listStyle:"disc", paddingLeft:"3rem"}}>
+                        <ul style={{listStyle: "disc", paddingLeft: "3rem"}}>
                             <li>
                                 {translations.newEventDescription4ListElement1}
                             </li>
@@ -59,6 +50,44 @@ function AccueilEvent() {
                                 {translations.newEventDescription4ListElement6}
                             </li>
                         </ul>
+
+                        <p dangerouslySetInnerHTML={{
+                            __html: translations.newEventDescription31
+                        }}>
+                        </p>
+                        <p dangerouslySetInnerHTML={{
+                            __html: translations.newEventDescription32
+                        }}>
+                        </p>
+                        <p dangerouslySetInnerHTML={{
+                            __html: translations.newEventDescription33
+                        }}>
+                        </p>
+                        <p dangerouslySetInnerHTML={{
+                            __html: translations.newEventDescription34
+                        }}>
+                        </p>
+                        <p dangerouslySetInnerHTML={{
+                            __html: translations.newEventDescription35
+                        }}>
+                        </p>
+                        <p dangerouslySetInnerHTML={{
+                            __html: translations.newEventDescription36
+                        }}>
+                        </p>
+
+                        <p dangerouslySetInnerHTML={{
+                            __html: translations.newEventDescription37
+                        }}>
+                        </p>
+                        <h3 className={"fs1-5"}>{translations.newEventTitle3}</h3>
+                        <p>
+                            {translations.newEventDescription4}
+                        </p>
+                        <h3 className={"fs1-5"}>{translations.newEventTitle4}</h3>
+                        <p>
+                            {translations.newEventDescription5}
+                        </p>
                     </div>
                     <br/>
                     <br/>
@@ -80,8 +109,8 @@ const styles = {
         flexDirection: 'row',
         width: '100%',
         position: 'relative',
-        paddingTop:'100px',
-        paddingBottom:'80px',
+        paddingTop: '100px',
+        paddingBottom: '80px',
         overflowX: 'clip',
     },
     damierBefore: {
@@ -90,7 +119,7 @@ const styles = {
         top: 0,
         left: 0,
         width: '100%',
-        height:"50px",
+        height: "50px",
         backgroundColor: "#fff",
         backgroundImage: "linear-gradient(45deg, black 25%, transparent 26%, transparent 75%, black 75%), linear-gradient(45deg, black 25%, transparent 26%, transparent 75%, black 75%)",
         backgroundSize: "50px 50px",
