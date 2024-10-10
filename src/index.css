@@ -186,6 +186,9 @@ button.skew-reverse::after, .button.skew-reverse::after{
 .g2{
   gap: 2rem;
 }
+.jc-c{
+  justify-content: center;
+}
 .jc-sb{
   justify-content: space-between;
 }

@@ -9,7 +9,7 @@ function Footer({marginTop = "0"}) {
 
     return (
         <footer style={{...styles.footer, marginTop: marginTop}} className={"fc f-c"}>
-            <div className={"fr g1 ai-c jc-c"}>
+            <div className={"fr g1 ai-c jc-c fw-w"}>
                 <a target={"_blank"} rel={"noreferrer"} href={"https://www.agsformule1.com/"}><img src="/logo_white.png"
                                                                                                    alt="Logo"
                                                                                                    style={styles.logo}/></a>
@@ -20,6 +20,9 @@ function Footer({marginTop = "0"}) {
                                                                                                    alt="Logo"
                                                                                                    style={styles.logo}/></a>
                 <a target={"_blank"} rel={"noreferrer"} href={"https://kspreportages.com/"}><img src="/ksp.png"
+                                                                                                   alt="Logo"
+                                                                                                   style={styles.logo}/></a>
+                <a target={"_blank"} rel={"noreferrer"} href={"https://www.grandprixdefrancehistorique.com/"}><img src="/grandprixdefrancehistorique.png"
                                                                                                    alt="Logo"
                                                                                                    style={styles.logo}/></a>
 
