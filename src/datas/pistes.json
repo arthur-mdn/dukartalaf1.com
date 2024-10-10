@@ -542,5 +542,39 @@
         "lienReservation": "https://yurplan.com/events/Selest-Kart-In/116591/tickets/widget?widget=dGlja2V0aW5nV2lkZ2V0WXBfMTE0NTYzXzExODI5Nw%3D%3D&from=widget_118297&wversion=1&culture=fr"
       }
     ]
+  },
+  {
+    "id": 38,
+    "nom": "Karting de Caudecoste",
+    "postal_code": "83",
+    "logo": "caudecoste/logo.png",
+    "image": "caudecoste/photo.png",
+    "piste": "caudecoste/piste.png",
+    "dates": [
+      {
+        "id": 116591,
+        "date": "2024-02-25",
+        "startTime": "10:00",
+        "endTime": "12:00",
+        "lienReservation": "https://yurplan.com/events/Selest-Kart-In/116591/tickets/widget?widget=dGlja2V0aW5nV2lkZ2V0WXBfMTE0NTYzXzExODI5Nw%3D%3D&from=widget_118297&wversion=1&culture=fr"
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "nom": "Sens Espaces Karting SARL",
+    "postal_code": "89",
+    "logo": "sek/logo.png",
+    "image": "sek/photo.png",
+    "piste": "sek/piste.png",
+    "dates": [
+      {
+        "id": 116591,
+        "date": "2024-02-25",
+        "startTime": "10:00",
+        "endTime": "12:00",
+        "lienReservation": "https://yurplan.com/events/Selest-Kart-In/116591/tickets/widget?widget=dGlja2V0aW5nV2lkZ2V0WXBfMTE0NTYzXzExODI5Nw%3D%3D&from=widget_118297&wversion=1&culture=fr"
+      }
+    ]
   }
 ]
