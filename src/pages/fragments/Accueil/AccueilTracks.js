@@ -67,7 +67,7 @@ function AccueilTracks() {
                         <div style={{backgroundColor:'#000', padding:'4rem 2rem 2rem', borderRadius:'2rem',position:"relative", minWidth:"30vw", display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"center"}}>
                             {selectedTrackImage && <>
                                 <h3 className={"white"} style={{position:"absolute",top:0, textAlign:"center",width:"calc(100% - 4rem)"}}>{selectedTrackTitle}</h3>
-                                <img src={selectedTrackImage} alt="Selected Track" style={{width:'100%', maxWidth:'300px'}} />
+                                <img src={selectedTrackImage} alt="Selected Track" style={{width:'100%', maxWidth:'350px', height:'100%',maxHeight:'300px', objectFit:'cover',borderRadius:'1rem'}} />
                                 {/*<a  href={`/inscription/${selectedTrackId}`} className={"button white"} style={{ textAlign:"center", backgroundColor:"#333"}}>{translations.book}</a>*/}
                             </>}
                             {!selectedTrackImage && <h3 className={"white"} style={{position:"absolute", marginTop:"-1rem",textAlign:"center",width:"calc(100% - 4rem)"}}>{translations.selectTrack}</h3>}
