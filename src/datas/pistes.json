@@ -52,7 +52,7 @@
   },
   {
     "id": 9,
-    "nom": "Pôle mécanique d'Alès",
+    "nom": "Pôle mécanique Alès",
     "postal_code": "30",
     "logo": "ales_pole_mecanique/logo.jpg",
     "image": "ales_pole_mecanique/photo.jpg",
@@ -69,7 +69,7 @@
   },
   {
     "id": 10,
-    "nom": "RKC",
+    "nom": "Racing Kart Cormeilles",
     "postal_code": "95",
     "logo": "rkc/logo.jpg",
     "image": "rkc/photo.png",
@@ -154,7 +154,7 @@
   },
   {
     "id": 15,
-    "nom": "CKC (Circuit Karting Besançon)",
+    "nom": "Circuit Karting Besançon",
     "postal_code": "70",
     "logo": "ckb/logo.jpg",
     "image": "ckb/photo.png",
@@ -307,7 +307,7 @@
   },
   {
     "id": 24,
-    "nom": "Racing Kart Organisation (RKO)",
+    "nom": "Racing Kart Organisation",
     "postal_code": "91",
     "logo": "rko/logo.png",
     "image": "rko/photo.png",
@@ -443,7 +443,7 @@
   },
   {
     "id": 32,
-    "nom": "KARTING LA ROCHE DE GLUN",
+    "nom": "Karting La Roche De Glun",
     "postal_code": "26",
     "logo": "glun/logo.png",
     "image": "glun/photo.png",
