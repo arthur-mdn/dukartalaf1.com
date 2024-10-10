@@ -1,6 +1,7 @@
-import React, {useEffect} from "react";
+import React, {useEffect, useState} from "react";
 import {useLanguage} from "../../../LanguageContext";
 import pistesData from "../../../datas/pistes.json";
+import EventModal from "../../../components/modal/EventModal";
 
 function AccueilTracks() {
     const { translations } = useLanguage();
@@ -10,6 +11,8 @@ function AccueilTracks() {
     const [selectedTrackPiste, setSelectedTrackPiste] = React.useState("");
     const [selectedTrackLogo, setSelectedTrackLogo] = React.useState("");
     const [selectedTrackTitle, setSelectedTrackTitle] = React.useState("");
+    const [selectedTrack, setSelectedTrack] = React.useState(null);
+    const [eventModalIsOpen, setEventModalIsOpen] = useState('null');
 
     const fetchSvg = async (edit = false) => {
         try {
@@ -47,6 +50,7 @@ function AccueilTracks() {
             setSelectedTrackPiste(`/pistes/${trackData.piste}`);
             setSelectedTrackLogo(`/pistes/${trackData.logo}`);
             setSelectedTrackTitle(trackData.nom);
+            setSelectedTrack(trackData);
         }
     };
 
@@ -66,11 +70,16 @@ function AccueilTracks() {
                         </div>
                         <div style={{backgroundColor:'#000', padding:'4rem 2rem 2rem', borderRadius:'2rem',position:"relative", minWidth:"30vw", display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"center"}}>
                             {selectedTrackImage && <>
-                                <h3 className={"white"} style={{position:"absolute",top:0, textAlign:"center",width:"calc(100% - 4rem)"}}>{selectedTrackTitle}</h3>
-                                <img src={selectedTrackImage} alt="Selected Track" style={{width:'100%', maxWidth:'350px', height:'100%',maxHeight:'300px', objectFit:'cover',borderRadius:'1rem'}} />
+                                <h3 className={"white"} style={{position: "absolute", top: 0, textAlign: "center", width: "calc(100% - 4rem)"}}>{selectedTrackTitle}</h3>
+                                <img src={selectedTrackImage} alt="Selected Track" style={{width: '100%', maxWidth: '350px', height: '100%', maxHeight: '300px', objectFit: 'cover', borderRadius: '1rem'}}/>
+                                {/*<button type={"button"} className={"expansiva fs1"} key={selectedTrack.dates[0].id}*/}
+                                {/*        onClick={() => setEventModalIsOpen(selectedTrack.dates[0])}*/}
+                                {/*>*/}
+                                {/*    {translations.book}*/}
+                                {/*</button>*/}
                                 {/*<a  href={`/inscription/${selectedTrackId}`} className={"button white"} style={{ textAlign:"center", backgroundColor:"#333"}}>{translations.book}</a>*/}
                             </>}
-                            {!selectedTrackImage && <h3 className={"white"} style={{position:"absolute", marginTop:"-1rem",textAlign:"center",width:"calc(100% - 4rem)"}}>{translations.selectTrack}</h3>}
+                            {!selectedTrackImage && <h3 className={"white"} style={{position: "absolute", marginTop: "-1rem", textAlign: "center", width: "calc(100% - 4rem)"}}>{translations.selectTrack}</h3>}
                         </div>
                     </div>
                 </div>
@@ -78,6 +87,26 @@ function AccueilTracks() {
 
             </article>
 
+
+            <EventModal isOpen={eventModalIsOpen} maxWidth={"93%"} zIndex={99999} title={translations.chooseDate} onClose={() => setEventModalIsOpen("null")}>
+                <div className={"fc f-c "} style={{height:'100%', width:'100%'}}>
+                    {eventModalIsOpen.date && (
+                        <>
+
+                            <iframe
+                                title={"Réserver"}
+                                id={`yurplan-widget-${eventModalIsOpen.id}`}
+                                src={`${eventModalIsOpen.lienReservation}`}
+                                width={"100%"}
+                                height={"100%"}
+                            >
+                            </iframe>
+                        </>
+
+
+                    )}
+                </div>
+            </EventModal>
         </section>
     );
 }

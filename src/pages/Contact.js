@@ -22,7 +22,7 @@ function Contact() {
 }
 
 function ContactForm() {
-    const { translations } = useLanguage();
+    const {translations} = useLanguage();
     return (
         <>
             <br/>
