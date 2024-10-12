@@ -5,7 +5,7 @@ function EventModal({ isOpen, onClose, children, title, maxHeight = "90vh",width
     if (!isOpen || isOpen === "null") return null;
 
     return (
-        <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+        <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}} className={"event-modale"}>
             <div className={'modal_bg'} style={{zIndex:zIndex}}>
                 <div className={'modal'} style={{maxWidth:maxWidth, maxHeight: maxHeight, width:width,height:'77vh', marginBottom: marginBottom, position:"relative"}}>
                     <div className={'modal_content_title'}>

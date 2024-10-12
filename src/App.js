@@ -13,6 +13,7 @@ import Mentions from "./pages/Mentions";
 import Rgpd from "./pages/Rgpd";
 import Contact from "./pages/Contact";
 import ComingSoon from "./pages/ComingSoon";
+import RegisterWidget from "./components/RegisterWidget";
 
 function App() {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -46,7 +47,7 @@ function MainContent() {
         <div>
             <Routes>
                 <Route path="/" element={<Accueil />}/>
-                {/*<Route path="/inscription" element={<Boutique />} />*/}
+                <Route path="/inscription" element={<Boutique />} />
                 {/*<Route path="/inscription/:pisteId" element={<Boutique />} />*/}
                 <Route path="/reglement" element={<Reglement />} />
                 <Route path="/contact" element={<Contact />} />
@@ -55,6 +56,7 @@ function MainContent() {
                 <Route path="/coming-soon" element={<ComingSoon />} />
                 <Route path="*" element={<NotFound />} />
             </Routes>
+            <RegisterWidget/>
         </div>
     );
 }

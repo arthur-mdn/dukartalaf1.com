@@ -494,6 +494,16 @@ section{
   section article div div.fc, section article p{
     margin-left: 0!important;
   }
+
+  .registerWidget img{
+    width: 6rem!important;
+    height: 6rem!important;
+  }
+  .registerWidget div{
+    font-size: 1rem!important;
+    padding: 0.6rem!important;
+    border-radius: 0.5rem!important;
+  }
 }
 .ai-c{
     align-items: center;
@@ -560,4 +570,108 @@ gap: 0 1rem;
 .tw-w{
   white-space: wrap!important;
   text-wrap: wrap!important;
+}
+.event-modale{
+  position: relative;
+}
+.event-modale:after{
+  content: 'Chargement ...';
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    font-weight: bold;
+  z-index: 999999999;
+  animation: hideModale 0.5s 2s forwards;
+}
+
+@keyframes hideModale {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.registerWidget{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 999999999;
+    padding: 1rem;
+    color: white;
+    transition: 0.2s all;
+  display: flex;
+    flex-direction: column;
+  align-items: flex-end;
+  gap: 1rem;
+  pointer-events: none;
+}
+
+.registerWidget img{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+  pointer-events: auto;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.registerWidget div{
+  background-color: #3075f7;
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  position: relative;
+  animation: fadeIn 0.5s forwards, jump 3s infinite;
+  pointer-events: auto;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.registerWidget div:hover, .registerWidget img:hover{
+    opacity: 0.8!important;
+
+}
+.registerWidget div:before {
+  content: "";
+  display: block;
+  width: 0;
+  border-width: 15px 15px 0px 15px;
+  border-color: #3075f7 transparent;
+  border-style: solid;
+  position: absolute;
+  bottom: -15px;
+  right: 20%;
+  transform: translateX(50%);
+}
+
+.registerWidget div h2, .registerWidget div p{
+    margin: 0;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes jump {
+  15% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-10px);
+  }
+  35% {
+    transform: translateY(0);
+  }
 }

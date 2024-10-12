@@ -72,11 +72,11 @@ function AccueilTracks() {
                             {selectedTrackImage && <>
                                 <h3 className={"white"} style={{position: "absolute", top: 0, textAlign: "center", width: "calc(100% - 4rem)"}}>{selectedTrackTitle}</h3>
                                 <img src={selectedTrackImage} alt="Selected Track" style={{width: '100%', maxWidth: '350px', height: '100%', maxHeight: '300px', objectFit: 'cover', borderRadius: '1rem'}}/>
-                                {/*<button type={"button"} className={"expansiva fs1"} key={selectedTrack.dates[0].id}*/}
-                                {/*        onClick={() => setEventModalIsOpen(selectedTrack.dates[0])}*/}
-                                {/*>*/}
-                                {/*    {translations.book}*/}
-                                {/*</button>*/}
+                                <button type={"button"} className={"expansiva fs1"} key={selectedTrack.dates[0].id}
+                                        onClick={() => setEventModalIsOpen(selectedTrack.dates[0])}
+                                >
+                                    {translations.book}
+                                </button>
                                 {/*<a  href={`/inscription/${selectedTrackId}`} className={"button white"} style={{ textAlign:"center", backgroundColor:"#333"}}>{translations.book}</a>*/}
                             </>}
                             {!selectedTrackImage && <h3 className={"white"} style={{position: "absolute", marginTop: "-1rem", textAlign: "center", width: "calc(100% - 4rem)"}}>{translations.selectTrack}</h3>}
@@ -89,7 +89,7 @@ function AccueilTracks() {
 
 
             <EventModal isOpen={eventModalIsOpen} maxWidth={"93%"} zIndex={99999} title={translations.chooseDate} onClose={() => setEventModalIsOpen("null")}>
-                <div className={"fc f-c "} style={{height:'100%', width:'100%'}}>
+                <div className={"fc f-c"} style={{height:'100%', width:'100%'}}>
                     {eventModalIsOpen.date && (
                         <>
 

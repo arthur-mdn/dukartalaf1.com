@@ -38,7 +38,7 @@
     "nom": "OnlyKart",
     "postal_code": "01",
     "logo": "onlykart/logo.jpg",
-    "image": "onlykart/photo.PNG",
+    "image": "onlykart/photo.png",
     "piste": "onlykart/piste.png",
     "dates": [
       {
@@ -562,7 +562,7 @@
   },
   {
     "id": 39,
-    "nom": "Sens Espaces Karting SARL",
+    "nom": "Sens Espaces Karting",
     "postal_code": "89",
     "logo": "sek/logo.png",
     "image": "sek/photo.png",
