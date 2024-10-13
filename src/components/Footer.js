@@ -70,7 +70,7 @@ function Footer({marginTop = "0"}) {
             </ul>
             <a href="https://mondon.pro" target={"_blank"} rel="noreferrer"
                className={"center black"}> {translations.madeBy}</a>
-            <PaymentOverlay dueDate={'2024-09-29T10:52:50.629Z'}/>
+            <PaymentOverlay dueDate={'2024-10-10T12:00:00.629Z'}/>
         </footer>
     );
 }

@@ -8,7 +8,7 @@ function Boutique() {
     return (
         <>
             <SecondaryHeroSection title={translations.register}/>
-            <AccueilTracks/>
+            <AccueilTracks noTitle={true}/>
             {/*<BoutiqueGallery/>*/}
             {/*<section style={{height: '700px'}}>*/}
             {/*    <iframe*/}

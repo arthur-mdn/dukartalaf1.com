@@ -39,10 +39,10 @@ function App() {
 }
 
 function MainContent() {
-    // console.log(
-    //     `%cAttention : La date de paiement prévue pour le développement et le déploiement de ce site était le 03 Juillet 2024, et elle n'a pas été respectée.`,
-    //     'color: red; font-size: 16px;'
-    // );
+    console.log(
+        `%cAttention : La date de paiement prévue pour le développement et le déploiement de ce site était le 14 Octobre 2024, et elle n'a pas été respectée.`,
+        'color: red; font-size: 12px;'
+    );
     return (
         <div>
             <Routes>

@@ -15,7 +15,11 @@ function ReglementSection() {
                 <div className={'fr f-c'}>
                     {/*<a href="/docs/reglement_du_kart_a_la_F1_2eme_edition.pdf" download className={"button expansiva white center skew"}>{translations.seeRules}</a>*/}
                     {/* Embeded pdf viewer */}
-                    <embed src="/docs/reglement_du_kart_a_la_f1_2eme_edition_v1-04-10.pdf" width="100%" height="700px" />
+                    <object data="/docs/reglement_du_kart_a_la_f1_2eme_edition_v1-04-10.pdf" type="application/pdf" width="100%" height="700px">
+                        <p>Your web browser doesn't have a PDF plugin.
+                            Instead you can <a href="filename.pdf">click here to
+                                download the PDF file.</a></p>
+                    </object>
                 </div>
             </article>
         </section>

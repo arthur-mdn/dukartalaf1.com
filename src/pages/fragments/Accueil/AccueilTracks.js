@@ -3,7 +3,7 @@ import {useLanguage} from "../../../LanguageContext";
 import pistesData from "../../../datas/pistes.json";
 import EventModal from "../../../components/modal/EventModal";
 
-function AccueilTracks() {
+function AccueilTracks({noTitle = false}) {
     const { translations } = useLanguage();
     const [imageView, setImageView] = React.useState("");
     const [selectedTrackId, setSelectedTrackId] = React.useState(null);
@@ -59,7 +59,7 @@ function AccueilTracks() {
     return (
         <section style={styles.event_section} >
             <article>
-                <h1 className={"expansiva-bold fs2"}>{translations.tracks}</h1>
+                {(!noTitle) && <h1 className={"expansiva-bold fs2"}>{translations.tracks}</h1>}
                 <div style={{marginLeft:'2rem'}} className={"noMarginleftOnMobile"}>
                     <p style={{marginRight:'auto', maxWidth:'800px', marginBottom:'50px'}}>{translations.tracksDescription}</p>
                     <div className={"fr f-c"} style={{gap:'2rem',alignItems:'stretch'}} id={"tracks_container"}>
@@ -71,8 +71,8 @@ function AccueilTracks() {
                         <div style={{backgroundColor:'#000', padding:'4rem 2rem 2rem', borderRadius:'2rem',position:"relative", minWidth:"30vw", display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"center"}}>
                             {selectedTrackImage && <>
                                 <h3 className={"white"} style={{position: "absolute", top: 0, textAlign: "center", width: "calc(100% - 4rem)"}}>{selectedTrackTitle}</h3>
-                                <img src={selectedTrackImage} alt="Selected Track" style={{width: '100%', maxWidth: '350px', height: '100%', maxHeight: '300px', objectFit: 'cover', borderRadius: '1rem'}}/>
-                                <button type={"button"} className={"expansiva fs1"} key={selectedTrack.dates[0].id}
+                                <img src={selectedTrackImage} alt="Selected Track" style={{width: '100%', maxWidth: '350px', height: '100%', maxHeight: '300px', objectFit: 'cover', borderRadius: '1rem', aspectRatio:"1/1"}}/>
+                                <button type={"button"} className={"expansiva fs1 bw1 mt1 fw-b"} key={selectedTrack.dates[0].id}
                                         onClick={() => setEventModalIsOpen(selectedTrack.dates[0])}
                                 >
                                     {translations.book}
@@ -118,7 +118,6 @@ const styles = {
         flexDirection: 'column',
         width: '100%',
         position: 'relative',
-        paddingTop:'80px',
         paddingBottom:'120px',
     },
     damierBefore: {
