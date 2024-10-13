@@ -447,6 +447,9 @@ section{
   max-width: 100px!important;
 }
 @media (max-width: 740px) {
+  .fs1_mobile{
+    font-size: 1rem;
+  }
   .column_on_mobile{
     flex-direction: column;
   }

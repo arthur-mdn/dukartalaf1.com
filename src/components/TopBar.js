@@ -1,12 +1,15 @@
 import React from "react";
 import LanguageSelector from "./LanguageSelector";
+import {useLanguage} from "../LanguageContext";
 
 function TopBar({ setIsMenuOpen }) {
+    const { translations } = useLanguage();
+
     return (
         <>
             <nav style={styles.navbar}>
                 <a href={"/"}>
-                    <img src="/logo_white.png" alt="Logo" style={styles.logo} id={"topbar_logo"}/>
+                    <h1 className={"expansiva white center fs1-5 fs1_mobile"}>{translations.fromKartToF}</h1>
                 </a>
                 <button style={styles.menuButton} type={"button"} onClick={() => setIsMenuOpen(true)}>
                     <div style={styles.menuBarContainer}>
@@ -14,7 +17,10 @@ function TopBar({ setIsMenuOpen }) {
                         <div style={{...styles.menuBar, ...styles.middleBar}}></div>
                         <div style={styles.menuBar}></div>
                     </div>
-                    Menu
+                    <span className={"hide_mobile"}>
+                        Menu
+                    </span>
+
                 </button>
                 <LanguageSelector className={"hide_mobile"}/>
             </nav>
