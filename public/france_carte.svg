@@ -103,7 +103,7 @@
         <circle id="piste_1" class="cls-1" cx="360" cy="363.6" r="10"/>
         <circle id="piste_2" class="cls-1" cx="360" cy="280.5" r="10"/>
         <circle id="piste_8" class="cls-1" cx="330.1" cy="265" r="10"/>
-        <circle id="piste_9" class="cls-1" cx="303" cy="342.9" r="10"/>
+<!--        <circle id="piste_9" class="cls-1" cx="303" cy="342.9" r="10"/>-->
         <circle id="piste_10" class="cls-1" cx="240" cy="115" r="10"/>
         <circle id="piste_11" class="cls-1" cx="115" cy="180" r="10"/>
         <circle id="piste_12" class="cls-1" cx="165" cy="120" r="10"/>

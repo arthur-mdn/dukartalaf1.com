@@ -1,10 +1,13 @@
-import React from "react";
+import React, {useState} from "react";
 import {useLanguage} from "../../../LanguageContext";
 import {FaChevronDown} from "react-icons/fa6";
+import EventModal from "../../../components/modal/EventModal";
 
 function AccueilHeroSection() {
     const { translations } = useLanguage();
 
+    const [selectedTrack, setSelectedTrack] = React.useState(null);
+    const [eventModalIsOpen, setEventModalIsOpen] = useState('null');
     return (
         <>
             <section style={styles.home_hero_section} id={"home_hero_section"} >
@@ -13,7 +16,11 @@ function AccueilHeroSection() {
                 <p className={"white center fs1-5"}>{translations.secondEdition}</p>
                 <p className={"white center fs1-5 fw-b clr"}>{translations['6Winners']}</p>
                 <div className={'fr f-c'}>
-                    <a href={"#AccueilContactForm"} className={"button expansiva white center fs1-5"}>{translations.stayConnected}</a>
+                    <button onClick={() => setEventModalIsOpen({
+                        "date": "oui",
+                        "id": "widget",
+                        "lienReservation": "https://yurplan.com/events/Du-Kart-a-La-F1/130790/tickets/widget?widget=dGlja2V0aW5nV2lkZ2V0WXBfMTI4NzYyXzEzMzEzMA%3D%3D&from=widget_133130&wversion=1&culture=fr"
+                    })} className={"button expansiva white center fs1-5"}>{translations.register}</button>
                 </div>
                 {/*<div style={styles.carsContainer} className={"carsContainer"}>*/}
                 {/*    <img src={"/kart.png"} alt="kart" style={styles.carsIllustration}/>*/}
@@ -24,6 +31,26 @@ function AccueilHeroSection() {
                     <FaChevronDown style={{fontSize:"4rem", color:"white"}}/>
                 </a>
             </section>
+
+            <EventModal isOpen={eventModalIsOpen} maxWidth={"93%"} zIndex={99999} title={translations.chooseDate} onClose={() => setEventModalIsOpen("null")}>
+                <div className={"fc f-c"} style={{height:'100%', width:'100%'}}>
+                    {eventModalIsOpen.date && (
+                        <>
+
+                            <iframe
+                                title={"Réserver"}
+                                id={`yurplan-widget-${eventModalIsOpen.id}`}
+                                src={`${eventModalIsOpen.lienReservation}`}
+                                width={"100%"}
+                                height={"100%"}
+                            >
+                            </iframe>
+                        </>
+
+
+                    )}
+                </div>
+            </EventModal>
         </>
 
     );

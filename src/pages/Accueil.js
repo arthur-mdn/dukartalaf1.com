@@ -14,7 +14,7 @@ function Accueil() {
             <AccueilGift/>
             <AccueilTracks/>
             {/*<AccueilCarousel/>*/}
-            <AccueilContact/>
+            {/*<AccueilContact/>*/}
             <AccueilVideo/>
         </>
 
