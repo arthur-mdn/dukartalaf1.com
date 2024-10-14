@@ -18,7 +18,7 @@ function RegisterWidget() {
                              setEventModalIsOpen({
                                  "date": "oui",
                                  "id": "widget",
-                                 "lienReservation": "https://yurplan.com/events/Du-Kart-a-La-F1/130790/tickets/widget?widget=dGlja2V0aW5nV2lkZ2V0WXBfMTI4NzYyXzEzMzEzMA%3D%3D&from=widget_133130&wversion=1&culture=fr"
+                                 "lienReservation": "https://yp.events/3816acd0-8761-446e-99f7-fe343e157be6/Du-Kart-a-La-F1?from=SiteWeb"
                              });
                              setWidgetIsOpen(false)
                          }
