@@ -52,6 +52,10 @@ function AccueilEvent() {
                         </ul>
 
                         <p dangerouslySetInnerHTML={{
+                            __html: translations.newEventDescription30
+                        }}>
+                        </p>
+                        <p dangerouslySetInnerHTML={{
                             __html: translations.newEventDescription31
                         }}>
                         </p>
