@@ -113,7 +113,7 @@
         <circle id="piste_16" class="cls-1" cx="150" cy="375.5" r="10"/>
         <circle id="piste_17" class="cls-1" cx="400" cy="210" r="10"/>
         <circle id="piste_18" class="cls-1" cx="315" cy="305.5" r="10"/>
-        <circle id="piste_19" class="cls-1" cx="255" cy="345.5" r="10"/>
+        <circle id="piste_19" class="cls-1" cx="245" cy="345.5" r="10"/>
         <circle id="piste_20" class="cls-1" cx="435" cy="445" r="10"/>
         <circle id="piste_21" class="cls-1" cx="280" cy="370.5" r="10"/>
         <circle id="piste_22" class="cls-1" cx="260" cy="90" r="10"/>
@@ -134,6 +134,7 @@
         <circle id="piste_37" class="cls-1" cx="365" cy="380" r="10"/>
         <circle id="piste_38" class="cls-1" cx="180" cy="335" r="10"/>
         <circle id="piste_39" class="cls-1" cx="290" cy="160" r="10"/>
+        <circle id="piste_40" class="cls-1" cx="275" cy="340" r="10"/>
       </g>
     </g>
   </g>

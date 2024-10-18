@@ -576,5 +576,22 @@
         "lienReservation": "https://yp.events/3816acd0-8761-446e-99f7-fe343e157be6/Du-Kart-a-La-F1?from=SiteWeb"
       }
     ]
+  },
+  {
+    "id": 40,
+    "nom": "Fun Kart Brissac",
+    "postal_code": "34",
+    "logo": "funkart/logo.png",
+    "image": "funkart/photo.png",
+    "piste": "funkart/piste.png",
+    "dates": [
+      {
+        "id": 116591,
+        "date": "2024-02-25",
+        "startTime": "10:00",
+        "endTime": "12:00",
+        "lienReservation": "https://yp.events/3816acd0-8761-446e-99f7-fe343e157be6/Du-Kart-a-La-F1?from=SiteWeb"
+      }
+    ]
   }
 ]
