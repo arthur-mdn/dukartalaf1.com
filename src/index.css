@@ -696,7 +696,7 @@ overflow-y: scroll;
     justify-content: center;
 }
 
-.pdfViewer canvas{
+.pdfViewer img{
     width: 100%!important;
     height: auto;
     border: 1px solid white;
