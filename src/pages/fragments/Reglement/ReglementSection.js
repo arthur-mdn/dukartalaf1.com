@@ -13,7 +13,7 @@ function ReglementSection() {
                 </div>
                 <div className={"ai-c jc-c fc"}>
                     <div className="pdfViewer">
-                        {[...Array(4)].map((x, i) =>
+                        {[...Array(5)].map((x, i) =>
                             <img key={i} src={`/docs/reglement_du_kart_a_la_f1_2eme_edition_v1-04-10_page-000${i+1}.jpg`}/>
                         )}
                     </div>
