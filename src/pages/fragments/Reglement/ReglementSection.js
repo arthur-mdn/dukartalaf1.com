@@ -18,9 +18,9 @@ function ReglementSection() {
                         )}
                     </div>
                 </div>
-                <div className={"fc ai-c p1"}>
-                    <button className={"button expansiva white center fs1-5"} onClick={() => window.open(pdfUrl, '_blank')}>{translations.seeRules}</button>
-                </div>
+                {/*<div className={"fc ai-c p1"}>*/}
+                {/*    <button className={"button expansiva white center fs1-5"} onClick={() => window.open(pdfUrl, '_blank')}>{translations.seeRules}</button>*/}
+                {/*</div>*/}
 
             </article>
         </section>
