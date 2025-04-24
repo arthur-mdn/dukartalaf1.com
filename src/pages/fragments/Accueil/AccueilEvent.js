@@ -16,82 +16,82 @@ function AccueilEvent() {
                             __html: translations.newEventDescription51
                         }}>
                         </p>
-                        <p>
-                            {translations.newEventDescription52}
-                        </p>
-                        <p>
-                            {translations.newEventDescription53}
-                        </p>
-                        <h3 className={"fs1-5"}>{translations.newEventTitle1}</h3>
-                        <p>
-                            {translations.newEventDescription2}
-                        </p>
-                        <h3 className={"fs1-5"}>{translations.newEventTitle2}</h3>
-                        <p>
-                            {translations.newEventDescription3}
-                        </p>
-                        <ul style={{listStyle: "disc", paddingLeft: "3rem"}}>
-                            <li>
-                                {translations.newEventDescription4ListElement1}
-                            </li>
-                            <li>
-                                {translations.newEventDescription4ListElement2}
-                            </li>
-                            <li>
-                                {translations.newEventDescription4ListElement3}
-                            </li>
-                            <li>
-                                {translations.newEventDescription4ListElement4}
-                            </li>
-                            <li>
-                                {translations.newEventDescription4ListElement5}
-                            </li>
-                            <li>
-                                {translations.newEventDescription4ListElement6}
-                            </li>
-                        </ul>
+                        {/*<p>*/}
+                        {/*    {translations.newEventDescription52}*/}
+                        {/*</p>*/}
+                        {/*<p>*/}
+                        {/*    {translations.newEventDescription53}*/}
+                        {/*</p>*/}
+                        {/*<h3 className={"fs1-5"}>{translations.newEventTitle1}</h3>*/}
+                        {/*<p>*/}
+                        {/*    {translations.newEventDescription2}*/}
+                        {/*</p>*/}
+                        {/*<h3 className={"fs1-5"}>{translations.newEventTitle2}</h3>*/}
+                        {/*<p>*/}
+                        {/*    {translations.newEventDescription3}*/}
+                        {/*</p>*/}
+                        {/*<ul style={{listStyle: "disc", paddingLeft: "3rem"}}>*/}
+                        {/*    <li>*/}
+                        {/*        {translations.newEventDescription4ListElement1}*/}
+                        {/*    </li>*/}
+                        {/*    <li>*/}
+                        {/*        {translations.newEventDescription4ListElement2}*/}
+                        {/*    </li>*/}
+                        {/*    <li>*/}
+                        {/*        {translations.newEventDescription4ListElement3}*/}
+                        {/*    </li>*/}
+                        {/*    <li>*/}
+                        {/*        {translations.newEventDescription4ListElement4}*/}
+                        {/*    </li>*/}
+                        {/*    <li>*/}
+                        {/*        {translations.newEventDescription4ListElement5}*/}
+                        {/*    </li>*/}
+                        {/*    <li>*/}
+                        {/*        {translations.newEventDescription4ListElement6}*/}
+                        {/*    </li>*/}
+                        {/*</ul>*/}
 
-                        <p dangerouslySetInnerHTML={{
-                            __html: translations.newEventDescription30
-                        }}>
-                        </p>
-                        <p dangerouslySetInnerHTML={{
-                            __html: translations.newEventDescription31
-                        }}>
-                        </p>
-                        <p dangerouslySetInnerHTML={{
-                            __html: translations.newEventDescription32
-                        }}>
-                        </p>
-                        <p dangerouslySetInnerHTML={{
-                            __html: translations.newEventDescription33
-                        }}>
-                        </p>
-                        <p dangerouslySetInnerHTML={{
-                            __html: translations.newEventDescription34
-                        }}>
-                        </p>
-                        <p dangerouslySetInnerHTML={{
-                            __html: translations.newEventDescription35
-                        }}>
-                        </p>
-                        <p dangerouslySetInnerHTML={{
-                            __html: translations.newEventDescription36
-                        }}>
-                        </p>
+                        {/*<p dangerouslySetInnerHTML={{*/}
+                        {/*    __html: translations.newEventDescription30*/}
+                        {/*}}>*/}
+                        {/*</p>*/}
+                        {/*<p dangerouslySetInnerHTML={{*/}
+                        {/*    __html: translations.newEventDescription31*/}
+                        {/*}}>*/}
+                        {/*</p>*/}
+                        {/*<p dangerouslySetInnerHTML={{*/}
+                        {/*    __html: translations.newEventDescription32*/}
+                        {/*}}>*/}
+                        {/*</p>*/}
+                        {/*<p dangerouslySetInnerHTML={{*/}
+                        {/*    __html: translations.newEventDescription33*/}
+                        {/*}}>*/}
+                        {/*</p>*/}
+                        {/*<p dangerouslySetInnerHTML={{*/}
+                        {/*    __html: translations.newEventDescription34*/}
+                        {/*}}>*/}
+                        {/*</p>*/}
+                        {/*<p dangerouslySetInnerHTML={{*/}
+                        {/*    __html: translations.newEventDescription35*/}
+                        {/*}}>*/}
+                        {/*</p>*/}
+                        {/*<p dangerouslySetInnerHTML={{*/}
+                        {/*    __html: translations.newEventDescription36*/}
+                        {/*}}>*/}
+                        {/*</p>*/}
 
-                        <p dangerouslySetInnerHTML={{
-                            __html: translations.newEventDescription37
-                        }}>
-                        </p>
-                        <h3 className={"fs1-5"}>{translations.newEventTitle3}</h3>
-                        <p>
-                            {translations.newEventDescription4}
-                        </p>
-                        <h3 className={"fs1-5"}>{translations.newEventTitle4}</h3>
-                        <p>
-                            {translations.newEventDescription5}
-                        </p>
+                        {/*<p dangerouslySetInnerHTML={{*/}
+                        {/*    __html: translations.newEventDescription37*/}
+                        {/*}}>*/}
+                        {/*</p>*/}
+                        {/*<h3 className={"fs1-5"}>{translations.newEventTitle3}</h3>*/}
+                        {/*<p>*/}
+                        {/*    {translations.newEventDescription4}*/}
+                        {/*</p>*/}
+                        {/*<h3 className={"fs1-5"}>{translations.newEventTitle4}</h3>*/}
+                        {/*<p>*/}
+                        {/*    {translations.newEventDescription5}*/}
+                        {/*</p>*/}
                     </div>
                     <br/>
                     <br/>

@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import {useLanguage} from "../../../LanguageContext";
 import {FaChevronDown} from "react-icons/fa6";
 import EventModal from "../../../components/modal/EventModal";
+import AccueilNewsletter from "./AccueilNewsletter";
 
 function AccueilHeroSection() {
     const { translations } = useLanguage();
@@ -14,13 +15,17 @@ function AccueilHeroSection() {
                 <div style={styles.beforeStyle} id={"home_header"}> <div style={styles.overlay} id={"home_header_overlay"}></div></div> {/* Agit comme un pseudo-élément :before */}
                 <h1 className={"expansiva white center fs3-5"}>{translations.fromKartToF}</h1>
                 <p className={"white center fs1-5"}>{translations.secondEdition}</p>
-                <p className={"white center fs1-5 fw-b clr"}>{translations['6Winners']}</p>
+                {/*<p className={"white center fs1-5 fw-b clr"}>{translations['6Winners']}</p>*/}
+                {/*<div className={'fr f-c'}>*/}
+                {/*    <button onClick={() => setEventModalIsOpen({*/}
+                {/*        "date": "oui",*/}
+                {/*        "id": "widget",*/}
+                {/*        "lienReservation": "https://yp.events/3816acd0-8761-446e-99f7-fe343e157be6/Du-Kart-a-La-F1?from=SiteWeb"*/}
+                {/*    })} className={"button expansiva white center fs1-5"}>{translations.register}</button>*/}
+                {/*</div>*/}
+
                 <div className={'fr f-c'}>
-                    <button onClick={() => setEventModalIsOpen({
-                        "date": "oui",
-                        "id": "widget",
-                        "lienReservation": "https://yp.events/3816acd0-8761-446e-99f7-fe343e157be6/Du-Kart-a-La-F1?from=SiteWeb"
-                    })} className={"button expansiva white center fs1-5"}>{translations.register}</button>
+                    <AccueilNewsletter/>
                 </div>
                 {/*<div style={styles.carsContainer} className={"carsContainer"}>*/}
                 {/*    <img src={"/kart.png"} alt="kart" style={styles.carsIllustration}/>*/}
@@ -32,25 +37,25 @@ function AccueilHeroSection() {
                 </a>
             </section>
 
-            <EventModal isOpen={eventModalIsOpen} maxWidth={"93%"} zIndex={99999} title={translations.chooseDate} onClose={() => setEventModalIsOpen("null")}>
-                <div className={"fc f-c"} style={{height:'100%', width:'100%'}}>
-                    {eventModalIsOpen.date && (
-                        <>
+            {/*<EventModal isOpen={eventModalIsOpen} maxWidth={"93%"} zIndex={99999} title={translations.chooseDate} onClose={() => setEventModalIsOpen("null")}>*/}
+            {/*    <div className={"fc f-c"} style={{height:'100%', width:'100%'}}>*/}
+            {/*        {eventModalIsOpen.date && (*/}
+            {/*            <>*/}
 
-                            <iframe
-                                title={"Réserver"}
-                                id={`yurplan-widget-${eventModalIsOpen.id}`}
-                                src={`${eventModalIsOpen.lienReservation}`}
-                                width={"100%"}
-                                height={"100%"}
-                            >
-                            </iframe>
-                        </>
+            {/*                <iframe*/}
+            {/*                    title={"Réserver"}*/}
+            {/*                    id={`yurplan-widget-${eventModalIsOpen.id}`}*/}
+            {/*                    src={`${eventModalIsOpen.lienReservation}`}*/}
+            {/*                    width={"100%"}*/}
+            {/*                    height={"100%"}*/}
+            {/*                >*/}
+            {/*                </iframe>*/}
+            {/*            </>*/}
 
 
-                    )}
-                </div>
-            </EventModal>
+            {/*        )}*/}
+            {/*    </div>*/}
+            {/*</EventModal>*/}
         </>
 
     );
@@ -74,7 +79,7 @@ const styles = {
         width: '100%',
         height: '100%',
         backgroundColor: '#ccc',
-        backgroundImage: 'url(/home_header.png)',
+        backgroundImage: 'url(/image_header_bg.jpeg)',
         backgroundPosition: 'center',
         backgroundSize: 'cover',
         zIndex:"-1"

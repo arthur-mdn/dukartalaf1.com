@@ -39,10 +39,10 @@ function App() {
 }
 
 function MainContent() {
-    // console.log(
-    //     `%cAttention : La date de paiement prévue pour le développement et le déploiement de ce site était le 14 Octobre 2024, et elle n'a pas été respectée.`,
-    //     'color: red; font-size: 12px;'
-    // );
+    console.log(
+        `%cAttention : La date de paiement prévue pour le développement et le déploiement de ce site était le 21 Avril 2025, et elle n'a pas été respectée.`,
+        'color: red; font-size: 12px;'
+    );
     return (
         <div>
             <Routes>
@@ -56,7 +56,7 @@ function MainContent() {
                 <Route path="/coming-soon" element={<ComingSoon />} />
                 <Route path="*" element={<NotFound />} />
             </Routes>
-            <RegisterWidget/>
+            {/*<RegisterWidget/>*/}
         </div>
     );
 }
