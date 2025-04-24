@@ -15,7 +15,7 @@ function ContactForm() {
         setError("");
 
         try {
-            const response = await fetch("https://kartf1.mondon.pro/send_mail.php", {
+            const response = await fetch("https://kart.mondon.pro/send_mail.php", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ email }),
