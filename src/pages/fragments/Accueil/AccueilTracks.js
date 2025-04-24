@@ -36,14 +36,14 @@ function AccueilTracks({noTitle = false}) {
     }, []);
 
     window.handleEllipseClick = (event) => {
-        console.log(event.target.id);
+        // console.log(event.target.id);
         const trackId = event.target.id;
         const trackNumber = parseInt(trackId.split("_")[1]);
 
         const trackData = pistesData.find(piste => piste.id === trackNumber);
 
         if (trackData) {
-            console.log(trackData)
+            // console.log(trackData)
             event.target.classList.add("selected");
             setSelectedTrackId(trackData.id);
             setSelectedTrackImage(`/pistes/${trackData.image}`);
