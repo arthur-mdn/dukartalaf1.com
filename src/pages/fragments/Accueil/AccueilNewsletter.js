@@ -1,6 +1,7 @@
 import React from "react";
 import {useLanguage} from "../../../LanguageContext";
 import { useForm, ValidationError } from '@formspree/react';
+import {FaPaperPlane} from "react-icons/fa6";
 
 function ContactForm() {
     const { translations } = useLanguage();
@@ -23,8 +24,8 @@ function ContactForm() {
                     field="email"
                     errors={state.errors}
                 />
-                <button type="submit" className={"button"} disabled={state.submitting} style={{margin:0,border:0, marginRight:"0.35rem"}}>
-                    {translations.register}
+                <button type="submit" className={"button fc ai-c jc-c"} disabled={state.submitting} style={{margin:0,border:0, marginRight:"0.35rem", padding:"1rem"}}>
+                    <FaPaperPlane/>
                 </button>
 
         </form>
