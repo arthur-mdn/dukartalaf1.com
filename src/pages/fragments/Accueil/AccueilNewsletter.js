@@ -23,7 +23,7 @@ function ContactForm() {
                     field="email"
                     errors={state.errors}
                 />
-                <button type="submit" className={"button"} disabled={state.submitting} style={{margin:0,border:0, marginRight:"0.25rem"}}>
+                <button type="submit" className={"button"} disabled={state.submitting} style={{margin:0,border:0, marginRight:"0.35rem"}}>
                     {translations.register}
                 </button>
 
